@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MATURITY GAME -  ATIVAR CONTA</title>
+</head>
+
+<style>
+
+#main
+{
+ margin:0 auto;
+ width:640px;
+ background-color:#FFF;
+ background-position:left 157px;
+}
+
+#end
+{
+ width:300px;
+ float:left;
+ padding: 50px 10px 50px 50px;
+}
+
+body
+{
+ background-color:#6ddbe8;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ color:#1b373c;
+}
+
+#text
+{
+ padding: 10px 50px 0 50px;
+}
+
+h1
+{
+ font-size:14px;
+}
+span
+{
+ line-height:20px;
+}
+
+#footer
+{
+ padding: 30px 0 0 0;
+
+}
+</style>
+<body>
+
+<div id="main">
+    <div id="text">
+        <h1>Prezado, ÞDestinatarioNomeÞ </h1>
+        <span> Com nossos mais sinceros cumprimentos, agradecemos sua gentil e importante contribuição realizada a esta instituição: 
+         <br /> 
+             <br>  
+                 Tipo de Doação: ¥µP320Pµ¥   <br></a>
+           Data da Doação: ¥µP321Pµ¥   <br></a>
+     Valor da Doação (R$): ¥µP323Pµ¥  <br></a>
+           Forma: ¥µP324Pµ¥   <br></a>
+       <br>
+   Atenciosamente, 
+<br>¥µF36362|583832Fµ¥ <br> 
+     <a href="¥µF36362|591665Fµ)">acesse nosso aplicativo </a> <br>
+    <div id="end">
+    <div id="end">

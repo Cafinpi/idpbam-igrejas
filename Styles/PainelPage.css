@@ -1,0 +1,2093 @@
+/*		Remove Guters		*/
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+	
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.container {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+
+
+.c_Form1
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+#Form1_body
+{
+	background-color: #DBDFE4;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	font-size: 100%;
+	margin: 0px;
+	overflow: inherit;
+}
+
+.c_MainAjaxPanel
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	height: 100%;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	width: 100%;
+}
+
+.c_LayoutContainer1
+{
+	background-color: Transparent;
+	background-size: auto;
+	cursor: inherit;
+	display: block;
+}
+
+.c_LayoutRow2
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	padding: 10px !important;
+}
+
+.c_LayoutCol8
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	overflow: inherit;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_LayoutRow9
+{
+	background-color: #E2E5E9;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	overflow: hidden;
+	padding: 0px !important;
+}
+
+.c_LayoutCol20
+{
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	padding: 20px !important;
+}
+
+.c_LayoutRow8
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	padding: 0px !important;
+}
+
+.c_LayoutCol18
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	overflow: inherit;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Label5
+{
+	font-family: 'Segoe UI';
+	font-size: 20px;
+	font-weight: 500;
+	font-weight: 500;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	color: #333333;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+	word-wrap: normal;
+}
+
+.c_GRepeaterBody2
+{
+	background-color: #DBDFE4;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-color: #000000;
+	border-style: None;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-width: 0px;
+	padding: 0px !important;
+}
+
+.c_LayoutCol28
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_LayoutRow11
+{
+	background-position: center;
+	background-size: auto;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+	padding: 0px !important;
+}
+
+.c_LayoutCol29
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 10px !important;
+}
+
+.c_Div7
+{
+	background-color: #E2E5E9;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 0px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	height: 112px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	display: block;
+	overflow: hidden;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_Icon5
+{
+	background-color: Transparent;
+	color: #0DCAF0;
+	display: block;
+	font-size: 50px;
+}
+
+.c_Div7.card .c_container_PainelPage_Icon5
+{
+	margin-top: -26px;
+	--mleft: 25px;
+	position: absolute !important;
+	left: 25px;
+	top: 50%;
+	text-align: left;
+}
+
+.c_Label21
+{
+	font-family: 'Segoe UI';
+	font-size: 36px;
+	font-weight: 500;
+	font-weight: 500;
+	position: absolute !important;
+	left: 106px;
+	top: 23px;
+	width: 204px;
+	height: 39px;
+	color: #333333;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	word-wrap: normal;
+}
+
+.c_Label22
+{
+	font-family: 'Segoe UI';
+	font-size: 20px;
+	font-weight: 500;
+	font-weight: 500;
+	position: absolute !important;
+	left: 107px;
+	bottom: 6px;
+	width: 196px;
+	color: #0DCAF0;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	word-wrap: normal;
+}
+
+.c_LayoutCol30
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 10px !important;
+}
+
+.c_Div8
+{
+	background-color: #E2E5E9;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 0px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	height: 112px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	display: block;
+	overflow: hidden;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_Icon6
+{
+	background-color: Transparent;
+	color: #FF0716;
+	display: block;
+	font-size: 50px;
+}
+
+.c_Div8.card .c_container_PainelPage_Icon6
+{
+	margin-top: -26px;
+	--mleft: 25px;
+	position: absolute !important;
+	left: 25px;
+	top: 50%;
+	text-align: left;
+}
+
+.c_Label23
+{
+	font-family: 'Segoe UI';
+	font-size: 20px;
+	font-weight: 500;
+	font-weight: 500;
+	position: absolute !important;
+	left: 106px;
+	bottom: 6px;
+	width: 125px;
+	color: #DC3545;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	word-wrap: normal;
+}
+
+.c_Label24
+{
+	font-family: 'Segoe UI';
+	font-size: 36px;
+	font-weight: 500;
+	font-weight: 500;
+	position: absolute !important;
+	left: 102px;
+	top: 23px;
+	width: 204px;
+	height: 39px;
+	color: #333333;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	word-wrap: normal;
+}
+
+.c_LayoutCol31
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 10px !important;
+}
+
+.c_Div9
+{
+	background-color: #E2E5E9;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 0px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	height: 112px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	display: block;
+	overflow: hidden;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_Icon7
+{
+	background-color: Transparent;
+	color: #28A745;
+	display: block;
+	font-size: 50px;
+}
+
+.c_Div9.card .c_container_PainelPage_Icon7
+{
+	margin-top: -26px;
+	--mleft: 25px;
+	position: absolute !important;
+	left: 25px;
+	top: 50%;
+	text-align: left;
+}
+
+.c_Label25
+{
+	font-family: 'Segoe UI';
+	font-size: 20px;
+	font-weight: 500;
+	font-weight: 500;
+	position: absolute !important;
+	left: 111px;
+	bottom: 6px;
+	width: 139px;
+	color: #28A745;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	word-wrap: normal;
+}
+
+.c_Label27
+{
+	font-family: 'Segoe UI';
+	font-size: 36px;
+	font-weight: 500;
+	font-weight: 500;
+	position: absolute !important;
+	left: 111px;
+	top: 23px;
+	width: 204px;
+	height: 39px;
+	color: #333333;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	word-wrap: normal;
+}
+
+.c_LayoutCol2
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	overflow: inherit;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_LayoutRow3
+{
+	background-color: #E2E5E9;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	overflow: hidden;
+	padding: 0px !important;
+}
+
+.c_LayoutCol21
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	padding: 12px 20px 12px 20px !important;
+}
+
+.c_Label1
+{
+	font-family: 'Segoe UI';
+	font-size: 20px;
+	font-weight: 500;
+	font-weight: 500;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	color: #333333;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+	word-wrap: normal;
+}
+
+.c_LayoutCol4
+{
+	background-position: center;
+	background-size: auto;
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	padding: 20px !important;
+}
+
+.c_GridSaldos
+{
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	display: block;
+	outline-style: none !important;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+#GridSaldos_GridData.rgDataDiv
+{
+	height: auto !important;
+}
+
+.c_GridColumn11
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_GridColumn12
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_GridColumn13
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_LayoutCol24
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 0px !important;
+}
+
+.c_LayoutRow16
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	padding: 10px !important;
+}
+
+.c_LayoutCol48
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Label28
+{
+	font-family: 'Segoe UI';
+	font-size: 20px;
+	font-weight: 500;
+	font-weight: 500;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	color: #333333;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+	word-wrap: normal;
+}
+
+.c_Label30
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	color: #333333;
+	display: block;
+	font-weight: 400;
+	Padding-right: 0px;
+	text-align: Left;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+	word-wrap: normal;
+}
+
+.c_CBMes
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	background-color: #FFFFFF;
+	cursor: inherit;
+	display: block;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_GComboBoxItem6
+{
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_GComboBoxItem7
+{
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_GComboBoxItem8
+{
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_GComboBoxItem9
+{
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_GComboBoxItem10
+{
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_GComboBoxItem11
+{
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_GComboBoxItem12
+{
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_GComboBoxItem13
+{
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_GComboBoxItem14
+{
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_GComboBoxItem15
+{
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_GComboBoxItem16
+{
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_GComboBoxItem17
+{
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_LayoutCol49
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_GRepeaterBody1
+{
+	background-color: #DBDFE4;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-color: #000000;
+	border-style: None;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-width: 0px;
+	padding: 0px !important;
+}
+
+.c_LayoutCol23
+{
+	background-color: #E2E5E9;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Div2
+{
+	background-color: Transparent;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	height: 109px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	border-color: #F0F0F0;
+	border-style: Solid;
+	border-width: 1px;
+	Clip: rect(auto auto auto auto);
+	display: block;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_Label6
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	margin-top: 5px;
+	--mleft: 75px;
+	position: absolute !important;
+	left: 75px;
+	width: 640px;
+	color: #0066CC;
+	display: block;
+	font-weight: 400;
+	Padding-right: 0px;
+	text-align: Left;
+	word-wrap: normal;
+}
+
+.c_Label8
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	margin-top: 5px;
+	--mright: 12px;
+	position: absolute !important;
+	right: 12px;
+	width: 190px;
+	color: #0066CC;
+	display: block;
+	font-weight: 400;
+	Padding-right: 0px;
+	text-align: Right;
+	word-wrap: normal;
+}
+
+.c_Label9
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	--mright: 12px;
+	position: absolute !important;
+	bottom: 6px;
+	right: 12px;
+	width: 149px;
+	color: #333333;
+	display: block;
+	font-weight: 400;
+	Padding-right: 0px;
+	text-align: Right;
+	word-wrap: normal;
+}
+
+.c_Label10
+{
+	font-family: 'Segoe UI';
+	font-size: 12px;
+	--mleft: 75px;
+	position: absolute !important;
+	left: 75px;
+	bottom: 6px;
+	width: 808px;
+	color: #333333;
+	display: block;
+	font-weight: 400;
+	Padding-right: 0px;
+	text-align: Left;
+	word-wrap: normal;
+}
+
+.c_Icon1
+{
+	background-color: Transparent;
+	color: #000000;
+	display: block;
+	font-size: 40px;
+}
+
+.c_Div2.div-transparent .c_container_PainelPage_Icon1
+{
+	margin-top: -26px;
+	--mleft: 6px;
+	position: absolute !important;
+	left: 6px;
+	top: 50%;
+	text-align: left;
+}
+
+.c_Label12
+{
+	font-family: 'Segoe UI';
+	font-size: 12px;
+	margin-top: -10px;
+	--mleft: 75px;
+	position: absolute !important;
+	left: 75px;
+	top: 50%;
+	width: 1060px;
+	color: #333333;
+	display: block;
+	font-weight: 400;
+	Padding-right: 0px;
+	text-align: Left;
+	word-wrap: normal;
+}
+
+.c_Label29
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	margin-top: -12px;
+	--mright: 12px;
+	position: absolute !important;
+	top: 50%;
+	right: 12px;
+	width: 190px;
+	color: #DC3545;
+	display: block;
+	font-weight: 400;
+	Padding-right: 0px;
+	text-align: Right;
+	word-wrap: normal;
+}
+
+.c_Pager1
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	height: 38px;
+	background-color: Transparent;
+	border-width: 1px;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.Pager1_SelectedButton
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	position: relative;
+	background-color: #FFD86B !important;
+	border-color: #000000;
+	border-width: 1;
+	color: White !important;
+}
+
+.c_LayoutCol42
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Line1
+{
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 5px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	height: 2px;
+	background-color: #373737;
+	display: block;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_LayoutCol35
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_LayoutRow13
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	padding: 10px !important;
+}
+
+.c_LayoutCol37
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Label38
+{
+	font-family: 'Segoe UI';
+	font-size: 20px;
+	font-weight: 500;
+	font-weight: 500;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	color: #333333;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+	word-wrap: normal;
+}
+
+.c_LayoutCol36
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_GRepeaterBody3
+{
+	background-color: #DBDFE4;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-color: #000000;
+	border-style: None;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-width: 0px;
+	padding: 0px !important;
+}
+
+.c_LayoutCol38
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 10px !important;
+}
+
+.c_Div10
+{
+	background-color: #E2E5E9;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 0px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	height: 112px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	display: block;
+	overflow: hidden;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_Icon8
+{
+	background-color: Transparent;
+	color: #0DCAF0;
+	display: block;
+	font-size: 50px;
+}
+
+.c_Div10.card .c_container_PainelPage_Icon8
+{
+	margin-top: -26px;
+	--mleft: 25px;
+	position: absolute !important;
+	left: 25px;
+	top: 50%;
+	text-align: left;
+}
+
+.c_Label32
+{
+	font-family: 'Segoe UI';
+	font-size: 36px;
+	font-weight: 500;
+	font-weight: 500;
+	position: absolute !important;
+	left: 106px;
+	top: 23px;
+	width: 204px;
+	height: 39px;
+	color: #333333;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	word-wrap: normal;
+}
+
+.c_Label33
+{
+	font-family: 'Segoe UI';
+	font-size: 20px;
+	font-weight: 500;
+	font-weight: 500;
+	position: absolute !important;
+	left: 107px;
+	bottom: 6px;
+	width: 196px;
+	color: #0DCAF0;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	word-wrap: normal;
+}
+
+.c_LayoutCol39
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 10px !important;
+}
+
+.c_Div11
+{
+	background-color: #E2E5E9;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 0px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	height: 112px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	display: block;
+	overflow: hidden;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_Icon9
+{
+	background-color: Transparent;
+	color: #FF0716;
+	display: block;
+	font-size: 50px;
+}
+
+.c_Div11.card .c_container_PainelPage_Icon9
+{
+	margin-top: -26px;
+	--mleft: 25px;
+	position: absolute !important;
+	left: 25px;
+	top: 50%;
+	text-align: left;
+}
+
+.c_Label34
+{
+	font-family: 'Segoe UI';
+	font-size: 20px;
+	font-weight: 500;
+	font-weight: 500;
+	position: absolute !important;
+	left: 106px;
+	bottom: 6px;
+	width: 125px;
+	color: #DC3545;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	word-wrap: normal;
+}
+
+.c_Label35
+{
+	font-family: 'Segoe UI';
+	font-size: 36px;
+	font-weight: 500;
+	font-weight: 500;
+	position: absolute !important;
+	left: 102px;
+	top: 23px;
+	width: 204px;
+	height: 39px;
+	color: #333333;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	word-wrap: normal;
+}
+
+.c_LayoutCol40
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 10px !important;
+}
+
+.c_Div12
+{
+	background-color: #E2E5E9;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 0px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	height: 112px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	display: block;
+	overflow: hidden;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_Icon10
+{
+	background-color: Transparent;
+	color: #28A745;
+	display: block;
+	font-size: 50px;
+}
+
+.c_Div12.card .c_container_PainelPage_Icon10
+{
+	margin-top: -26px;
+	--mleft: 25px;
+	position: absolute !important;
+	left: 25px;
+	top: 50%;
+	text-align: left;
+}
+
+.c_Label36
+{
+	font-family: 'Segoe UI';
+	font-size: 20px;
+	font-weight: 500;
+	font-weight: 500;
+	position: absolute !important;
+	left: 111px;
+	bottom: 6px;
+	width: 139px;
+	color: #28A745;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	word-wrap: normal;
+}
+
+.c_Label37
+{
+	font-family: 'Segoe UI';
+	font-size: 36px;
+	font-weight: 500;
+	font-weight: 500;
+	position: absolute !important;
+	left: 111px;
+	top: 23px;
+	width: 204px;
+	height: 39px;
+	color: #333333;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	word-wrap: normal;
+}
+
+.c_LayoutCol41
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 0px !important;
+}
+
+.c_LayoutRow14
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	padding: 10px !important;
+}
+
+.c_LayoutCol44
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Label39
+{
+	font-family: 'Segoe UI';
+	font-size: 20px;
+	font-weight: 500;
+	font-weight: 500;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	color: #333333;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+	word-wrap: normal;
+}
+
+.c_LayoutCol45
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Grid2
+{
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	display: block;
+	outline-style: none !important;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_GridColumn_CT_NOME
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_GridColumn_TotalSaldo
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_LayoutCol3
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	overflow: inherit;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_LayoutRow6
+{
+	background-color: #E2E5E9;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	overflow: hidden;
+	padding: 0px !important;
+}
+
+.c_LayoutCol22
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	padding: 12px 20px 12px 20px !important;
+}
+
+.c_Label2
+{
+	font-family: 'Segoe UI';
+	font-size: 20px;
+	font-weight: 500;
+	font-weight: 500;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	color: #333333;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+	word-wrap: normal;
+}
+
+.c_LayoutCol7
+{
+	background-position: center;
+	background-size: auto;
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	padding: 20px !important;
+}
+
+.c_TabControl1
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_TabItem1
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_TabPage1
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+	height: 100% !important;
+	position: relative;
+}
+
+#Graph1Content
+{
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 6px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	display: block;
+	height: 100%;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_TabItem2
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_TabPage2
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+	height: 100% !important;
+	position: relative;
+}
+
+#Graph2Content
+{
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 6px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	display: block;
+	height: 100%;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_TabItem3
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_TabPage3
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+	height: 100% !important;
+	position: relative;
+}
+
+#Graph3Content
+{
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 6px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	display: block;
+	height: 100%;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_LayoutCol34
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: none;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_LayoutRow12
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	padding: 10px !important;
+}
+
+.c_LayoutCol10
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: none;
+	flex-direction: column;
+	overflow: inherit;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_ComboBox11
+{
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	background-color: #FFFFFF;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+	display: block;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_LayoutCol17
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: none;
+	flex-direction: column;
+	overflow: inherit;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_ComboBox2
+{
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	background-color: #FFFFFF;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+	display: block;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_LayoutCol16
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: none;
+	flex-direction: column;
+	overflow: inherit;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_ComboBox3
+{
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	background-color: #FFFFFF;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+	display: block;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_GComboBoxItem1
+{
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_GComboBoxItem2
+{
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_GComboBoxItem3
+{
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_LayoutCol13
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: none;
+	flex-direction: column;
+	overflow: inherit;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_ComboBox6
+{
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	background-color: #FFFFFF;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+	display: block;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_LayoutCol14
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: none;
+	flex-direction: column;
+	overflow: inherit;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_ComboBox5
+{
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	background-color: #FFFFFF;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+	display: block;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_GComboBoxItem4
+{
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_GComboBoxItem5
+{
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_LayoutCol15
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: none;
+	flex-direction: column;
+	overflow: inherit;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_ComboBox4
+{
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	background-color: #FFFFFF;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+	display: block;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_LayoutCol19
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: block;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Label31
+{
+	font-family: 'Segoe UI';
+	font-size: 20px;
+	font-weight: 500;
+	font-weight: 500;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	color: #333333;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+	word-wrap: normal;
+}
+
+.c_Grid1
+{
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	display: block;
+	outline-style: none !important;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+#Grid1 tr.rgFilterRow td.hasFilterButton input.rgFilterBox
+{
+	width: calc(100% - 32px) !important;
+}
+
+#Grid1 tr.rgFilterRow td.hasFilterButton input[type="checkbox"]
+{
+	margin-right: 15px !important;
+}
+
+.c_GridColumn14
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_GridColumn23
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_GridColumn16
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_GridColumn15
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_GridColumn17
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_GridColumn18
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_GridColumn19
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_GridColumn22
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_GridColumn21
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_WindowSettings2
+{
+	position: absolute !important;
+	left: 525px;
+	top: 2221px;
+	width: 150px;
+	height: 150px;
+}
+
+.c_WindowSettings3
+{
+	position: absolute !important;
+	left: 333px;
+	top: 1725px;
+	width: 150px;
+	height: 150px;
+}
+
+.c_SweetAlert1
+{
+	background-color: #FFFFFF;
+	position: absolute !important;
+	left: 492px;
+	top: 2515px;
+	width: 640px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+	z-index: 2500;
+}
+
+#SweetAlert1 > ul
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+#SweetAlert1 > ul > li
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	height: 100%;
+	width: 100%;
+}

@@ -1,0 +1,233 @@
+/*		Remove Guters		*/
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+	
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.container {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+
+
+.c_Form1
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+#Form1_body
+{
+	background-color: #FFFFFF;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	font-size: 100%;
+	margin: 0px;
+	overflow: inherit;
+}
+
+.c_MainAjaxPanel
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	height: 100%;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	width: 100%;
+}
+
+.c_LayoutContainer1
+{
+	background-color: Transparent;
+	background-size: auto;
+	cursor: inherit;
+}
+
+.c_LayoutRow1
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	padding: 10px !important;
+}
+
+.c_LayoutCol2
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_LayoutRow2
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	padding: 10px !important;
+}
+
+.c_LayoutCol1
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Button1
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	height: 40px;
+	background-image: none !important;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border-bottom-left-radius: 2px !important;
+	border-bottom-right-radius: 2px !important;
+	border-top-left-radius: 2px !important;
+	border-top-right-radius: 2px !important;
+	border-width: 1px !important;
+	display: block;
+	outline-style: none !important;
+	padding: 0px !important;
+	padding: 0px 10px 0px 10px !important;
+	text-align: Center;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_Button1:not(:hover), .c_Button1.RadButton.rbButton.rbDisabled
+{
+	background-color: #A4ABB2;
+	border-color: #CBCBCB;
+	color: #383838 !important;
+}
+
+.c_Grid1
+{
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	display: block;
+	outline-style: none !important;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+#Grid1 tr.rgFilterRow td.hasFilterButton input.rgFilterBox
+{
+	width: calc(100% - 32px) !important;
+}
+
+#Grid1 tr.rgFilterRow td.hasFilterButton input[type="checkbox"]
+{
+	margin-right: 15px !important;
+}
+
+.c_GridColumn_Funcao
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_GridColumn_Nome
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_GridDistrito
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_ColCoordenacao
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_ColSupervisao
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_ColCelula
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_GridColumn1
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+/*		Hover style		*/
+
+
+.c_Button1:hover
+{
+	background-color: #A4ABB2 !important;
+	border-color: #CBCBCB !important;
+	color: #383838 !important;
+}
+
+.c_Button1:hover
+{
+	background-color: #A4ABB2 !important;
+	border-color: #CBCBCB !important;
+	color: #383838 !important;
+}

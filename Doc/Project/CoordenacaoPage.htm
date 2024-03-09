@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AppSecretaria - Coordenação</title>
+<link rel="stylesheet" type="text/css" href="../css/StyleDoc.css" />
+</head>
+
+<body>
+<div class="properties">
+    <h2> Título: <span>AppSecretaria - Coordenação</span></h2>	
+    <table>
+      <tr><th>Nome: </th><td>DataPageModule</td></tr>
+      <tr><th>Descrição</th><td></td></tr>				
+      <tr><th>Permite Inclusão: </th><td>True</td></tr>
+      <tr><th>Permite Edição: </th><td>True</td></tr>
+      <tr><th>Permite Deleção: </th><td>True</td></tr>
+      <tr><th>Banco de Dados: </th><td>idpb_cafinpi</td></tr>
+      <tr><th>Tabela Básica: </th><td>cordenacao</td></tr>
+      <tr><th>Provider: </th><td>PrvCoordenacao</td></tr>
+      <tr><th>Index: </th><td>PK_cordenacao</td></tr>
+    </table>
+   
+       <h3>Campos</h3>
+	<table>
+      <tr><th>Nome: </th><td>txtCoordenacao</td></tr>
+      <tr><th>Campo Relacionado: </th><td>Coordenacao</td></tr>
+      <tr><th>Validação: </th><td>{ServerValidation =(CheckNotEmpty(Coordenacao))}</td></tr>	
+      <tr><th>Mensagem: </th><td>Coordenacao não pode ser vazio!</td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>txtNomeCoordenacao</td></tr>
+      <tr><th>Campo Relacionado: </th><td>Coordenacao_Nome</td></tr>
+      <tr><th>Validação: </th><td>{ServerValidation =(CheckNotEmpty(Coordenacao_Nome))}</td></tr>	
+      <tr><th>Mensagem: </th><td>Coordenacao_Nome não pode ser vazio!</td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>ComboBox1</td></tr>
+      <tr><th>Campo Relacionado: </th><td>Distrito</td></tr>
+      <tr><th>Validação: </th><td>{ClientValidation =(CheckNotEmpty(Distrito))}{ServerValidation =(CheckNotEmpty(Distrito))}</td></tr>	
+      <tr><th>Mensagem: </th><td>O valor não pode ser vazio</td></tr>
+	</table>
+	</br>
+</div>
+
+	<div class="properties">
+		<h2>Tabela Auxiliar:<span>AUX_cordenacao1</span></h2>
+		<table>
+			<tr><th>Banco</th><td>idpb_cafinpi</td></tr>
+			<tr><th>Tabela Relacionada</th><td>cordenacao</td></tr>
+			<tr><th>Forçar Relacionamento</th><td>False</td></tr>   
+			<tr><th>Indice</th><td></td></tr>
+			<tr><th>Menssagem</th><td></td></tr>
+		</table>
+		
+		
+	</div>
+</body>
+</html>

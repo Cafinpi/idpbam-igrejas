@@ -1,0 +1,193 @@
+/*		Remove Guters		*/
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+	
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.container {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+
+
+.c_Header_Form1
+{
+	margin-right: 0px;
+	--mleft: 0px;
+	--mright: 0px;
+	background-color: #FFFFFF;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	height: var(--headerHeight);
+	overflow: hidden;
+}
+
+:root
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	--headerHeight: 60px;
+}
+
+/*
+Media query for XS resolution
+*/
+@media (min-width: 0px) {
+	
+	:root
+	{
+		--headerHeight: 60px;
+	}
+
+}
+
+.gvLayoutContainer
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_Header_LayoutContainer1
+{
+	background-color: Transparent;
+	background-size: auto;
+	cursor: inherit;
+}
+
+.c_Header_LayoutRow1
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	padding: 0px !important;
+}
+
+.c_Header_LayoutCol1
+{
+	background-color: #FFD86B;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	overflow: inherit;
+	padding: 0px !important;
+}
+
+.c_Header_Div1
+{
+	background-color: Transparent;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	height: 75px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	display: block;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_Header_Image4
+{
+	margin-top: -26px;
+	--mright: 0px;
+	position: absolute !important;
+	top: 50%;
+	right: 0px;
+	width: 88px;
+	height: 52px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-color: #000000;
+	border-style: None;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-width: 0px;
+	cursor: inherit;
+	Object-fit: contain;
+}
+
+.c_Header_Button15
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	position: absolute !important;
+	left: 17px;
+	top: 15px;
+	width: 64px;
+	height: 45px;
+	background-image: none !important;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border-bottom-left-radius: 2px !important;
+	border-bottom-right-radius: 2px !important;
+	border-top-left-radius: 2px !important;
+	border-top-right-radius: 2px !important;
+	border-width: 1px !important;
+	display: block;
+	outline-style: none !important;
+	padding: 0px !important;
+	padding: 0px 10px 0px 10px !important;
+	text-align: Center;
+}
+
+.c_Header_Button15:not(:hover), .c_Header_Button15.RadButton.rbButton.rbDisabled
+{
+	background-color: #FFD86B;
+	border-color: #CBCBCB;
+	color: #3B3B3B !important;
+	min-width: 51px;
+}
+
+.c_Header_Button15_icon
+{
+	color: #3B3B3B;
+	font-size: 29px;
+	text-align: center;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+}
+
+.c_Header_Button15:hover .c_Header_Button15_icon
+{
+	background-image: none;
+	color: #3B3B3B;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+}
+/*		Hover style		*/
+
+
+.c_Header_Button15:hover
+{
+	background-color: #FFD86B !important;
+	border-color: #CBCBCB !important;
+	color: #3B3B3B !important;
+	min-width: 51px;
+}
+
+.c_Header_Button15:hover
+{
+	background-color: #FFD86B !important;
+	border-color: #CBCBCB !important;
+	color: #3B3B3B !important;
+}

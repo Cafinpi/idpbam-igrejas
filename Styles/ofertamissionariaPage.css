@@ -1,0 +1,1145 @@
+/*		Remove Guters		*/
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+	
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.container {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+
+
+.c_Form1
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+#Form1_body
+{
+	background-color: #FFFFFF;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	font-size: 100%;
+	margin: 0px;
+	overflow: inherit;
+}
+
+.c_MainAjaxPanel
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	height: 100%;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	width: 100%;
+}
+
+.c_LayoutContainer1
+{
+	background-color: Transparent;
+	background-size: auto;
+	cursor: inherit;
+}
+
+.c_LayoutRow2
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	padding: 10px !important;
+}
+
+.c_LayoutCol1
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Div1
+{
+	background-color: Transparent;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	height: 100px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	display: block;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_Label1
+{
+	font-family: 'Segoe UI';
+	font-size: 20px;
+	font-weight: 500;
+	font-weight: 500;
+	margin-left: 0px !important;
+	margin-right: 0px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: absolute !important;
+	left: 0px;
+	top: 2px;
+	right: 0px;
+	height: 45px;
+	color: #333333;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+	word-wrap: normal;
+}
+
+.c_Button21
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	--mleft: 0px;
+	position: absolute !important;
+	left: 0px;
+	top: 51px;
+	width: 138px;
+	height: 40px;
+	background-image: none !important;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border-bottom-left-radius: 2px !important;
+	border-bottom-right-radius: 2px !important;
+	border-top-left-radius: 2px !important;
+	border-top-right-radius: 2px !important;
+	border-width: 1px !important;
+	gap: 10px;
+	outline-style: none !important;
+	padding: 0px !important;
+	padding: 0px 10px 0px 10px !important;
+	text-align: Center;
+}
+
+.c_Button21:not(:hover), .c_Button21.RadButton.rbButton.rbDisabled
+{
+	background-color: #A4ABB2;
+	border-color: #CBCBCB;
+	color: #383838 !important;
+}
+
+.c_Button21_icon
+{
+	color: #383838;
+	font-size: 16px;
+	text-align: center;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+}
+
+.c_Button21:hover .c_Button21_icon
+{
+	background-image: none;
+	color: #383838;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+}
+
+.c_Div2
+{
+	background-color: Transparent;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	height: 138px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	display: block;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+/*
+Media query for XS resolution
+*/
+@media (min-width: 0px) {
+	
+	.c_Div2
+	{
+		height: 198px;
+	}
+
+}
+
+/*
+Media query for SM resolution
+*/
+@media (min-width: 576px) {
+	
+	.c_Div2
+	{
+		height: 179px;
+	}
+
+}
+
+/*
+Media query for MD resolution
+*/
+@media (min-width: 768px) {
+	
+	.c_Div2
+	{
+		height: 150px;
+	}
+
+}
+
+/*
+Media query for LG resolution
+*/
+@media (min-width: 992px) {
+	
+	.c_Div2
+	{
+		height: 150px;
+	}
+
+}
+
+/*
+Media query for XL resolution
+*/
+@media (min-width: 1200px) {
+	
+	.c_Div2
+	{
+		height: 138px;
+	}
+
+}
+
+.c_Label10
+{
+	font-family: 'Segoe UI';
+	font-size: 16px;
+	margin-left: 0px !important;
+	margin-right: 0px;
+	margin-top: 0px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: absolute !important;
+	left: 0px;
+	right: 0px;
+	color: #DC3545;
+	display: block;
+	font-weight: 400;
+	Padding-right: 0px;
+	text-align: Left;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+	word-wrap: normal;
+}
+
+.c_Link1
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	--mleft: 0px;
+	position: absolute !important;
+	left: 0px;
+	top: 67px;
+	width: 362px;
+	height: 31px;
+	background-color: Transparent;
+	color: #0DCAF0;
+	display: block;
+	text-align: Left;
+}
+
+.c_Link2
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	--mleft: 0px;
+	position: absolute !important;
+	left: 0px;
+	top: 106px;
+	width: 339px;
+	height: 29px;
+	background-color: Transparent;
+	color: #0DCAF0;
+	display: block;
+	text-align: Left;
+}
+
+/*
+Media query for XS resolution
+*/
+@media (min-width: 0px) {
+	
+	.c_Link2
+	{
+		display: none;
+	}
+
+}
+
+/*
+Media query for SM resolution
+*/
+@media (min-width: 576px) {
+	
+	.c_Link2
+	{
+		display: none;
+	}
+
+}
+
+/*
+Media query for MD resolution
+*/
+@media (min-width: 768px) {
+	
+	.c_Link2
+	{
+		display: block;
+	}
+
+}
+
+/*
+Media query for LG resolution
+*/
+@media (min-width: 992px) {
+	
+	.c_Link2
+	{
+		display: block;
+	}
+
+}
+
+/*
+Media query for XL resolution
+*/
+@media (min-width: 1200px) {
+	
+	.c_Link2
+	{
+		display: block;
+	}
+
+}
+
+.c_LayoutCol13
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_LayoutRow1
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	padding: 10px !important;
+}
+
+.c_LayoutCol2
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Label2
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	color: #333333;
+	display: block;
+	font-weight: 400;
+	Padding-right: 0px;
+	text-align: Left;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+	word-wrap: normal;
+}
+
+.c_RadTextBox1
+{
+	font-family: 'Segoe UI' !important;
+	font-size: 14px !important;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	height: 100%;
+	outline-style: none !important;
+}
+
+.c_RadTextBox1_wrapper
+{
+	position: relative;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	display: block;
+	margin: 0px var(--mright) 5px var(--mleft);
+	--mleft: 0px;
+	--mright: 0px;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_LayoutCol4
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Label4
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	color: #333333;
+	display: block;
+	font-weight: 400;
+	Padding-right: 0px;
+	text-align: Left;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+	word-wrap: normal;
+}
+
+.c_DatePicker1
+{
+	font-family: 'Segoe UI' !important;
+	font-size: 14px !important;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	height: 40px;
+	height: 32px !important;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+	display: block;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_DatePicker1_wrapper
+{
+	position: relative;
+	position: relative;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	display: block;
+	height: 32px !important;
+	margin: 0px var(--mright) 5px var(--mleft);
+	--mleft: 0px;
+	--mright: 0px;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_DatePicker1_dateInput_wrapper
+{
+	position: relative;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_LayoutCol5
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Label5
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	color: #333333;
+	display: block;
+	font-weight: 400;
+	Padding-right: 0px;
+	text-align: Left;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+	word-wrap: normal;
+}
+
+.c_ComboBox2
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	background-color: #FFFFFF;
+	cursor: inherit;
+	display: block;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_LayoutCol6
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Label6
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	color: #333333;
+	display: block;
+	font-weight: 400;
+	Padding-right: 0px;
+	text-align: Left;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+	word-wrap: normal;
+}
+
+.c_ComboBox3
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	background-color: #FFFFFF;
+	cursor: inherit;
+	display: block;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_LayoutCol8
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Label26
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	color: #333333;
+	display: block;
+	font-weight: 400;
+	Padding-right: 0px;
+	text-align: Left;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+	word-wrap: normal;
+}
+
+.c_ComboBox5
+{
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	background-color: #FFFFFF;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+	display: block;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_Label11
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	color: #333333;
+	display: block;
+	font-weight: 400;
+	Padding-right: 0px;
+	text-align: Left;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+	word-wrap: normal;
+}
+
+.c_CBCorrentista
+{
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 0px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	background-color: #FFFFFF;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+	display: block;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_RadCheckBox2
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	height: 40px;
+	border-style: None;
+	color: #373737;
+	direction: ltr;
+	display: block;
+	text-align: Left;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_RadCheckBox2.rbCheckBox .rbText
+{
+	color: #373737;
+}
+
+.c_LayoutCol7
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Label7
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	color: #333333;
+	display: block;
+	font-weight: 400;
+	Padding-right: 0px;
+	text-align: Left;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+	word-wrap: normal;
+}
+
+.c_ComboBox4
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	background-color: #FFFFFF;
+	cursor: inherit;
+	display: block;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_GComboBoxItem1
+{
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_GComboBoxItem2
+{
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_GComboBoxItem3
+{
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_GComboBoxItem4
+{
+	position: absolute !important;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_LayoutCol9
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Label9
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	color: #333333;
+	display: block;
+	font-weight: 400;
+	Padding-right: 0px;
+	text-align: Left;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+	word-wrap: normal;
+}
+
+.c_RadTextBox2
+{
+	font-family: 'Segoe UI' !important;
+	font-size: 14px !important;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	height: 100%;
+	outline-style: none !important;
+}
+
+.c_RadTextBox2_wrapper
+{
+	position: relative;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	display: block;
+	margin: 0px var(--mright) 5px var(--mleft);
+	--mleft: 0px;
+	--mright: 0px;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_LayoutCol10
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Salvar
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 25px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	height: 31px;
+	background-image: none !important;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border-bottom-left-radius: 2px !important;
+	border-bottom-right-radius: 2px !important;
+	border-top-left-radius: 2px !important;
+	border-top-right-radius: 2px !important;
+	border-width: 1px !important;
+	gap: 10px;
+	outline-style: none !important;
+	padding: 0px !important;
+	padding: 0px 10px 0px 10px !important;
+	text-align: Center;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_Salvar:not(:hover), .c_Salvar.RadButton.rbButton.rbDisabled
+{
+	background-color: #A4ABB2;
+	border-color: #CBCBCB;
+	color: #383838 !important;
+}
+
+.c_Salvar_icon
+{
+	color: #000000;
+	font-size: 16px;
+	text-align: center;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+}
+
+.c_Salvar:hover .c_Salvar_icon
+{
+	background-image: none;
+	color: #000000;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+}
+
+.c_LayoutCol11
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: none;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_labError
+{
+	font-family: 'Times New Roman';
+	font-size: 12px;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 0px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-color: Transparent;
+	border-style: None;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-width: 0px;
+	color: #FF0000;
+	cursor: inherit;
+	display: block;
+	font-weight: 400;
+	line-height: 12px;
+	Padding-right: 0px;
+	text-align: Left;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+	word-wrap: normal;
+}
+
+.c_LayoutCol12
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Grid1
+{
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	display: block;
+	outline-style: none !important;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_GridColumn1
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_GridColumn2
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_GridColumn3
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_GridColumn4
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_GridColumn5
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_GridColumn6
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	display: none;
+}
+
+.c_SweetAlert1
+{
+	background-color: #FFFFFF;
+	position: absolute !important;
+	left: 268px;
+	top: 1202px;
+	width: 640px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+	z-index: 2500;
+}
+
+#SweetAlert1 > ul
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+#SweetAlert1 > ul > li
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	height: 100%;
+	width: 100%;
+}
+/*		Hover style		*/
+
+
+.c_Button21:hover
+{
+	background-color: #A4ABB2 !important;
+	border-color: #CBCBCB !important;
+	color: #383838 !important;
+}
+
+.c_Button21:hover
+{
+	background-color: #A4ABB2 !important;
+	border-color: #CBCBCB !important;
+	color: #383838 !important;
+}
+
+.c_Link1:hover
+{
+	font-family: 'Segoe UI';
+	font-size: 16px;
+	color: #0DCAF0;
+}
+
+.c_Link2:hover
+{
+	font-family: 'Segoe UI';
+	font-size: 16px;
+	color: #0DCAF0;
+}
+
+.c_Salvar:hover
+{
+	background-color: #A4ABB2 !important;
+	border-color: #CBCBCB !important;
+	color: #383838 !important;
+}
+
+.c_Salvar:hover
+{
+	background-color: #A4ABB2 !important;
+	border-color: #CBCBCB !important;
+	color: #383838 !important;
+}

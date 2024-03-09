@@ -1,0 +1,404 @@
+/*		Remove Guters		*/
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+	
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.container {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+
+
+.c_Form1
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+#Form1_body
+{
+	background-color: #FFFFFF;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	font-size: 100%;
+	margin: 0px;
+	overflow: inherit;
+}
+
+.c_MainAjaxPanel
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	height: 100%;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	width: 100%;
+}
+
+.c_LayoutContainer1
+{
+	background-color: Transparent;
+	background-size: auto;
+	cursor: inherit;
+}
+
+.c_LayoutRow1
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	padding: 10px !important;
+}
+
+.c_LayoutCol20
+{
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	padding: 20px !important;
+}
+
+.c_LayoutRow8
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	padding: 0px !important;
+}
+
+.c_LayoutCol18
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	overflow: inherit;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Label5
+{
+	font-family: 'Segoe UI';
+	font-size: 20px;
+	font-weight: 500;
+	font-weight: 500;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	color: #333333;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+	word-wrap: normal;
+}
+
+.c_GRepeaterBody1
+{
+	background-color: #DBDFE4;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-color: #000000;
+	border-style: None;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-width: 0px;
+	padding: 0px !important;
+}
+
+.c_LayoutCol37
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_LayoutRow12
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	padding: 0px !important;
+}
+
+.c_LayoutCol32
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Div10
+{
+	background-color: #E2E5E9;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 0px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	height: 125px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	display: block;
+	overflow: hidden;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_Icon8
+{
+	background-color: Transparent;
+	color: #0DCAF0;
+	display: block;
+	font-size: 50px;
+}
+
+.c_Div10.card .c_container_PainelCentroCusto_Icon8
+{
+	margin-top: -26px;
+	--mleft: 25px;
+	position: absolute !important;
+	left: 25px;
+	top: 50%;
+	text-align: left;
+}
+
+.c_Label28
+{
+	font-family: 'Segoe UI';
+	font-size: 36px;
+	font-weight: 500;
+	font-weight: 500;
+	position: absolute !important;
+	left: 106px;
+	top: 23px;
+	width: 204px;
+	height: 64px;
+	color: #333333;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	word-wrap: normal;
+}
+
+.c_Label29
+{
+	font-family: 'Segoe UI';
+	font-size: 20px;
+	font-weight: 500;
+	font-weight: 500;
+	position: absolute !important;
+	left: 107px;
+	bottom: 6px;
+	width: 196px;
+	color: #0DCAF0;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	word-wrap: normal;
+}
+
+.c_LayoutCol33
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Div11
+{
+	background-color: #E2E5E9;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 0px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	height: 125px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	display: block;
+	overflow: hidden;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_Icon9
+{
+	background-color: Transparent;
+	color: #FF0716;
+	display: block;
+	font-size: 50px;
+}
+
+.c_Div11.card .c_container_PainelCentroCusto_Icon9
+{
+	margin-top: -26px;
+	--mleft: 25px;
+	position: absolute !important;
+	left: 25px;
+	top: 50%;
+	text-align: left;
+}
+
+.c_Label30
+{
+	font-family: 'Segoe UI';
+	font-size: 20px;
+	font-weight: 500;
+	font-weight: 500;
+	position: absolute !important;
+	left: 106px;
+	bottom: 6px;
+	width: 125px;
+	color: #DC3545;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	word-wrap: normal;
+}
+
+.c_Label31
+{
+	font-family: 'Segoe UI';
+	font-size: 36px;
+	font-weight: 500;
+	font-weight: 500;
+	position: absolute !important;
+	left: 102px;
+	top: 23px;
+	width: 204px;
+	height: 64px;
+	color: #333333;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	word-wrap: normal;
+}
+
+.c_LayoutCol34
+{
+	background-color: Transparent;
+	background-position: center;
+	background-size: auto;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px 10px !important;
+}
+
+.c_Div12
+{
+	background-color: #E2E5E9;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 0px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	height: 125px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	display: block;
+	overflow: hidden;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_Icon10
+{
+	background-color: Transparent;
+	color: #28A745;
+	display: block;
+	font-size: 50px;
+}
+
+.c_Div12.card .c_container_PainelCentroCusto_Icon10
+{
+	margin-top: -26px;
+	--mleft: 25px;
+	position: absolute !important;
+	left: 25px;
+	top: 50%;
+	text-align: left;
+}
+
+.c_Label32
+{
+	font-family: 'Segoe UI';
+	font-size: 20px;
+	font-weight: 500;
+	font-weight: 500;
+	position: absolute !important;
+	left: 111px;
+	bottom: 6px;
+	width: 139px;
+	color: #28A745;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	word-wrap: normal;
+}
+
+.c_Label33
+{
+	font-family: 'Segoe UI';
+	font-size: 36px;
+	font-weight: 500;
+	font-weight: 500;
+	position: absolute !important;
+	left: 111px;
+	top: 23px;
+	width: 204px;
+	height: 64px;
+	color: #333333;
+	display: block;
+	Padding-right: 0px;
+	text-align: Left;
+	word-wrap: normal;
+}

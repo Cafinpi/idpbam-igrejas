@@ -1,0 +1,33 @@
+/* RadTextBox style: */ 
+
+.RadInput_Office2010Silver .riTextBox.textbox-default, 
+.RadInput_Office2010Silver .riSelect.textbox-default, 
+.RadInput_Office2010Silver .rcSelect.textbox-default, 
+.RadInputMgr_Office2010Silver {
+    border-color: #CBCBCB;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.RadInput_Office2010Silver .riTextBox.textbox-default, .RadInputMgr {
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+}
+
+.RadInput_Office2010Silver.RadInputFocused .riTextBox.textbox-default,
+.RadInput_Office2010Silver.RadInputFocused .riSelect.textbox-default,
+.RadInput_Office2010Silver.RadInputFocused .rcSelect.textbox-default,
+.RadInput_Focused_Office2010Silver{
+    border-color: #CBCBCB;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.RadInput_Office2010Silver.RadInputHovered .riTextBox.textbox-default,
+.RadInput_Office2010Silver.RadInputHovered .riSelect.textbox-default,
+.RadInput_Office2010Silver.RadInputHovered .rcSelect.textbox-default,
+.RadInput_Hover_Default{
+    border-color: #CBCBCB;
+    color: #333333;
+    background-color: #ffffff;
+}

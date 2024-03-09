@@ -1,0 +1,1766 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CAFINPI___IDPB___LOCAL_RR>
+<DATABASE TITLE="idpb_AM" NAME="idpb_AM">
+	<TABLE TITLE="agenda_igreja" NAME="agenda_igreja">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id_agenda" NAME="id_agenda" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Descricao" NAME="Descricao" />
+		<FIELD TYPE="MEMO" TITLE="Objetivo" NAME="Objetivo" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="DataIni" NAME="DataIni" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="DataFim" NAME="DataFim" />
+		<INDEX TITLE="PK_agenda_igreja" NAME="PK_agenda_igreja" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="id_agenda" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="avisos" NAME="avisos">
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="Data" NAME="Data" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="avisos" NAME="avisos" />
+		<FIELD TYPE="MEMO" TITLE="conteudo" NAME="conteudo" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Distrito" NAME="Distrito" />
+		<INDEX TITLE="PK_avisos" NAME="PK_avisos" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="Data" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="boletim" NAME="boletim">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="Data" NAME="Data" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="semana" NAME="semana" />
+		<FIELD TYPE="MEMO" TITLE="titulo" NAME="titulo" />
+		<FIELD TYPE="MEMO" TITLE="introducao" NAME="introducao" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="ponto1" NAME="ponto1" />
+		<FIELD TYPE="TEXT" SIZE="4000" MASK="@!" TITLE="conteudo1" NAME="conteudo1" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="ponto2" NAME="ponto2" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="conteudo2" NAME="conteudo2" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="ponto3" NAME="ponto3" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="conteudo3" NAME="conteudo3" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="ponto4" NAME="ponto4" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="conteudo4" NAME="conteudo4" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="ponto5" NAME="ponto5" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="conteudo5" NAME="conteudo5" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="ponto6" NAME="ponto6" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="conteudo6" NAME="conteudo6" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="ponto7" NAME="ponto7" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="conteudo7" NAME="conteudo7" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="ponto8" NAME="ponto8" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="conteudo8" NAME="conteudo8" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="ponto9" NAME="ponto9" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="conteudo9" NAME="conteudo9" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="ponto10" NAME="ponto10" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="conteudo10" NAME="conteudo10" />
+		<FIELD TYPE="TEXT" SIZE="4000" MASK="@!" TITLE="conclusao" NAME="conclusao" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="Autor" NAME="Autor" />
+		<INDEX TITLE="PK_boletim" NAME="PK_boletim" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="id" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="CATEGORIA_IDPB" NAME="CATEGORIA_IDPB">
+		<FIELD TYPE="TEXT" SIZE="10" MASK="@!" TITLE="COD_CATEGORIA" NAME="COD_CATEGORIA" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="DESC_CATEGORIA" NAME="DESC_CATEGORIA" />
+	</TABLE>
+	<TABLE TITLE="celulas" NAME="celulas">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Nome" NAME="Nome" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Supervisao" NAME="Supervisao" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Anfitriao" NAME="Anfitriao" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="CriadoEm" NAME="CriadoEm" />
+		<FIELD TYPE="TEXT" SIZE="145" MASK="@!" TITLE="CriandoPor" NAME="CriandoPor" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="AtualizadoEm" NAME="AtualizadoEm" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="AtualizadoPor" NAME="AtualizadoPor" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Coordenacao" NAME="Coordenacao" />
+		<INDEX TITLE="PK_celulas" NAME="PK_celulas" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="Celula" />
+			<FIELD NAME="Supervisao" />
+			<FIELD NAME="Distrito" />
+			<FIELD NAME="Coordenacao" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="CONTAS_IDPB" NAME="CONTAS_IDPB">
+		<FIELD TYPE="TEXT" SIZE="10" MASK="@!" TITLE="COD_CONTAS" NAME="COD_CONTAS" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="DESC_CONTAS" NAME="DESC_CONTAS" />
+		<FIELD TYPE="TEXT" SIZE="10" MASK="@!" TITLE="COD_CATEGORIA" NAME="COD_CATEGORIA" />
+	</TABLE>
+	<TABLE TITLE="contribuicoes" NAME="contribuicoes">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="RolMembro" NAME="RolMembro" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Nome" NAME="Nome" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Semana" NAME="Semana" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Mes" NAME="Mes" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="Data" NAME="Data" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Ano" NAME="Ano" />
+		<FIELD TYPE="TEXT" SIZE="45" MASK="@!" TITLE="Tipo" NAME="Tipo" />
+		<FIELD TYPE="TEXT" SIZE="145" MASK="@!" TITLE="Valor" NAME="Valor" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="CriadoPor" NAME="CriadoPor" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="CriandaEm" NAME="CriandaEm" />
+		<INDEX TITLE="PK_contribuicoes" NAME="PK_contribuicoes" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="id" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="cordenacao" NAME="cordenacao">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Coordenacao" NAME="Coordenacao" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="Coordenacao_Nome" NAME="Coordenacao_Nome" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="CriadoEm" NAME="CriadoEm" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="CriadoPor" NAME="CriadoPor" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="AtualizadoEm" NAME="AtualizadoEm" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="AtualizadoPor" NAME="AtualizadoPor" />
+		<INDEX TITLE="PK_cordenacao" NAME="PK_cordenacao" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="Coordenacao" />
+			<FIELD NAME="Distrito" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="cursos" NAME="cursos">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="codigoCurso" NAME="codigoCurso" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Curso" NAME="Curso" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="imagemCurso" NAME="imagemCurso" />
+		<FIELD TYPE="BOOLEAN" DEFAULT="False" TITLE="PreRequisito" NAME="PreRequisito" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Requisito" NAME="Requisito" />
+		<FIELD TYPE="BOOLEAN" TITLE="inscricao" NAME="inscricao" />
+		<INDEX TITLE="PK_cursos" NAME="PK_cursos" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="codigoCurso" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="cursosConcluidos" NAME="cursosConcluidos">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="codigoCurso" NAME="codigoCurso" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Curso" NAME="Curso" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="RolMembro" NAME="RolMembro" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Nome" NAME="Nome" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="Data" NAME="Data" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="idTurma" NAME="idTurma" />
+		<INDEX TITLE="PK_cursosConcluidos" NAME="PK_cursosConcluidos" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="id" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="dicas" NAME="dicas">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="MEMO" TITLE="Dica" NAME="Dica" />
+		<INDEX TITLE="PK_dicas" NAME="PK_dicas" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="id" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="distrito" NAME="distrito">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="Distrito_Nome" NAME="Distrito_Nome" />
+		<FIELD TYPE="TEXT" SIZE="250" MASK="@!" TITLE="Endereco" NAME="Endereco" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="CriadoEm" NAME="CriadoEm" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="CriadoPor" NAME="CriadoPor" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="AtualizadoEm" NAME="AtualizadoEm" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="AtualizadoPor" NAME="AtualizadoPor" />
+		<INDEX TITLE="PK_distrito" NAME="PK_distrito" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="Distrito" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="eventos" NAME="eventos">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="Data" NAME="Data" />
+		<FIELD TYPE="TEXT" SIZE="5" MASK="@!" TITLE="Horario" NAME="Horario" />
+		<FIELD TYPE="MEMO" TITLE="Evento" NAME="Evento" />
+		<FIELD TYPE="MEMO" TITLE="Local" NAME="Local" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Mes" NAME="Mes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Ano" NAME="Ano" />
+		<FIELD TYPE="MEMO" TITLE="Objetivo" NAME="Objetivo" />
+		<FIELD TYPE="TEXT" SIZE="45" MASK="@!" TITLE="Publico" NAME="Publico" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Numero" NAME="Numero" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="Funcao" NAME="Funcao" />
+		<INDEX TITLE="id_UNIQUE" NAME="id_UNIQUE" PRIMARY="False" UNIQUE="True" ISCLUSTER="False" FILLFACTOR="0">
+			<FIELD NAME="id" />
+		</INDEX>
+		<INDEX TITLE="PK_EVENTOS1" NAME="PK_EVENTOS1" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="0">
+			<FIELD NAME="id" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="eventosCelulas" NAME="eventosCelulas">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="Data" NAME="Data" />
+		<FIELD TYPE="MEMO" TITLE="Evento" NAME="Evento" />
+		<FIELD TYPE="MEMO" TITLE="Local" NAME="Local" />
+		<FIELD TYPE="MEMO" TITLE="Objetivo" NAME="Objetivo" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Descricao" NAME="Descricao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Ano" NAME="Ano" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Mes" NAME="Mes" />
+		<FIELD TYPE="TEXT" SIZE="5" MASK="@!" TITLE="Horario" NAME="Horario" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="CriadoEm" NAME="CriadoEm" />
+		<INDEX TITLE="PK_eventosCelulas" NAME="PK_eventosCelulas" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="id" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="eventosGeral" NAME="eventosGeral">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="MEMO" TITLE="Evento" NAME="Evento" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="DataIni" NAME="DataIni" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="DataFim" NAME="DataFim" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="LogoEvento" NAME="LogoEvento" />
+		<FIELD TYPE="TEXT" SIZE="300" MASK="@!" TITLE="nomeEvento" NAME="nomeEvento" />
+		<FIELD TYPE="BOOLEAN" TITLE="inscricao" NAME="inscricao" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="DataEvento" NAME="DataEvento" />
+		<INDEX TITLE="PK_eventosGeral" NAME="PK_eventosGeral" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="id" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="funcao" NAME="funcao">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="Funcao" NAME="Funcao" />
+		<INDEX TITLE="PK_funcao" NAME="PK_funcao" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="id" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="GRUPO_CATEGORIA_IDPB" NAME="GRUPO_CATEGORIA_IDPB">
+		<FIELD TYPE="TEXT" SIZE="10" MASK="@!" TITLE="COD_CATEGORIA" NAME="COD_CATEGORIA" />
+		<FIELD TYPE="TEXT" SIZE="10" MASK="@!" TITLE="COD_GRUPO_CAT_IDPB" NAME="COD_GRUPO_CAT_IDPB" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="DESC_GRUPO_IDPB" NAME="DESC_GRUPO_IDPB" />
+	</TABLE>
+	<TABLE TITLE="igreja" NAME="igreja">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="TEXT" SIZE="20" MASK="@!" TITLE="codigo" NAME="codigo" />
+		<FIELD TYPE="MEMO" TITLE="nome" NAME="nome" />
+		<FIELD TYPE="TEXT" SIZE="15" MASK="@!" TITLE="foneSecretaria" NAME="foneSecretaria" />
+		<FIELD TYPE="TEXT" SIZE="15" MASK="@!" TITLE="contatoWhatsApp" NAME="contatoWhatsApp" />
+		<FIELD TYPE="TEXT" SIZE="15" MASK="@!" TITLE="foneFinanceiro" NAME="foneFinanceiro" />
+		<FIELD TYPE="MEMO" TITLE="corPrimaria" NAME="corPrimaria" />
+		<FIELD TYPE="MEMO" TITLE="corSecundaria" NAME="corSecundaria" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="img01" NAME="img01" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="img02" NAME="img02" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="img03" NAME="img03" />
+		<FIELD TYPE="MEMO" TITLE="faceBook" NAME="faceBook" />
+		<FIELD TYPE="MEMO" TITLE="youTube" NAME="youTube" />
+		<FIELD TYPE="MEMO" TITLE="instagram" NAME="instagram" />
+		<FIELD TYPE="MEMO" TITLE="googloMap" NAME="googloMap" />
+		<FIELD TYPE="TEXT" SIZE="18" MASK="@!" TITLE="cnpj" NAME="cnpj" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="CriadoEm" NAME="CriadoEm" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="CriadoPor" NAME="CriadoPor" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="AtualizadoEm" NAME="AtualizadoEm" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="AtualizadoPor" NAME="AtualizadoPor" />
+		<FIELD TYPE="TEXT" SIZE="1000" MASK="@!" TITLE="website" NAME="website" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="pastor_presidente" NAME="pastor_presidente" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="tesoureiro" NAME="tesoureiro" />
+		<INDEX TITLE="PK_igreja" NAME="PK_igreja" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="id" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="IgrejaLocal" NAME="IgrejaLocal">
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Nome" NAME="Nome" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Codigo" NAME="Codigo" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="PastorPresidente" NAME="PastorPresidente" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="CPF" NAME="CPF" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Telefone" NAME="Telefone" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Jurisdicao" NAME="Jurisdicao" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Cep" NAME="Cep" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Logradouro" NAME="Logradouro" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Numero" NAME="Numero" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Bairro" NAME="Bairro" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Cidade" NAME="Cidade" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Localizador" NAME="Localizador" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="idade7" NAME="idade7" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="idade11" NAME="idade11" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="idade17" NAME="idade17" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="idade35" NAME="idade35" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="idade50" NAME="idade50" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="idade70" NAME="idade70" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="idadeMaior70" NAME="idadeMaior70" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Congregacoes" NAME="Congregacoes" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="PrediosProprios" NAME="PrediosProprios" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="PrediosAlugados" NAME="PrediosAlugados" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Acampamentos" NAME="Acampamentos" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Terrenos" NAME="Terrenos" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="CasaPastoral" NAME="CasaPastoral" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="OutrosImoveis" NAME="OutrosImoveis" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="MA" NAME="MA" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Estagiarios" NAME="Estagiarios" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="MO" NAME="MO" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="ML" NAME="ML" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="MC" NAME="MC" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="AM" NAME="AM" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="FaceBook" NAME="FaceBook" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Instagram" NAME="Instagram" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="YouTube" NAME="YouTube" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="CriadoPor" NAME="CriadoPor" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="UF" NAME="UF" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="nomeJurisdicao" NAME="nomeJurisdicao" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="nomeDistrito" NAME="nomeDistrito" />
+		<FIELD TYPE="TEXT" SIZE="250" MASK="@!" TITLE="Complemento" NAME="Complemento" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="AtualizadoEm" NAME="AtualizadoEm" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<INDEX TITLE="PK_IgrejaLocal" NAME="PK_IgrejaLocal" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="id" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="inscritosCursos" NAME="inscritosCursos">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="idTurma" NAME="idTurma" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="codigoCurso" NAME="codigoCurso" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Curso" NAME="Curso" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="DataCurso" NAME="DataCurso" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" DEFAULT="'0'" TITLE="Documento" NAME="Documento" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="RolMembro" NAME="RolMembro" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Nome" NAME="Nome" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="Nascimento" NAME="Nascimento" />
+		<FIELD TYPE="TEXT" SIZE="20" MASK="@!" TITLE="Contato" NAME="Contato" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Email" NAME="Email" />
+		<FIELD TYPE="TEXT" SIZE="20" MASK="@!" TITLE="Igreja" NAME="Igreja" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="Status" NAME="Status" />
+		<FIELD TYPE="TEXT" SIZE="45" MASK="@!" TITLE="Nota" NAME="Nota" />
+		<FIELD TYPE="TEXT" SIZE="45" MASK="@!" TITLE="Frequencia" NAME="Frequencia" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="Situacao" NAME="Situacao" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="CreatedAt" NAME="CreatedAt" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="CriadoPor" NAME="CriadoPor" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="99.999.999,99" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="valor_pago" NAME="valor_pago" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="data_pagamento" NAME="data_pagamento" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="forma_pagamento" NAME="forma_pagamento" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="participante" NAME="participante" />
+		<INDEX TITLE="NK_inscritosCursos1" NAME="NK_inscritosCursos1" PRIMARY="False" UNIQUE="True" ISCLUSTER="False" FILLFACTOR="0">
+			<FIELD NAME="id" />
+		</INDEX>
+		<INDEX TITLE="PK_inscritosCursos" NAME="PK_inscritosCursos" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="codigoCurso" />
+			<FIELD NAME="Documento" />
+			<FIELD NAME="RolMembro" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="inscritosEventosGeral" NAME="inscritosEventosGeral">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="idEvento" NAME="idEvento" />
+		<FIELD TYPE="MEMO" TITLE="Evento" NAME="Evento" />
+		<FIELD TYPE="TEXT" SIZE="45" MASK="@!" TITLE="Identificador" NAME="Identificador" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Nome" NAME="Nome" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="Nascimento" NAME="Nascimento" />
+		<FIELD TYPE="TEXT" SIZE="20" MASK="@!" TITLE="Contato" NAME="Contato" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Email" NAME="Email" />
+		<FIELD TYPE="TEXT" SIZE="20" MASK="@!" TITLE="Igreja" NAME="Igreja" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="Status" NAME="Status" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="RolMembro" NAME="RolMembro" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="CreatedAt" NAME="CreatedAt" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="participante" NAME="participante" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" DEFAULT="'0'" TITLE="Documento" NAME="Documento" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="99.999.999,99" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="valor_pago" NAME="valor_pago" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="forma_pagamento" NAME="forma_pagamento" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="data_pagamento" NAME="data_pagamento" />
+		<INDEX TITLE="NK_inscritosEventosGeralIdUnico" NAME="NK_inscritosEventosGeralIdUnico" PRIMARY="False" UNIQUE="True" ISCLUSTER="False" FILLFACTOR="0">
+			<FIELD NAME="id" />
+		</INDEX>
+		<INDEX TITLE="PK_inscritosEventosGeral" NAME="PK_inscritosEventosGeral" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="idEvento" />
+			<FIELD NAME="RolMembro" />
+			<FIELD NAME="Documento" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="lideranca" NAME="lideranca">
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="Funcao" NAME="Funcao" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Nome" NAME="Nome" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="Nascimento" NAME="Nascimento" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="RolMembro" NAME="RolMembro" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Email" NAME="Email" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="CriadoEm" NAME="CriadoEm" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="CriadoPor" NAME="CriadoPor" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="AtualizadoEm" NAME="AtualizadoEm" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="AtualizadoPor" NAME="AtualizadoPor" />
+		<FIELD TYPE="TEXT" SIZE="10" MASK="@!" TITLE="Sexo" NAME="Sexo" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Coordenacao" NAME="Coordenacao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Supervisao" NAME="Supervisao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="foto" NAME="foto" />
+		<FIELD TYPE="TEXT" SIZE="20" MASK="@!" TITLE="Igreja" NAME="Igreja" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Nucleo" NAME="Nucleo" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="idTurma" NAME="idTurma" />
+		<INDEX TITLE="NK_lideranca1" NAME="NK_lideranca1" PRIMARY="False" UNIQUE="True" ISCLUSTER="False" FILLFACTOR="0">
+			<FIELD NAME="id" />
+		</INDEX>
+		<INDEX TITLE="PK_lideranca" NAME="PK_lideranca" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="Funcao" />
+			<FIELD NAME="RolMembro" />
+			<FIELD NAME="Celula" />
+			<FIELD NAME="Distrito" />
+			<FIELD NAME="Coordenacao" />
+			<FIELD NAME="Supervisao" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="membros" NAME="membros">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="id" NAME="id" />
+		<FIELD TYPE="TEXT" SIZE="20" MASK="@!" TITLE="Igreja" NAME="Igreja" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Nome" NAME="Nome" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="foto" NAME="foto" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Coordenacao" NAME="Coordenacao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Supervisao" NAME="Supervisao" />
+		<FIELD TYPE="TEXT" SIZE="145" MASK="@!" TITLE="Discipulador" NAME="Discipulador" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="RolMembro" NAME="RolMembro" />
+		<FIELD TYPE="TEXT" SIZE="25" MASK="@!" TITLE="TelCelular" NAME="TelCelular" />
+		<FIELD TYPE="TEXT" SIZE="25" MASK="@!" TITLE="TelFixo" NAME="TelFixo" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Email" NAME="Email" />
+		<FIELD TYPE="TEXT" SIZE="15" MASK="@!" TITLE="Sexo" NAME="Sexo" />
+		<FIELD TYPE="TEXT" SIZE="45" MASK="@!" TITLE="EstadoCivil" NAME="EstadoCivil" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="Nascimento" NAME="Nascimento" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Naturalidade" NAME="Naturalidade" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="Situacao" NAME="Situacao" />
+		<FIELD TYPE="TEXT" SIZE="245" MASK="@!" TITLE="MOTIVO" NAME="MOTIVO" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="Conversao" NAME="Conversao" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="Batismo" NAME="Batismo" />
+		<FIELD TYPE="TEXT" SIZE="10" MASK="@!" TITLE="CEP" NAME="CEP" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Logradouro" NAME="Logradouro" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Bairro" NAME="Bairro" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Numero" NAME="Numero" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Complemento" NAME="Complemento" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Localidade" NAME="Localidade" />
+		<FIELD TYPE="TEXT" SIZE="25" MASK="@!" TITLE="UF" NAME="UF" />
+		<FIELD TYPE="TEXT" SIZE="14" MASK="@!" DEFAULT="'0'" TITLE="CPF" NAME="CPF" />
+		<FIELD TYPE="TEXT" SIZE="25" MASK="@!" TITLE="RG" NAME="RG" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="FormacaoAcademica" NAME="FormacaoAcademica" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Profissao" NAME="Profissao" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Pai" NAME="Pai" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Mae" NAME="Mae" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="CriadoEm" NAME="CriadoEm" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="AtualizadoEm" NAME="AtualizadoEm" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="AtualizadoPor" NAME="AtualizadoPor" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="CriadoPor" NAME="CriadoPor" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="idFuncao" NAME="idFuncao" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="Funcao" NAME="Funcao" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="GrauMinisterial" NAME="GrauMinisterial" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="idNucleo" NAME="idNucleo" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="nomeNucleo" NAME="nomeNucleo" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="senha" NAME="senha" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="conjuge" NAME="conjuge" />
+		<INDEX TITLE="PK_membros" NAME="PK_membros" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="RolMembro" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="mensagem" NAME="mensagem">
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="Data" NAME="Data" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="titulo" NAME="titulo" />
+		<FIELD TYPE="MEMO" TITLE="Mensagem" NAME="Mensagem" />
+		<FIELD TYPE="TEXT" SIZE="250" MASK="@!" TITLE="Autor" NAME="Autor" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="idMensagem" NAME="idMensagem" />
+		<INDEX TITLE="PK_mensagem" NAME="PK_mensagem" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="idMensagem" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="Nucleos" NAME="Nucleos">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="idNucleo" NAME="idNucleo" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="nomeNucleo" NAME="nomeNucleo" />
+		<FIELD TYPE="TEXT" SIZE="250" MASK="@!" TITLE="Endereco" NAME="Endereco" />
+		<INDEX TITLE="PK_Nucleos" NAME="PK_Nucleos" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="idNucleo" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="plancelula" NAME="plancelula">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Anfitriao" NAME="Anfitriao" />
+		<FIELD TYPE="TEXT" SIZE="25" MASK="@!" TITLE="Multiplicacao" NAME="Multiplicacao" />
+		<FIELD TYPE="TEXT" SIZE="5" MASK="@!" TITLE="Horario" NAME="Horario" />
+		<FIELD TYPE="MEMO" TITLE="Fase" NAME="Fase" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Semana" NAME="Semana" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="Data" NAME="Data" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Supervisao" NAME="Supervisao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Coordenacao" NAME="Coordenacao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="MEMO" TITLE="Encontro" NAME="Encontro" />
+		<FIELD TYPE="MEMO" TITLE="Exaltacao" NAME="Exaltacao" />
+		<FIELD TYPE="MEMO" TITLE="Edificacao" NAME="Edificacao" />
+		<FIELD TYPE="MEMO" TITLE="Evangelismo" NAME="Evangelismo" />
+		<FIELD TYPE="MEMO" TITLE="Lanche" NAME="Lanche" />
+		<INDEX TITLE="PK_plancelula" NAME="PK_plancelula" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="id" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="pontuacao" NAME="pontuacao">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Semana" NAME="Semana" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Ano" NAME="Ano" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Supervisao" NAME="Supervisao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="TEXT" SIZE="4000" MASK="@!" TITLE="Pontuacao" NAME="Pontuacao" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="99.999.999,99" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="TotalRank" NAME="TotalRank" />
+		<FIELD TYPE="TEXT" SIZE="25" MASK="@!" TITLE="Total" NAME="Total" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="CriadoPor" NAME="CriadoPor" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="CriadoEm" NAME="CriadoEm" />
+		<INDEX TITLE="PK_pontuacao" NAME="PK_pontuacao" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="id" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="radio" NAME="radio">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="url" NAME="url" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="label" NAME="label" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="compositor" NAME="compositor" />
+		<INDEX TITLE="PK_radio" NAME="PK_radio" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="id" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="relatorioCelebracao" NAME="relatorioCelebracao">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Semana" NAME="Semana" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="Data" NAME="Data" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="TEXT" SIZE="4000" MASK="@!" TITLE="NomesMembros" NAME="NomesMembros" />
+		<FIELD TYPE="TEXT" SIZE="4000" MASK="@!" TITLE="NomesVisitantes" NAME="NomesVisitantes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Adultos" NAME="Adultos" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Criancas" NAME="Criancas" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Visitantes" NAME="Visitantes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Conversoes" NAME="Conversoes" />
+		<FIELD TYPE="TEXT" SIZE="4000" MASK="@!" TITLE="Observacoes" NAME="Observacoes" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="CriadoPor" NAME="CriadoPor" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="CriadoEm" NAME="CriadoEm" />
+		<INDEX TITLE="PK_relatorioCelebracao" NAME="PK_relatorioCelebracao" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="id" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="relatorioCelulas" NAME="relatorioCelulas">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Semana" NAME="Semana" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="Data" NAME="Data" />
+		<FIELD TYPE="TEXT" SIZE="4000" MASK="@!" TITLE="NomesMembros" NAME="NomesMembros" />
+		<FIELD TYPE="TEXT" SIZE="4000" MASK="@!" TITLE="NomesVisitantes" NAME="NomesVisitantes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Adultos" NAME="Adultos" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Criancas" NAME="Criancas" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Visitantes" NAME="Visitantes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="PresentesEventos" NAME="PresentesEventos" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Visitas" NAME="Visitas" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Conversoes" NAME="Conversoes" />
+		<FIELD TYPE="TEXT" SIZE="4000" MASK="@!" TITLE="Observacoes" NAME="Observacoes" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="CriadoPor" NAME="CriadoPor" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="CriadoEm" NAME="CriadoEm" />
+		<INDEX TITLE="PK_relatorioCelulas" NAME="PK_relatorioCelulas" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="id" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="relatorioDiscipulado" NAME="relatorioDiscipulado">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Semana" NAME="Semana" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="Data" NAME="Data" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Adultos" NAME="Adultos" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Criancas" NAME="Criancas" />
+		<FIELD TYPE="TEXT" SIZE="4000" MASK="@!" TITLE="NomesMembros" NAME="NomesMembros" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="LeituraBiblica" NAME="LeituraBiblica" />
+		<FIELD TYPE="TEXT" SIZE="4000" MASK="@!" TITLE="Observacoes" NAME="Observacoes" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="CriadoPor" NAME="CriadoPor" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="CriadoEm" NAME="CriadoEm" />
+		<INDEX TITLE="PK_relatorioDiscipulado" NAME="PK_relatorioDiscipulado" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="id" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="relatorioVisitaSupervisao" NAME="relatorioVisitaSupervisao">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Nome" NAME="Nome" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="Funcao" NAME="Funcao" />
+		<FIELD TYPE="TEXT" SIZE="25" MASK="@!" TITLE="CelulaVisitada" NAME="CelulaVisitada" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Supervisao" NAME="Supervisao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Coordenacao" NAME="Coordenacao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="Data" NAME="Data" />
+		<FIELD TYPE="MEMO" TITLE="Recepcao" NAME="Recepcao" />
+		<FIELD TYPE="MEMO" TITLE="Etapas" NAME="Etapas" />
+		<FIELD TYPE="MEMO" TITLE="Estrutura" NAME="Estrutura" />
+		<FIELD TYPE="TEXT" SIZE="4000" MASK="@!" TITLE="Observacoes" NAME="Observacoes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Mes" NAME="Mes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Ano" NAME="Ano" />
+		<FIELD TYPE="TEXT" SIZE="45" MASK="@!" TITLE="Ranking" NAME="Ranking" />
+		<INDEX TITLE="PK_relatorioVisitaSupervisao" NAME="PK_relatorioVisitaSupervisao" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="id" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="relSupervisao" NAME="relSupervisao">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Nome" NAME="Nome" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="Funcao" NAME="Funcao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="CelulaVisitada" NAME="CelulaVisitada" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Supervisao" NAME="Supervisao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Coordenacao" NAME="Coordenacao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="Data" NAME="Data" />
+		<FIELD TYPE="TEXT" SIZE="4000" MASK="@!" TITLE="Avaliacoes" NAME="Avaliacoes" />
+		<FIELD TYPE="TEXT" SIZE="4000" MASK="@!" TITLE="Presentes" NAME="Presentes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Mes" NAME="Mes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Ano" NAME="Ano" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="MembrosVisitados" NAME="MembrosVisitados" />
+		<INDEX TITLE="PK_relSupervisao" NAME="PK_relSupervisao" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="id" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="SUB_CONTAS_IDPB" NAME="SUB_CONTAS_IDPB">
+		<FIELD TYPE="TEXT" SIZE="10" MASK="@!" TITLE="COD_SUB_CONTA" NAME="COD_SUB_CONTA" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="DESC_SUB_CONTA" NAME="DESC_SUB_CONTA" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="COD_PLANO_CONTA" NAME="COD_PLANO_CONTA" />
+		<FIELD TYPE="TEXT" SIZE="10" MASK="@!" TITLE="COD_CATEGORIA" NAME="COD_CATEGORIA" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="DESC_CATEGORIA" NAME="DESC_CATEGORIA" />
+		<FIELD TYPE="TEXT" SIZE="10" MASK="@!" TITLE="COD_GRUPO_CAT_IDPB" NAME="COD_GRUPO_CAT_IDPB" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="DESC_GRUPO_IDPB" NAME="DESC_GRUPO_IDPB" />
+		<FIELD TYPE="TEXT" SIZE="10" MASK="@!" TITLE="COD_CONTAS" NAME="COD_CONTAS" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="DESC_CONTAS" NAME="DESC_CONTAS" />
+	</TABLE>
+	<TABLE TITLE="supervisao" NAME="supervisao">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Supervisao" NAME="Supervisao" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="Supervisao_Nome" NAME="Supervisao_Nome" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="CriadoEm" NAME="CriadoEm" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="CriadoPor" NAME="CriadoPor" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="AtualizadoEm" NAME="AtualizadoEm" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="AtualizadoPor" NAME="AtualizadoPor" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Coordenacao" NAME="Coordenacao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Distrito" NAME="Distrito" />
+		<INDEX TITLE="PK_supervisao" NAME="PK_supervisao" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="Supervisao" />
+			<FIELD NAME="Coordenacao" />
+			<FIELD NAME="Distrito" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="SYS~Sequencial" NAME="SYS~Sequencial">
+		<FIELD TYPE="TEXT" SIZE="10" MASK="@!" TITLE="PW~Projeto" NAME="PW~Projeto" />
+		<FIELD TYPE="TEXT" SIZE="30" MASK="@!" TITLE="SYS~Tabela" NAME="SYS~Tabela" />
+		<FIELD TYPE="TEXT" SIZE="30" MASK="@!" TITLE="SYS~Campo" NAME="SYS~Campo" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="SYS~Valor" NAME="SYS~Valor" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="SYS~ValorAnterior" NAME="SYS~ValorAnterior" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="SYS~Estacao" NAME="SYS~Estacao" />
+		<FIELD TYPE="TEXT" SIZE="30" MASK="@!" TITLE="SYS~Identificacao" NAME="SYS~Identificacao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="SYS~Pendentes" NAME="SYS~Pendentes" />
+		<INDEX TITLE="Chave sequencial" NAME="Chave sequencial" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="SYS~Tabela" />
+			<FIELD NAME="SYS~Campo" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="TB_CATEGORIA" NAME="TB_CATEGORIA">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CAT_ID" NAME="CAT_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CAT_NOME" NAME="CAT_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="GC_ID" NAME="GC_ID" />
+		<FIELD TYPE="TEXT" SIZE="20" MASK="@!" TITLE="plano_conta" NAME="plano_conta" />
+		<INDEX TITLE="PK_TB_CATEGORIA" NAME="PK_TB_CATEGORIA" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="CAT_ID" />
+			<FIELD NAME="GC_ID" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="TB_CENTRO_CUSTO" NAME="TB_CENTRO_CUSTO">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CC_ID" NAME="CC_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CC_NOME" NAME="CC_NOME" />
+		<INDEX TITLE="PK_TB_CENTRO_CUSTO" NAME="PK_TB_CENTRO_CUSTO" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="CC_ID" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="TB_CONTA" NAME="TB_CONTA">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CT_ID" NAME="CT_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CT_NOME" NAME="CT_NOME" />
+		<INDEX TITLE="PK_TB_CONTA" NAME="PK_TB_CONTA" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="CT_ID" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="TB_CORRENTISTA" NAME="TB_CORRENTISTA">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="COR_ID" NAME="COR_ID" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="COR_NOME" NAME="COR_NOME" />
+		<FIELD TYPE="TEXT" SIZE="14" MASK="@!" TITLE="COR_TIPO_DOC" NAME="COR_TIPO_DOC" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="COR_NUM_DOC" NAME="COR_NUM_DOC" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="COR_ENDERECO" NAME="COR_ENDERECO" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="COR_BAIRRO" NAME="COR_BAIRRO" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="COR_CIDADE" NAME="COR_CIDADE" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="COR_EMAIL" NAME="COR_EMAIL" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="COR_NASCIMENTO" NAME="COR_NASCIMENTO" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="COR_TIPO" NAME="COR_TIPO" />
+		<FIELD TYPE="TEXT" SIZE="15" MASK="@!" TITLE="COR_TELEFONE" NAME="COR_TELEFONE" />
+		<INDEX TITLE="PK_TB_CORRENTISTA" NAME="PK_TB_CORRENTISTA" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="COR_ID" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="TB_GRUPO_CATEGORIA" NAME="TB_GRUPO_CATEGORIA">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="GC_ID" NAME="GC_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="GC_NOME" NAME="GC_NOME" />
+		<INDEX TITLE="PK_TB_GRUPO_CATEGORIA" NAME="PK_TB_GRUPO_CATEGORIA" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="GC_ID" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="TB_LANCAMENTO" NAME="TB_LANCAMENTO">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9999999999999999999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="LANC_ID" NAME="LANC_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_DESCRICAO" NAME="LANC_DESCRICAO" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="LANC_DATA" NAME="LANC_DATA" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_TIPO" NAME="LANC_TIPO" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="99.999.999,99" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="LANC_VALOR" NAME="LANC_VALOR" />
+		<FIELD TYPE="BOOLEAN" TITLE="LANC_PAGO" NAME="LANC_PAGO" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="LANC_DATA_HORA_INCLUSAO" NAME="LANC_DATA_HORA_INCLUSAO" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="COR_ID" NAME="COR_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CAT_ID" NAME="CAT_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CT_ID" NAME="CT_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CC_ID" NAME="CC_ID" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="nota_recibo" NAME="nota_recibo" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="id_membro" NAME="id_membro" />
+		<FIELD TYPE="BOOLEAN" TITLE="tipo_ofertante" NAME="tipo_ofertante" />
+		<FIELD TYPE="TEXT" SIZE="20" MASK="@!" TITLE="plano_conta" NAME="plano_conta" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="forma_pagamento" NAME="forma_pagamento" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CAT_NOME" NAME="CAT_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="GC_ID" NAME="GC_ID" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="CriadoPor" NAME="CriadoPor" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="AtualizadoEm" NAME="AtualizadoEm" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="AtualizadoPor" NAME="AtualizadoPor" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="anexo2" NAME="anexo2" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="anexo3" NAME="anexo3" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="idLancamentoMissao" NAME="idLancamentoMissao" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="codigo_igreja" NAME="codigo_igreja" />
+		<FIELD TYPE="BOOLEAN" DEFAULT="False" TITLE="recibo" NAME="recibo" />
+		<FIELD TYPE="BOOLEAN" TITLE="recebidoIgrejaLocal" NAME="recebidoIgrejaLocal" />
+		<INDEX TITLE="PK_TB_LANCAMENTO" NAME="PK_TB_LANCAMENTO" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="LANC_ID" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="TB_LANCAMENTO_IGREJAS" NAME="TB_LANCAMENTO_IGREJAS">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="LANC_ID" NAME="LANC_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_DESCRICAO" NAME="LANC_DESCRICAO" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="LANC_DATA" NAME="LANC_DATA" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_TIPO" NAME="LANC_TIPO" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="99.999.999,99" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="LANC_VALOR" NAME="LANC_VALOR" />
+		<FIELD TYPE="BOOLEAN" TITLE="LANC_PAGO" NAME="LANC_PAGO" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="LANC_DATA_HORA_INCLUSAO" NAME="LANC_DATA_HORA_INCLUSAO" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="COR_ID" NAME="COR_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="CAT_ID" NAME="CAT_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="CT_ID" NAME="CT_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="CC_ID" NAME="CC_ID" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="nota_recibo" NAME="nota_recibo" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="id_membro" NAME="id_membro" />
+		<FIELD TYPE="BOOLEAN" TITLE="tipo_ofertante" NAME="tipo_ofertante" />
+		<FIELD TYPE="TEXT" SIZE="20" MASK="@!" TITLE="plano_conta" NAME="plano_conta" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="forma_pagamento" NAME="forma_pagamento" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CAT_NOME" NAME="CAT_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="GC_ID" NAME="GC_ID" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="CriadoPor" NAME="CriadoPor" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="AtualizadoEm" NAME="AtualizadoEm" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="AtualizadoPor" NAME="AtualizadoPor" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="anexo2" NAME="anexo2" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="anexo3" NAME="anexo3" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="idLancamentoMissao" NAME="idLancamentoMissao" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="codigo_igreja" NAME="codigo_igreja" />
+		<INDEX TITLE="PK_TB_LANCAMENTO1" NAME="PK_TB_LANCAMENTO1" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="LANC_ID" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="TB_LOGIN_DEVICE" NAME="TB_LOGIN_DEVICE">
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="LOGIN_DEVICE_ID" NAME="LOGIN_DEVICE_ID" />
+		<FIELD TYPE="TEXT" SIZE="40" MASK="@!" TITLE="LOGIN_USER_LOGIN" NAME="LOGIN_USER_LOGIN" />
+		<FIELD TYPE="NUMBER" SIZE="4" MASK="9.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="LOGIN_DEVICE_TYPE" NAME="LOGIN_DEVICE_TYPE" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="LOGIN_DEVICE_REGISTRATION" NAME="LOGIN_DEVICE_REGISTRATION" />
+		<INDEX TITLE="LOGIN_DEVICE_PK" NAME="LOGIN_DEVICE_PK" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="LOGIN_DEVICE_ID" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="TB_LOGIN_GROUP" NAME="TB_LOGIN_GROUP">
+		<FIELD TYPE="TEXT" SIZE="60" MASK="@!" TITLE="LOGIN_GROUP_NAME" NAME="LOGIN_GROUP_NAME" />
+		<FIELD TYPE="BOOLEAN" TITLE="LOGIN_GROUP_IS_ADMIN" NAME="LOGIN_GROUP_IS_ADMIN" />
+		<INDEX TITLE="LOGIN_GROUP_PK" NAME="LOGIN_GROUP_PK" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="LOGIN_GROUP_NAME" />
+		</INDEX>
+		<RELATION FOREIGNTABLE="TB_LOGIN_RULE" BASETABLE="TB_LOGIN_GROUP" TYPE="CONSTRAINT" CARDINALITY="1-N" TITLE="TB_LOGIN_GROUP_RULE" NAME="TB_LOGIN_GROUP_RULE">
+			<RELATIONOF FOREIGNFIELD="LOGIN_GROUP_NAME" BASEFIELD="LOGIN_GROUP_NAME" NAME="LOGIN_GROUP_NAME" />
+		</RELATION>
+		<RELATION FOREIGNTABLE="TB_LOGIN_USER" BASETABLE="TB_LOGIN_GROUP" TYPE="CONSTRAINT" CARDINALITY="1-N" TITLE="TB_LOGIN_GROUP_USER" NAME="TB_LOGIN_GROUP_USER">
+			<RELATIONOF FOREIGNFIELD="LOGIN_GROUP_NAME" BASEFIELD="LOGIN_GROUP_NAME" NAME="LOGIN_GROUP_NAME" />
+		</RELATION>
+	</TABLE>
+	<TABLE TITLE="TB_LOGIN_RULE" NAME="TB_LOGIN_RULE">
+		<FIELD TYPE="TEXT" SIZE="8" MASK="@!" TITLE="LOGIN_RULE_PROJECT" NAME="LOGIN_RULE_PROJECT" />
+		<FIELD TYPE="TEXT" SIZE="60" MASK="@!" TITLE="LOGIN_GROUP_NAME" NAME="LOGIN_GROUP_NAME" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LOGIN_RULE_OBJECT" NAME="LOGIN_RULE_OBJECT" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LOGIN_RULE_PERMISSIONS" NAME="LOGIN_RULE_PERMISSIONS" />
+		<INDEX TITLE="LOGIN_RULE_PK" NAME="LOGIN_RULE_PK" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="LOGIN_RULE_PROJECT" />
+			<FIELD NAME="LOGIN_GROUP_NAME" />
+			<FIELD NAME="LOGIN_RULE_OBJECT" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="TB_LOGIN_TOKEN" NAME="TB_LOGIN_TOKEN">
+		<FIELD TYPE="TEXT" SIZE="36" MASK="@!" TITLE="LOGIN_TOKEN_ID" NAME="LOGIN_TOKEN_ID" />
+		<FIELD TYPE="TEXT" SIZE="40" MASK="@!" TITLE="LOGIN_USER_LOGIN" NAME="LOGIN_USER_LOGIN" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="LOGIN_TOKEN_ACQUIRED" NAME="LOGIN_TOKEN_ACQUIRED" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="LOGIN_TOKEN_EXPIRATION" NAME="LOGIN_TOKEN_EXPIRATION" />
+		<INDEX TITLE="LOGIN_TOKEN_PK" NAME="LOGIN_TOKEN_PK" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="LOGIN_TOKEN_ID" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="TB_LOGIN_USER" NAME="TB_LOGIN_USER">
+		<FIELD TYPE="TEXT" SIZE="60" MASK="@!" TITLE="LOGIN_GROUP_NAME" NAME="LOGIN_GROUP_NAME" />
+		<FIELD TYPE="TEXT" SIZE="40" MASK="@!" TITLE="LOGIN_USER_LOGIN" NAME="LOGIN_USER_LOGIN" />
+		<FIELD TYPE="TEXT" SIZE="40" MASK="@!" TITLE="LOGIN_USER_PASSWORD" NAME="LOGIN_USER_PASSWORD" />
+		<FIELD TYPE="TEXT" SIZE="60" MASK="@!" TITLE="LOGIN_USER_NAME" NAME="LOGIN_USER_NAME" />
+		<FIELD TYPE="MEMO" TITLE="LOGIN_USER_OBS" NAME="LOGIN_USER_OBS" />
+		<INDEX TITLE="LOGIN_USER_PK" NAME="LOGIN_USER_PK" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="LOGIN_USER_LOGIN" />
+		</INDEX>
+		<RELATION FOREIGNTABLE="TB_LOGIN_TOKEN" BASETABLE="TB_LOGIN_USER" TYPE="CONSTRAINT" CARDINALITY="1-N" TITLE="TB_LOGIN_USER_TOKEN" NAME="TB_LOGIN_USER_TOKEN">
+			<RELATIONOF FOREIGNFIELD="LOGIN_USER_LOGIN" BASEFIELD="LOGIN_USER_LOGIN" NAME="LOGIN_USER_LOGIN" />
+		</RELATION>
+	</TABLE>
+	<TABLE TITLE="TB_MES_EXTENSO" NAME="TB_MES_EXTENSO">
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="9999999999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Mes" NAME="Mes" />
+		<FIELD TYPE="TEXT" SIZE="100" TITLE="Extenso" NAME="Extenso" />
+		<INDEX TITLE="PK_TB_MES_EXTENSO" NAME="PK_TB_MES_EXTENSO" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="Mes" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="TB_MES_REFERENCIA" NAME="TB_MES_REFERENCIA">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="CriadoEm" NAME="CriadoEm" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="CriadoPor" NAME="CriadoPor" />
+		<INDEX TITLE="PK_TB_MES_REFERENCIA" NAME="PK_TB_MES_REFERENCIA" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="mesReferencia" />
+			<FIELD NAME="anoReferencia" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="TB_MESES_FECHAMENTO_IGREJA" NAME="TB_MESES_FECHAMENTO_IGREJA">
+		<FIELD TYPE="TEXT" SIZE="10" MASK="@!" TITLE="codigoIgreja" NAME="codigoIgreja" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Igreja" NAME="Igreja" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="BOOLEAN" DEFAULT="False" TITLE="EntregueIgreja" NAME="EntregueIgreja" />
+		<FIELD TYPE="BOOLEAN" DEFAULT="False" TITLE="recebidoIDPBAM" NAME="recebidoIDPBAM" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="ExtensoMes" NAME="ExtensoMes" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yyyy" TITLE="dataEntregue" NAME="dataEntregue" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yyyy" TITLE="dataRecebido" NAME="dataRecebido" />
+		<FIELD TYPE="TEXT" SIZE="1000" TITLE="anexoRelatorio" NAME="anexoRelatorio" />
+		<FIELD TYPE="TEXT" SIZE="1000" TITLE="anexoOfx" NAME="anexoOfx" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="99999999,99" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="VALORARECEBER" NAME="VALORARECEBER" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="99999999,99" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="VALORECEBIDO" NAME="VALORECEBIDO" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="99999999,99" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="TotalRecebido" NAME="TotalRecebido" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="99999999,99" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="totalareceber" NAME="totalareceber" />
+		<INDEX TITLE="PK_TB_MESES_FECHAMENTO_IGREJA" NAME="PK_TB_MESES_FECHAMENTO_IGREJA" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="codigoIgreja" />
+			<FIELD NAME="mesReferencia" />
+			<FIELD NAME="anoReferencia" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="TB_MESES_USADOS" NAME="TB_MESES_USADOS">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="BOOLEAN" TITLE="mesAtivo" NAME="mesAtivo" />
+		<INDEX TITLE="PK_TB_MESES_USADOS" NAME="PK_TB_MESES_USADOS" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="mesReferencia" />
+			<FIELD NAME="anoReferencia" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="TB_PARAM_OFERTA_MISSAO" NAME="TB_PARAM_OFERTA_MISSAO">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="IDFERTAMISSAO" NAME="IDFERTAMISSAO" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="OFERTA_DESTINO" NAME="OFERTA_DESTINO" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="99.999.999,99" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="PERC_DESTINO" NAME="PERC_DESTINO" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="CAT_ID" NAME="CAT_ID" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="CAT_NOME" NAME="CAT_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="GC_ID" NAME="GC_ID" />
+		<INDEX TITLE="PK_TB_PARAM_OFERTA_MISSAO" NAME="PK_TB_PARAM_OFERTA_MISSAO" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="IDFERTAMISSAO" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="TB_PARAMETRO" NAME="TB_PARAMETRO">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="PAR_CAT_TRANSF" NAME="PAR_CAT_TRANSF" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="9999999,999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="PAR_PERC_IDPB_NACIONAL" NAME="PAR_PERC_IDPB_NACIONAL" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="9999999999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="CC_SAIDA_CONTRIBUICAOMM" NAME="CC_SAIDA_CONTRIBUICAOMM" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="PAR_CENTROCUSTO" NAME="PAR_CENTROCUSTO" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="9.999.999,999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="PERC_REPASSE_AM" NAME="PERC_REPASSE_AM" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="9.999.999,999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="PERC_REPASSE_NACIONAL" NAME="PERC_REPASSE_NACIONAL" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="CAT_MISSOES_AM" NAME="CAT_MISSOES_AM" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="CAT_MISSOES_NACIONAL" NAME="CAT_MISSOES_NACIONAL" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="9.999.999,999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="PAR_PERC_IDPB_AM" NAME="PAR_PERC_IDPB_AM" />
+		<INDEX TITLE="PK_TB_PARAMETRO" NAME="PK_TB_PARAMETRO" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="PAR_CAT_TRANSF" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="TB_PLANO_CONTA" NAME="TB_PLANO_CONTA">
+		<FIELD TYPE="TEXT" SIZE="20" MASK="@!" TITLE="codigo" NAME="codigo" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Descricao" NAME="Descricao" />
+		<FIELD TYPE="TEXT" SIZE="20" MASK="@!" DEFAULT="'0'" TITLE="Reduz" NAME="Reduz" />
+		<FIELD TYPE="BOOLEAN" TITLE="analitica" NAME="analitica" />
+		<FIELD TYPE="BOOLEAN" TITLE="patrimonio" NAME="patrimonio" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="natureza" NAME="natureza" />
+		<INDEX TITLE="PK_TB_PLANO_CONTA" NAME="PK_TB_PLANO_CONTA" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="codigo" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="TB_RECIBO" NAME="TB_RECIBO">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="Numero" NAME="Numero" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Descricao" NAME="Descricao" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Tipo" NAME="Tipo" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="99.999.999,99" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="valor" NAME="valor" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="Data" NAME="Data" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="recebedorIgreja" NAME="recebedorIgreja" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="DOCIgreja" NAME="DOCIgreja" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="recebedorOutros" NAME="recebedorOutros" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="DOCOutros" NAME="DOCOutros" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="LANC_ID" NAME="LANC_ID" />
+		<INDEX TITLE="NK_TB_RECIBO1" NAME="NK_TB_RECIBO1" PRIMARY="False" UNIQUE="True" ISCLUSTER="False" FILLFACTOR="0">
+			<FIELD NAME="LANC_ID" />
+		</INDEX>
+		<INDEX TITLE="PK_TB_RECIBO" NAME="PK_TB_RECIBO" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="Numero" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="TB_REL_FECHAMENTO" NAME="TB_REL_FECHAMENTO">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="CAT_ID" NAME="CAT_ID" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="CAT_NOME" NAME="CAT_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="GC_ID" NAME="GC_ID" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="GC_NOME" NAME="GC_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="TEXT" SIZE="100" TITLE="codigoIgreja" NAME="codigoIgreja" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="99999999,99" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="VALORARECEBER" NAME="VALORARECEBER" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="99999999,99" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="VALORECEBIDO" NAME="VALORECEBIDO" />
+		<FIELD TYPE="TEXT" SIZE="100" TITLE="idPAGAMENTO" NAME="idPAGAMENTO" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yyyy" TITLE="DataRecebido" NAME="DataRecebido" />
+		<FIELD TYPE="TEXT" SIZE="4000" TITLE="JASONPAGAMENTO" NAME="JASONPAGAMENTO" />
+		<INDEX TITLE="PK_TB_REL_FECHAMENTO" NAME="PK_TB_REL_FECHAMENTO" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="CAT_ID" />
+			<FIELD NAME="GC_ID" />
+			<FIELD NAME="codigoIgreja" />
+			<FIELD NAME="mesReferencia" />
+			<FIELD NAME="anoReferencia" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="TB_SALDO_INICAL" NAME="TB_SALDO_INICAL">
+		<FIELD TYPE="NUMBER" SIZE="4" MASK="9.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="ano" NAME="ano" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="99.999.999,99" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="valor" NAME="valor" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Mes" NAME="Mes" />
+		<INDEX TITLE="PK_TB_SALDO_INICAL" NAME="PK_TB_SALDO_INICAL" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="ano" />
+			<FIELD NAME="Mes" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="TB_TRANSFERENCIA" NAME="TB_TRANSFERENCIA">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="TF_ID" NAME="TF_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="TF_DESCRICAO" NAME="TF_DESCRICAO" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="TF_DATA" NAME="TF_DATA" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="TF_CT_ORIGEM" NAME="TF_CT_ORIGEM" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="TF_CT_DESTINO" NAME="TF_CT_DESTINO" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="99.999.999,99" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="TF_VALOR" NAME="TF_VALOR" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="TF_DATA_HORA_INCLUSAO" NAME="TF_DATA_HORA_INCLUSAO" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CAT_ID" NAME="CAT_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="CriadoPor" NAME="CriadoPor" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="AtualizadoEm" NAME="AtualizadoEm" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="AtualizadoPor" NAME="AtualizadoPor" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="GC_ID" NAME="GC_ID" />
+		<INDEX TITLE="PK_TB_TRANSFERENCIA" NAME="PK_TB_TRANSFERENCIA" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="TF_ID" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="turma" NAME="turma">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="idTurma" NAME="idTurma" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="codigoCurso" NAME="codigoCurso" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Curso" NAME="Curso" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="DataCurso" NAME="DataCurso" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="imagemCurso" NAME="imagemCurso" />
+		<FIELD TYPE="BOOLEAN" DEFAULT="False" TITLE="PreRequisito" NAME="PreRequisito" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Requisito" NAME="Requisito" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="inicioDivulgacao" NAME="inicioDivulgacao" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="fimDivulgacao" NAME="fimDivulgacao" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="99.999.999,99" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="valor" NAME="valor" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Professor" NAME="Professor" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Email" NAME="Email" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="RolMembro" NAME="RolMembro" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="Status" NAME="Status" />
+		<INDEX TITLE="PK_turma" NAME="PK_turma" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="idTurma" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="visitantes" NAME="visitantes">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" DEFAULT="0" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Nome" NAME="Nome" />
+		<FIELD TYPE="TEXT" SIZE="20" MASK="@!" TITLE="Contato" NAME="Contato" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="Nascimento" NAME="Nascimento" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="CriadoPor" NAME="CriadoPor" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="CriadoEm" NAME="CriadoEm" />
+		<INDEX TITLE="PK_visitantes" NAME="PK_visitantes" PRIMARY="True" UNIQUE="True" ISCLUSTER="True" FILLFACTOR="90">
+			<FIELD NAME="id" />
+		</INDEX>
+	</TABLE>
+	<TABLE TITLE="CONS_ACUMULADO_MES_ANO" NAME="CONS_ACUMULADO_MES_ANO">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="ano" NAME="ano" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="acumuladoMes" NAME="acumuladoMes" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mes" NAME="mes" />
+	</TABLE>
+	<TABLE TITLE="CONS_CATEGORIA" NAME="CONS_CATEGORIA">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CAT_ID" NAME="CAT_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CAT_NOME" NAME="CAT_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="GC_ID" NAME="GC_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="GC_NOME" NAME="GC_NOME" />
+	</TABLE>
+	<TABLE TITLE="CONS_CENTRO_CUSTOS" NAME="CONS_CENTRO_CUSTOS">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CC_ID" NAME="CC_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CC_NOME" NAME="CC_NOME" />
+	</TABLE>
+	<TABLE TITLE="CONS_CONTAS" NAME="CONS_CONTAS">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CT_ID" NAME="CT_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CT_NOME" NAME="CT_NOME" />
+	</TABLE>
+	<TABLE TITLE="CONS_CORRENTISTA" NAME="CONS_CORRENTISTA">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="COR_ID" NAME="COR_ID" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="COR_NOME" NAME="COR_NOME" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="COR_ENDERECO" NAME="COR_ENDERECO" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="COR_BAIRRO" NAME="COR_BAIRRO" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="COR_CIDADE" NAME="COR_CIDADE" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="COR_EMAIL" NAME="COR_EMAIL" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="DOC" NAME="DOC" />
+	</TABLE>
+	<TABLE TITLE="CONS_FECHAMENTO_MES" NAME="CONS_FECHAMENTO_MES">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CC_ID" NAME="CC_ID" />
+		<FIELD TYPE="NUMBER" SIZE="12" MASK="9.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="LANC_VALOR" NAME="LANC_VALOR" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CAT_NOME" NAME="CAT_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CAT_ID" NAME="CAT_ID" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="COR_NOME" NAME="COR_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="COR_ID" NAME="COR_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CT_NOME" NAME="CT_NOME" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="LANC_DATA_HORA_INCLUSAO" NAME="LANC_DATA_HORA_INCLUSAO" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CT_ID" NAME="CT_ID" />
+		<FIELD TYPE="TEXT" SIZE="3" MASK="@!" TITLE="PAGO" NAME="PAGO" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_TIPO" NAME="LANC_TIPO" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_DESCRICAO" NAME="LANC_DESCRICAO" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="LANC_DATA" NAME="LANC_DATA" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="LANC_ID" NAME="LANC_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="GC_NOME" NAME="GC_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="GC_ID" NAME="GC_ID" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="acumuladoMes" NAME="acumuladoMes" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="ano" NAME="ano" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Mes" NAME="Mes" />
+	</TABLE>
+	<TABLE TITLE="CONS_GRUPO_CATEGORIA" NAME="CONS_GRUPO_CATEGORIA">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="GC_ID" NAME="GC_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="GC_NOME" NAME="GC_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CAT_ID" NAME="CAT_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CAT_NOME" NAME="CAT_NOME" />
+	</TABLE>
+	<TABLE TITLE="CONS_LANCAMENTOS" NAME="CONS_LANCAMENTOS">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="LANC_ID" NAME="LANC_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_DESCRICAO" NAME="LANC_DESCRICAO" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="LANC_DATA" NAME="LANC_DATA" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_TIPO" NAME="LANC_TIPO" />
+		<FIELD TYPE="TEXT" SIZE="3" MASK="@!" TITLE="PAGO" NAME="PAGO" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="LANC_DATA_HORA_INCLUSAO" NAME="LANC_DATA_HORA_INCLUSAO" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CT_ID" NAME="CT_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CT_NOME" NAME="CT_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="COR_ID" NAME="COR_ID" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="COR_NOME" NAME="COR_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CAT_ID" NAME="CAT_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CAT_NOME" NAME="CAT_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="12" MASK="9.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="LANC_VALOR" NAME="LANC_VALOR" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CC_ID" NAME="CC_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="GC_ID" NAME="GC_ID" />
+	</TABLE>
+	<TABLE TITLE="CONS_LANCAMENTOS_GRUPOS_CATEGORIA" NAME="CONS_LANCAMENTOS_GRUPOS_CATEGORIA">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CC_ID" NAME="CC_ID" />
+		<FIELD TYPE="NUMBER" SIZE="12" MASK="9.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="LANC_VALOR" NAME="LANC_VALOR" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CAT_NOME" NAME="CAT_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CAT_ID" NAME="CAT_ID" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="COR_NOME" NAME="COR_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="COR_ID" NAME="COR_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CT_NOME" NAME="CT_NOME" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="LANC_DATA_HORA_INCLUSAO" NAME="LANC_DATA_HORA_INCLUSAO" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CT_ID" NAME="CT_ID" />
+		<FIELD TYPE="TEXT" SIZE="3" MASK="@!" TITLE="PAGO" NAME="PAGO" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_TIPO" NAME="LANC_TIPO" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_DESCRICAO" NAME="LANC_DESCRICAO" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="LANC_DATA" NAME="LANC_DATA" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="LANC_ID" NAME="LANC_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="GC_NOME" NAME="GC_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="GC_ID" NAME="GC_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesReferencia" NAME="mesReferencia" />
+	</TABLE>
+	<TABLE TITLE="CONS_REL_FECHAMENTO" NAME="CONS_REL_FECHAMENTO">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CC_ID" NAME="CC_ID" />
+		<FIELD TYPE="NUMBER" SIZE="12" MASK="9.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="LANC_VALOR" NAME="LANC_VALOR" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="valorAcumulado" NAME="valorAcumulado" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CAT_NOME" NAME="CAT_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CAT_ID" NAME="CAT_ID" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="COR_NOME" NAME="COR_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="COR_ID" NAME="COR_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CT_NOME" NAME="CT_NOME" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="LANC_DATA_HORA_INCLUSAO" NAME="LANC_DATA_HORA_INCLUSAO" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CT_ID" NAME="CT_ID" />
+		<FIELD TYPE="TEXT" SIZE="3" MASK="@!" TITLE="PAGO" NAME="PAGO" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_TIPO" NAME="LANC_TIPO" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_DESCRICAO" NAME="LANC_DESCRICAO" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="LANC_DATA" NAME="LANC_DATA" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="LANC_ID" NAME="LANC_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="GC_NOME" NAME="GC_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="GC_ID" NAME="GC_ID" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="acumuladoMes" NAME="acumuladoMes" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="ano" NAME="ano" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Mes" NAME="Mes" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CC_NOME" NAME="CC_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="12" MASK="9.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="Receita" NAME="Receita" />
+		<FIELD TYPE="NUMBER" SIZE="14" MASK="999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="Despesa" NAME="Despesa" />
+	</TABLE>
+	<TABLE TITLE="CONS_SALDO" NAME="CONS_SALDO">
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CT_NOME" NAME="CT_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="PENDENTE" NAME="PENDENTE" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="SALDO" NAME="SALDO" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CT_ID" NAME="CT_ID" />
+	</TABLE>
+	<TABLE TITLE="CONS_SALDO_GRUPO" NAME="CONS_SALDO_GRUPO">
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="GC_NOME" NAME="GC_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="TOTAL" NAME="TOTAL" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="anoReferencia" NAME="anoReferencia" />
+	</TABLE>
+	<TABLE TITLE="CONS_TIPO" NAME="CONS_TIPO">
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_TIPO" NAME="LANC_TIPO" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="TOTAL" NAME="TOTAL" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="anoReferencia" NAME="anoReferencia" />
+	</TABLE>
+	<TABLE TITLE="CONS_TRANFERENCIA" NAME="CONS_TRANFERENCIA">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="TF_ID" NAME="TF_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="TF_DESCRICAO" NAME="TF_DESCRICAO" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="TF_DATA" NAME="TF_DATA" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="TF_CT_ORIGEM" NAME="TF_CT_ORIGEM" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="FANCONTAORIGEM" NAME="FANCONTAORIGEM" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="TF_CT_DESTINO" NAME="TF_CT_DESTINO" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="FANCONTADESTINO" NAME="FANCONTADESTINO" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="99.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="TF_VALOR" NAME="TF_VALOR" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CAT_ID" NAME="CAT_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CAT_NOME" NAME="CAT_NOME" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="TF_DATA_HORA_INCLUSAO" NAME="TF_DATA_HORA_INCLUSAO" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="anoReferencia" NAME="anoReferencia" />
+	</TABLE>
+	<TABLE TITLE="CONS_VALOR_MES_ANO" NAME="CONS_VALOR_MES_ANO">
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="acumuladoMes" NAME="acumuladoMes" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="anoReferencia" NAME="anoReferencia" />
+	</TABLE>
+	<TABLE TITLE="VV_CELULA" NAME="VV_CELULA">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="TEXT" SIZE="406" MASK="@!" TITLE="distrito_Nome" NAME="distrito_Nome" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Coordenacao" NAME="Coordenacao" />
+		<FIELD TYPE="TEXT" SIZE="356" MASK="@!" TITLE="coordenacao_Nome" NAME="coordenacao_Nome" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Supervisao" NAME="Supervisao" />
+		<FIELD TYPE="TEXT" SIZE="306" MASK="@!" TITLE="supervisao_Nome" NAME="supervisao_Nome" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="TEXT" SIZE="358" MASK="@!" TITLE="Nome" NAME="Nome" />
+	</TABLE>
+	<TABLE TITLE="VV_CENSOGERAL" NAME="VV_CENSOGERAL">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Coordenacao" NAME="Coordenacao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Supervisao" NAME="Supervisao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="Situacao" NAME="Situacao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="TotalMembros" NAME="TotalMembros" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="TotalCrianca" NAME="TotalCrianca" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="TotalAdolescente" NAME="TotalAdolescente" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="TotalJovem" NAME="TotalJovem" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="TotalAdulto" NAME="TotalAdulto" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="TotalIdoso" NAME="TotalIdoso" />
+	</TABLE>
+	<TABLE TITLE="VV_CENSOIDADE" NAME="VV_CENSOIDADE">
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="Situacao" NAME="Situacao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="TotalMembros" NAME="TotalMembros" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="TotalCrianca" NAME="TotalCrianca" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="TotalAdolescente" NAME="TotalAdolescente" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="TotalJovem" NAME="TotalJovem" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="TotalAdulto" NAME="TotalAdulto" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="TotalIdoso" NAME="TotalIdoso" />
+	</TABLE>
+	<TABLE TITLE="VV_COORDENACAO" NAME="VV_COORDENACAO">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="TEXT" SIZE="303" MASK="@!" TITLE="Distrito_Nome" NAME="Distrito_Nome" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Coordenacao" NAME="Coordenacao" />
+		<FIELD TYPE="TEXT" SIZE="253" MASK="@!" TITLE="Coordenacao_Nome" NAME="Coordenacao_Nome" />
+	</TABLE>
+	<TABLE TITLE="VV_DISTRITO" NAME="VV_DISTRITO">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="TEXT" SIZE="303" MASK="@!" TITLE="Distrito_Nome" NAME="Distrito_Nome" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Coordenacao" NAME="Coordenacao" />
+		<FIELD TYPE="TEXT" SIZE="253" MASK="@!" TITLE="Coordenacao_Nome" NAME="Coordenacao_Nome" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Supervisao" NAME="Supervisao" />
+		<FIELD TYPE="TEXT" SIZE="203" MASK="@!" TITLE="Supervisao_Nome" NAME="Supervisao_Nome" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="TEXT" SIZE="358" MASK="@!" TITLE="Nome" NAME="Nome" />
+	</TABLE>
+	<TABLE TITLE="VV_MEMBROS" NAME="VV_MEMBROS">
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Nome" NAME="Nome" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="foto" NAME="foto" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="RolMembro" NAME="RolMembro" />
+		<FIELD TYPE="TEXT" SIZE="25" MASK="@!" TITLE="TelCelular" NAME="TelCelular" />
+		<FIELD TYPE="TEXT" SIZE="245" MASK="@!" TITLE="MOTIVO" NAME="MOTIVO" />
+		<FIELD TYPE="TEXT" SIZE="25" MASK="@!" TITLE="TelFixo" NAME="TelFixo" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Email" NAME="Email" />
+		<FIELD TYPE="TEXT" SIZE="15" MASK="@!" TITLE="Sexo" NAME="Sexo" />
+		<FIELD TYPE="TEXT" SIZE="45" MASK="@!" TITLE="EstadoCivil" NAME="EstadoCivil" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="Nascimento" NAME="Nascimento" />
+		<FIELD TYPE="NUMBER" SIZE="18" MASK="999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="idade" NAME="idade" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Naturalidade" NAME="Naturalidade" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="Situacao" NAME="Situacao" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="Conversao" NAME="Conversao" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="Batismo" NAME="Batismo" />
+		<FIELD TYPE="TEXT" SIZE="10" MASK="@!" TITLE="CEP" NAME="CEP" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Mae" NAME="Mae" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="CriadoEm" NAME="CriadoEm" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Logradouro" NAME="Logradouro" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Bairro" NAME="Bairro" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Numero" NAME="Numero" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Complemento" NAME="Complemento" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Localidade" NAME="Localidade" />
+		<FIELD TYPE="TEXT" SIZE="14" MASK="@!" TITLE="CPF" NAME="CPF" />
+		<FIELD TYPE="TEXT" SIZE="25" MASK="@!" TITLE="UF" NAME="UF" />
+		<FIELD TYPE="TEXT" SIZE="25" MASK="@!" TITLE="RG" NAME="RG" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Profissao" NAME="Profissao" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="FormacaoAcademica" NAME="FormacaoAcademica" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Pai" NAME="Pai" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="AtualizadoEm" NAME="AtualizadoEm" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="AtualizadoPor" NAME="AtualizadoPor" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="CriadoPor" NAME="CriadoPor" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="Distrito_Nome" NAME="Distrito_Nome" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="Coordenacao_Nome" NAME="Coordenacao_Nome" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="Supervisao_Nome" NAME="Supervisao_Nome" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="CelulaNome" NAME="CelulaNome" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Coordenacao" NAME="Coordenacao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Supervisao" NAME="Supervisao" />
+		<FIELD TYPE="MEMO" TITLE="igreja" NAME="igreja" />
+	</TABLE>
+	<TABLE TITLE="VV_MENSAGEM" NAME="VV_MENSAGEM">
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="Data" NAME="Data" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="titulo" NAME="titulo" />
+		<FIELD TYPE="MEMO" TITLE="Mensagem" NAME="Mensagem" />
+		<FIELD TYPE="TEXT" SIZE="250" MASK="@!" TITLE="Autor" NAME="Autor" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="semana" NAME="semana" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="semanaatual" NAME="semanaatual" />
+	</TABLE>
+	<TABLE TITLE="VV_PONTUACAO" NAME="VV_PONTUACAO">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Semana" NAME="Semana" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Ano" NAME="Ano" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Supervisao" NAME="Supervisao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="TEXT" SIZE="4000" MASK="@!" TITLE="Pontuacao" NAME="Pontuacao" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="99.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="TotalRank" NAME="TotalRank" />
+		<FIELD TYPE="TEXT" SIZE="25" MASK="@!" TITLE="Total" NAME="Total" />
+		<FIELD TYPE="TEXT" SIZE="303" MASK="@!" TITLE="Distrito_Nome" NAME="Distrito_Nome" />
+		<FIELD TYPE="TEXT" SIZE="253" MASK="@!" TITLE="Coordenacao_Nome" NAME="Coordenacao_Nome" />
+		<FIELD TYPE="TEXT" SIZE="203" MASK="@!" TITLE="Supervisao_Nome" NAME="Supervisao_Nome" />
+		<FIELD TYPE="TEXT" SIZE="358" MASK="@!" TITLE="Nome" NAME="Nome" />
+	</TABLE>
+	<TABLE TITLE="VV_REL_CENSO" NAME="VV_REL_CENSO">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="TotalCrianca" NAME="TotalCrianca" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="TotalMembros" NAME="TotalMembros" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="TotalAdolescente" NAME="TotalAdolescente" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="TotalJovem" NAME="TotalJovem" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="TotalAdulto" NAME="TotalAdulto" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="TotalIdoso" NAME="TotalIdoso" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="Situacao" NAME="Situacao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Coordenacao" NAME="Coordenacao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Supervisao" NAME="Supervisao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="TEXT" SIZE="303" MASK="@!" TITLE="Distrito_Nome" NAME="Distrito_Nome" />
+		<FIELD TYPE="TEXT" SIZE="253" MASK="@!" TITLE="Coordenacao_Nome" NAME="Coordenacao_Nome" />
+		<FIELD TYPE="TEXT" SIZE="203" MASK="@!" TITLE="Supervisao_Nome" NAME="Supervisao_Nome" />
+		<FIELD TYPE="TEXT" SIZE="358" MASK="@!" TITLE="Nome" NAME="Nome" />
+		<FIELD TYPE="MEMO" TITLE="Lideres" NAME="Lideres" />
+	</TABLE>
+	<TABLE TITLE="VV_RELATORIOCELEBRACAO" NAME="VV_RELATORIOCELEBRACAO">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Semana" NAME="Semana" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="Data" NAME="Data" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Adultos" NAME="Adultos" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Criancas" NAME="Criancas" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Visitantes" NAME="Visitantes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Conversoes" NAME="Conversoes" />
+		<FIELD TYPE="TEXT" SIZE="4000" MASK="@!" TITLE="Observacoes" NAME="Observacoes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="RolMembros" NAME="RolMembros" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="NomeMembros" NAME="NomeMembros" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="PresencaMembros" NAME="PresencaMembros" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesRelatorio" NAME="mesRelatorio" />
+	</TABLE>
+	<TABLE TITLE="VV_RELATORIOCELEBRACAO_GERAL" NAME="VV_RELATORIOCELEBRACAO_GERAL">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Semana" NAME="Semana" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="Data" NAME="Data" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Adultos" NAME="Adultos" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Criancas" NAME="Criancas" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Visitantes" NAME="Visitantes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Conversoes" NAME="Conversoes" />
+		<FIELD TYPE="TEXT" SIZE="4000" MASK="@!" TITLE="Observacoes" NAME="Observacoes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="RolMembros" NAME="RolMembros" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="NomeMembros" NAME="NomeMembros" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="PresencaMembros" NAME="PresencaMembros" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Coordenacao" NAME="Coordenacao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Supervisao" NAME="Supervisao" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="Nascimento" NAME="Nascimento" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesRelatorio" NAME="mesRelatorio" />
+		<FIELD TYPE="TEXT" SIZE="7" MASK="@!" TITLE="tipoMembro" NAME="tipoMembro" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="Distrito_Nome" NAME="Distrito_Nome" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="Coordenacao_Nome" NAME="Coordenacao_Nome" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="Supervisao_Nome" NAME="Supervisao_Nome" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Nome" NAME="Nome" />
+	</TABLE>
+	<TABLE TITLE="VV_RELATORIOCELULA" NAME="VV_RELATORIOCELULA">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Semana" NAME="Semana" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="Data" NAME="Data" />
+		<FIELD TYPE="TEXT" SIZE="4000" MASK="@!" TITLE="NomesMembros" NAME="NomesMembros" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Adultos" NAME="Adultos" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Criancas" NAME="Criancas" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Visitantes" NAME="Visitantes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="PresentesEventos" NAME="PresentesEventos" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Visitas" NAME="Visitas" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Conversoes" NAME="Conversoes" />
+		<FIELD TYPE="TEXT" SIZE="4000" MASK="@!" TITLE="Observacoes" NAME="Observacoes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="RolMembros" NAME="RolMembros" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="NomeMembros" NAME="NomeMembros" />
+		<FIELD TYPE="BOOLEAN" TITLE="PresencaMembros" NAME="PresencaMembros" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesRelatorio" NAME="mesRelatorio" />
+	</TABLE>
+	<TABLE TITLE="VV_RELATORIOCELULA_GERAL" NAME="VV_RELATORIOCELULA_GERAL">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Semana" NAME="Semana" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="Data" NAME="Data" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Adultos" NAME="Adultos" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Criancas" NAME="Criancas" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Visitantes" NAME="Visitantes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="PresentesEventos" NAME="PresentesEventos" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Visitas" NAME="Visitas" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Conversoes" NAME="Conversoes" />
+		<FIELD TYPE="TEXT" SIZE="4000" MASK="@!" TITLE="Observacoes" NAME="Observacoes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="RolMembros" NAME="RolMembros" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="NomeMembros" NAME="NomeMembros" />
+		<FIELD TYPE="BOOLEAN" TITLE="PresencaMembros" NAME="PresencaMembros" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Coordenacao" NAME="Coordenacao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Supervisao" NAME="Supervisao" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="Nascimento" NAME="Nascimento" />
+		<FIELD TYPE="TEXT" SIZE="7" MASK="@!" TITLE="tipoMembro" NAME="tipoMembro" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="Distrito_Nome" NAME="Distrito_Nome" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="Coordenacao_Nome" NAME="Coordenacao_Nome" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="Supervisao_Nome" NAME="Supervisao_Nome" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Nome" NAME="Nome" />
+	</TABLE>
+	<TABLE TITLE="VV_RELATORIOCELULA_GERAL_MES" NAME="VV_RELATORIOCELULA_GERAL_MES">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Semana" NAME="Semana" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="Data" NAME="Data" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Adultos" NAME="Adultos" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Criancas" NAME="Criancas" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Visitantes" NAME="Visitantes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Visitas" NAME="Visitas" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="PresentesEventos" NAME="PresentesEventos" />
+		<FIELD TYPE="TEXT" SIZE="4000" MASK="@!" TITLE="Observacoes" NAME="Observacoes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Conversoes" NAME="Conversoes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="RolMembros" NAME="RolMembros" />
+		<FIELD TYPE="BOOLEAN" TITLE="PresencaMembros" NAME="PresencaMembros" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesRelatorio" NAME="mesRelatorio" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Coordenacao" NAME="Coordenacao" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="Coordenacao_Nome" NAME="Coordenacao_Nome" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="Distrito_Nome" NAME="Distrito_Nome" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="Supervisao_Nome" NAME="Supervisao_Nome" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Supervisao" NAME="Supervisao" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="CelulaNome" NAME="CelulaNome" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="Nascimento" NAME="Nascimento" />
+		<FIELD TYPE="TEXT" SIZE="1" MASK="@!" TITLE="Ausente" NAME="Ausente" />
+		<FIELD TYPE="TEXT" SIZE="1" MASK="@!" TITLE="Presente" NAME="Presente" />
+		<FIELD TYPE="TEXT" SIZE="7" MASK="@!" TITLE="tipoMembro" NAME="tipoMembro" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="NomeMembros" NAME="NomeMembros" />
+	</TABLE>
+	<TABLE TITLE="VV_RELATORIOCELULA_MES" NAME="VV_RELATORIOCELULA_MES">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Semana" NAME="Semana" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="Data" NAME="Data" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Adultos" NAME="Adultos" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Criancas" NAME="Criancas" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Visitantes" NAME="Visitantes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="PresentesEventos" NAME="PresentesEventos" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Visitas" NAME="Visitas" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Conversoes" NAME="Conversoes" />
+		<FIELD TYPE="TEXT" SIZE="4000" MASK="@!" TITLE="Observacoes" NAME="Observacoes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="RolMembros" NAME="RolMembros" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="NomeMembros" NAME="NomeMembros" />
+		<FIELD TYPE="BOOLEAN" TITLE="PresencaMembros" NAME="PresencaMembros" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesRelatorio" NAME="mesRelatorio" />
+	</TABLE>
+	<TABLE TITLE="VV_SALDO_MES" NAME="VV_SALDO_MES">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Mes" NAME="Mes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Ano" NAME="Ano" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="SALDO" NAME="SALDO" />
+	</TABLE>
+	<TABLE TITLE="VV_SEMANA_ATUAL" NAME="VV_SEMANA_ATUAL">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="SEMANAATUAL" NAME="SEMANAATUAL" />
+	</TABLE>
+	<TABLE TITLE="VV_SUPERVISAO" NAME="VV_SUPERVISAO">
+		<FIELD TYPE="TEXT" SIZE="303" MASK="@!" TITLE="Distrito_Nome" NAME="Distrito_Nome" />
+		<FIELD TYPE="TEXT" SIZE="253" MASK="@!" TITLE="Coordenacao_Nome" NAME="Coordenacao_Nome" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Supervisao" NAME="Supervisao" />
+		<FIELD TYPE="TEXT" SIZE="203" MASK="@!" TITLE="Supervisao_Nome" NAME="Supervisao_Nome" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Coordenacao" NAME="Coordenacao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Distrito" NAME="Distrito" />
+	</TABLE>
+	<TABLE TITLE="VW_ACUMULADO_MES" NAME="VW_ACUMULADO_MES">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Mes" NAME="Mes" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="ano" NAME="ano" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="SALDO" NAME="SALDO" />
+	</TABLE>
+	<TABLE TITLE="CONS_CONTASAPAGAR" NAME="CONS_CONTASAPAGAR">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="LANC_ID" NAME="LANC_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_DESCRICAO" NAME="LANC_DESCRICAO" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="LANC_DATA" NAME="LANC_DATA" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="MES_VENCIMENTO" NAME="MES_VENCIMENTO" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="ANO_VENCIMENTO" NAME="ANO_VENCIMENTO" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_TIPO" NAME="LANC_TIPO" />
+		<FIELD TYPE="TEXT" SIZE="3" MASK="@!" TITLE="PAGO" NAME="PAGO" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="LANC_DATA_HORA_INCLUSAO" NAME="LANC_DATA_HORA_INCLUSAO" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CT_ID" NAME="CT_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CT_NOME" NAME="CT_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="COR_ID" NAME="COR_ID" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="COR_NOME" NAME="COR_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CAT_ID" NAME="CAT_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CAT_NOME" NAME="CAT_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="12" MASK="9.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="LANC_VALOR" NAME="LANC_VALOR" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CC_ID" NAME="CC_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="TEXT" SIZE="8" MASK="@!" TITLE="pagamento" NAME="pagamento" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="DIASEMATRASO" NAME="DIASEMATRASO" />
+	</TABLE>
+	<TABLE TITLE="CONS_CONTASARECEBER" NAME="CONS_CONTASARECEBER">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="LANC_ID" NAME="LANC_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_DESCRICAO" NAME="LANC_DESCRICAO" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="LANC_DATA" NAME="LANC_DATA" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="MES_VENCIMENTO" NAME="MES_VENCIMENTO" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="ANO_VENCIMENTO" NAME="ANO_VENCIMENTO" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_TIPO" NAME="LANC_TIPO" />
+		<FIELD TYPE="TEXT" SIZE="3" MASK="@!" TITLE="PAGO" NAME="PAGO" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="LANC_DATA_HORA_INCLUSAO" NAME="LANC_DATA_HORA_INCLUSAO" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CT_ID" NAME="CT_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CT_NOME" NAME="CT_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="COR_ID" NAME="COR_ID" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="COR_NOME" NAME="COR_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CAT_ID" NAME="CAT_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CAT_NOME" NAME="CAT_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="12" MASK="9.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="LANC_VALOR" NAME="LANC_VALOR" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CC_ID" NAME="CC_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="TEXT" SIZE="9" MASK="@!" TITLE="recebimento" NAME="recebimento" />
+	</TABLE>
+	<TABLE TITLE="CONS_FECHAMENTO_DETALHADO" NAME="CONS_FECHAMENTO_DETALHADO">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="GC_ID" NAME="GC_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CAT_NOME" NAME="CAT_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CAT_ID" NAME="CAT_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="GC_NOME" NAME="GC_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="TotalReceita" NAME="TotalReceita" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="TotalDespesa" NAME="TotalDespesa" />
+	</TABLE>
+	<TABLE TITLE="CONS_LANCAMENTO_CENTRO_CUSTO" NAME="CONS_LANCAMENTO_CENTRO_CUSTO">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CC_ID" NAME="CC_ID" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="Receita" NAME="Receita" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="Despesa" NAME="Despesa" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="Saldo" NAME="Saldo" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CC_NOME" NAME="CC_NOME" />
+	</TABLE>
+	<TABLE TITLE="CONS_LANCAMENTO_COMPLETOS" NAME="CONS_LANCAMENTO_COMPLETOS">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="LANC_ID" NAME="LANC_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_DESCRICAO" NAME="LANC_DESCRICAO" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_TIPO" NAME="LANC_TIPO" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="LANC_DATA" NAME="LANC_DATA" />
+		<FIELD TYPE="BOOLEAN" TITLE="LANC_PAGO" NAME="LANC_PAGO" />
+		<FIELD TYPE="NUMBER" SIZE="12" MASK="9.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="LANC_VALOR" NAME="LANC_VALOR" />
+		<FIELD TYPE="TEXT" SIZE="8000" MASK="@!" TITLE="VALOR_EXTENSO" NAME="VALOR_EXTENSO" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="COR_ID" NAME="COR_ID" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="LANC_DATA_HORA_INCLUSAO" NAME="LANC_DATA_HORA_INCLUSAO" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CAT_ID" NAME="CAT_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CT_ID" NAME="CT_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CC_ID" NAME="CC_ID" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="nota_recibo" NAME="nota_recibo" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="id_membro" NAME="id_membro" />
+		<FIELD TYPE="BOOLEAN" TITLE="tipo_ofertante" NAME="tipo_ofertante" />
+		<FIELD TYPE="TEXT" SIZE="20" MASK="@!" TITLE="plano_conta" NAME="plano_conta" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="forma_pagamento" NAME="forma_pagamento" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CAT_NOME" NAME="CAT_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="GC_ID" NAME="GC_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CT_NOME" NAME="CT_NOME" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="COR_NOME" NAME="COR_NOME" />
+		<FIELD TYPE="TEXT" SIZE="14" MASK="@!" TITLE="COR_TIPO_DOC" NAME="COR_TIPO_DOC" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="COR_NUM_DOC" NAME="COR_NUM_DOC" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="COR_NASCIMENTO" NAME="COR_NASCIMENTO" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="COR_ENDERECO" NAME="COR_ENDERECO" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="COR_BAIRRO" NAME="COR_BAIRRO" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="COR_CIDADE" NAME="COR_CIDADE" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="COR_EMAIL" NAME="COR_EMAIL" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="COR_TIPO" NAME="COR_TIPO" />
+		<FIELD TYPE="TEXT" SIZE="15" MASK="@!" TITLE="COR_TELEFONE" NAME="COR_TELEFONE" />
+		<FIELD TYPE="MEMO" TITLE="igreja" NAME="igreja" />
+		<FIELD TYPE="TEXT" SIZE="18" MASK="@!" TITLE="cnpj" NAME="cnpj" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="codigo_igreja" NAME="codigo_igreja" />
+		<FIELD TYPE="TEXT" SIZE="250" MASK="@!" TITLE="NomeIgreja" NAME="NomeIgreja" />
+		<FIELD TYPE="TEXT" SIZE="250" MASK="@!" TITLE="NomeJurisdicao" NAME="NomeJurisdicao" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="NomeDistrito" NAME="NomeDistrito" />
+		<FIELD TYPE="TEXT" SIZE="250" MASK="@!" TITLE="PastorPresidente" NAME="PastorPresidente" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="CPFPastorPresidente" NAME="CPFPastorPresidente" />
+		<FIELD TYPE="TEXT" SIZE="18" MASK="@!" TITLE="CNPJIgrejaLocal" NAME="CNPJIgrejaLocal" />
+		<FIELD TYPE="BOOLEAN" TITLE="recibo" NAME="recibo" />
+	</TABLE>
+	<TABLE TITLE="CONS_SALDO_TOTAL_CONTAS" NAME="CONS_SALDO_TOTAL_CONTAS">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CT_ID" NAME="CT_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CT_NOME" NAME="CT_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="TotalSaldo" NAME="TotalSaldo" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="TotalPendente" NAME="TotalPendente" />
+	</TABLE>
+	<TABLE TITLE="CONS_SOMA_SALDO_CATEGORIA" NAME="CONS_SOMA_SALDO_CATEGORIA">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CAT_ID" NAME="CAT_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="GC_ID" NAME="GC_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Mes" NAME="Mes" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="ano" NAME="ano" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="TotalReceita" NAME="TotalReceita" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="TotalDespesa" NAME="TotalDespesa" />
+	</TABLE>
+	<TABLE TITLE="CONS_SOMA_TOTAL_LANCAMENTO" NAME="CONS_SOMA_TOTAL_LANCAMENTO">
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="TotalEntrada" NAME="TotalEntrada" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="TotalSaida" NAME="TotalSaida" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="TotalSaldo" NAME="TotalSaldo" />
+	</TABLE>
+	<TABLE TITLE="CONS_UNION_CAT_MES" NAME="CONS_UNION_CAT_MES">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="GC_ID" NAME="GC_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CAT_NOME" NAME="CAT_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CAT_ID" NAME="CAT_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="anoReferencia" NAME="anoReferencia" />
+	</TABLE>
+	<TABLE TITLE="VV_ACUMULADO_MES_TOTAL" NAME="VV_ACUMULADO_MES_TOTAL">
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="acumuladoMes" NAME="acumuladoMes" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mes" NAME="mes" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="ano" NAME="ano" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="acumuladomestotal" NAME="acumuladomestotal" />
+	</TABLE>
+	<TABLE TITLE="VV_CENSO_IDPB" NAME="VV_CENSO_IDPB">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Total0a7" NAME="Total0a7" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Total8a11" NAME="Total8a11" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Total12a17" NAME="Total12a17" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Total18a35" NAME="Total18a35" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Total36a50" NAME="Total36a50" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Total50a70" NAME="Total50a70" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Total71" NAME="Total71" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="TotalMembro" NAME="TotalMembro" />
+	</TABLE>
+	<TABLE TITLE="VV_INSCRITOMEMBROGERAL" NAME="VV_INSCRITOMEMBROGERAL">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="id" NAME="id" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="idEvento" NAME="idEvento" />
+		<FIELD TYPE="MEMO" TITLE="Evento" NAME="Evento" />
+		<FIELD TYPE="TEXT" SIZE="45" MASK="@!" TITLE="Identificador" NAME="Identificador" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="Nascimento" NAME="Nascimento" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Email" NAME="Email" />
+		<FIELD TYPE="TEXT" SIZE="20" MASK="@!" TITLE="Contato" NAME="Contato" />
+		<FIELD TYPE="TEXT" SIZE="20" MASK="@!" TITLE="Igreja" NAME="Igreja" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="Status" NAME="Status" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="RolMembro" NAME="RolMembro" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="CreatedAt" NAME="CreatedAt" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="participante" NAME="participante" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="Documento" NAME="Documento" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="99.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="valor_pago" NAME="valor_pago" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="forma_pagamento" NAME="forma_pagamento" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="data_pagamento" NAME="data_pagamento" />
+		<FIELD TYPE="NUMBER" SIZE="18" MASK="999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="idade" NAME="idade" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="CelulaNome" NAME="CelulaNome" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="Supervisao_Nome" NAME="Supervisao_Nome" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Supervisao" NAME="Supervisao" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="Coordenacao_Nome" NAME="Coordenacao_Nome" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Coordenacao" NAME="Coordenacao" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="Distrito_Nome" NAME="Distrito_Nome" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="Situacao" NAME="Situacao" />
+		<FIELD TYPE="TEXT" SIZE="15" MASK="@!" TITLE="Sexo" NAME="Sexo" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Nome" NAME="Nome" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="NascimentoMembro" NAME="NascimentoMembro" />
+	</TABLE>
+	<TABLE TITLE="VV_LANCAMENTO_MEMBROS" NAME="VV_LANCAMENTO_MEMBROS">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="LANC_ID" NAME="LANC_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_DESCRICAO" NAME="LANC_DESCRICAO" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="LANC_DATA" NAME="LANC_DATA" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_TIPO" NAME="LANC_TIPO" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="99.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="LANC_VALOR" NAME="LANC_VALOR" />
+		<FIELD TYPE="BOOLEAN" TITLE="LANC_PAGO" NAME="LANC_PAGO" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="LANC_DATA_HORA_INCLUSAO" NAME="LANC_DATA_HORA_INCLUSAO" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="COR_ID" NAME="COR_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CAT_ID" NAME="CAT_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CT_ID" NAME="CT_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CC_ID" NAME="CC_ID" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="nota_recibo" NAME="nota_recibo" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="id_membro" NAME="id_membro" />
+		<FIELD TYPE="BOOLEAN" TITLE="tipo_ofertante" NAME="tipo_ofertante" />
+		<FIELD TYPE="TEXT" SIZE="20" MASK="@!" TITLE="plano_conta" NAME="plano_conta" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="forma_pagamento" NAME="forma_pagamento" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="GC_ID" NAME="GC_ID" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="Distrito_Nome" NAME="Distrito_Nome" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Coordenacao" NAME="Coordenacao" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="Coordenacao_Nome" NAME="Coordenacao_Nome" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Supervisao" NAME="Supervisao" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="Supervisao_Nome" NAME="Supervisao_Nome" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="CelulaNome" NAME="CelulaNome" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Nome" NAME="Nome" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="Situacao" NAME="Situacao" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CT_NOME" NAME="CT_NOME" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CAT_NOME" NAME="CAT_NOME" />
+	</TABLE>
+	<TABLE TITLE="VV_LIDERANCA" NAME="VV_LIDERANCA">
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="Funcao" NAME="Funcao" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Nome" NAME="Nome" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="Nascimento" NAME="Nascimento" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="RolMembro" NAME="RolMembro" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="Email" NAME="Email" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="CriadoEm" NAME="CriadoEm" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="CriadoPor" NAME="CriadoPor" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="AtualizadoPor" NAME="AtualizadoPor" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="AtualizadoEm" NAME="AtualizadoEm" />
+		<FIELD TYPE="TEXT" SIZE="10" MASK="@!" TITLE="Sexo" NAME="Sexo" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Coordenacao" NAME="Coordenacao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Supervisao" NAME="Supervisao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="id" NAME="id" />
+		<FIELD TYPE="TEXT" SIZE="500" MASK="@!" TITLE="foto" NAME="foto" />
+		<FIELD TYPE="TEXT" SIZE="20" MASK="@!" TITLE="Igreja" NAME="Igreja" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Nucleo" NAME="Nucleo" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="idTurma" NAME="idTurma" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="Distrito_Nome" NAME="Distrito_Nome" />
+		<FIELD TYPE="TEXT" SIZE="150" MASK="@!" TITLE="Coordenacao_Nome" NAME="Coordenacao_Nome" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="Supervisao_Nome" NAME="Supervisao_Nome" />
+		<FIELD TYPE="TEXT" SIZE="255" MASK="@!" TITLE="CelulaNome" NAME="CelulaNome" />
+	</TABLE>
+	<TABLE TITLE="VV_LIDERESCELULA" NAME="VV_LIDERESCELULA">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Celula" NAME="Celula" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Distrito" NAME="Distrito" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Coordenacao" NAME="Coordenacao" />
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Supervisao" NAME="Supervisao" />
+		<FIELD TYPE="MEMO" TITLE="Lideres" NAME="Lideres" />
+	</TABLE>
+	<TABLE TITLE="VV_MESABERTO" NAME="VV_MESABERTO">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="TEXT" SIZE="9" MASK="@!" TITLE="Mes" NAME="Mes" />
+	</TABLE>
+	<TABLE TITLE="VV_MESES_USADOS" NAME="VV_MESES_USADOS">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="BOOLEAN" TITLE="mesAtivo" NAME="mesAtivo" />
+		<FIELD TYPE="TEXT" SIZE="9" MASK="@!" TITLE="Mes" NAME="Mes" />
+	</TABLE>
+	<TABLE TITLE="VV_NUMERO_RECIBO" NAME="VV_NUMERO_RECIBO">
+		<FIELD TYPE="NUMBER" SIZE="9" MASK="999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="Numero" NAME="Numero" />
+	</TABLE>
+	<TABLE TITLE="VV_SALDO_CONTA_MENSAL" NAME="VV_SALDO_CONTA_MENSAL">
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CT_NOME" NAME="CT_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="PENDENTE" NAME="PENDENTE" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="SALDO" NAME="SALDO" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CT_ID" NAME="CT_ID" />
+	</TABLE>
+	<TABLE TITLE="VV_SOMA_PERC_OFERTAMISSAO" NAME="VV_SOMA_PERC_OFERTAMISSAO">
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="TotalPercentual" NAME="TotalPercentual" />
+	</TABLE>
+	<TABLE TITLE="VV_SOMA_RECEITAOPERACIONAL" NAME="VV_SOMA_RECEITAOPERACIONAL">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="TotalReceita" NAME="TotalReceita" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="9.999.999.999.999.999,9999" INTERNAL_SEQUENCE="FALSE" TITLE="repasseAM" NAME="repasseAM" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="9.999.999.999.999.999,9999" INTERNAL_SEQUENCE="FALSE" TITLE="repasseNacioal" NAME="repasseNacioal" />
+	</TABLE>
+	<TABLE TITLE="VV_SOMALANCAMENTO" NAME="VV_SOMALANCAMENTO">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="Entrada" NAME="Entrada" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="Saida" NAME="Saida" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="saldo" NAME="saldo" />
+	</TABLE>
+	<TABLE TITLE="CONS_REL_FECHAMENTO_IGREJAS" NAME="CONS_REL_FECHAMENTO_IGREJAS">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CC_ID" NAME="CC_ID" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="99.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="LANC_VALOR" NAME="LANC_VALOR" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="valorAcumulado" NAME="valorAcumulado" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CAT_NOME" NAME="CAT_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CAT_ID" NAME="CAT_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="COR_ID" NAME="COR_ID" />
+		<FIELD TYPE="DATETIME" MASK="dd/MM/yy" TITLE="LANC_DATA_HORA_INCLUSAO" NAME="LANC_DATA_HORA_INCLUSAO" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CT_ID" NAME="CT_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_TIPO" NAME="LANC_TIPO" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_DESCRICAO" NAME="LANC_DESCRICAO" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="LANC_DATA" NAME="LANC_DATA" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="LANC_ID" NAME="LANC_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="GC_ID" NAME="GC_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="codigo_igreja" NAME="codigo_igreja" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="GC_NOME" NAME="GC_NOME" />
+		<FIELD TYPE="NUMBER" SIZE="10" MASK="99.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="Receita" NAME="Receita" />
+		<FIELD TYPE="NUMBER" SIZE="12" MASK="9.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="Despesa" NAME="Despesa" />
+	</TABLE>
+	<TABLE TITLE="CONS_SALDORECEBER_IGREJALOCAL" NAME="CONS_SALDORECEBER_IGREJALOCAL">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="mesReferencia" NAME="mesReferencia" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="anoReferencia" NAME="anoReferencia" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="codigoIgreja" NAME="codigoIgreja" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="TotalARecer" NAME="TotalARecer" />
+		<FIELD TYPE="NUMBER" SIZE="20" MASK="999.999.999.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="TotalRecebido" NAME="TotalRecebido" />
+	</TABLE>
+	<TABLE TITLE="VV_DADOS_RECIBO" NAME="VV_DADOS_RECIBO">
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="TRUE" SEQUENCE="1" TITLE="LANC_ID" NAME="LANC_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_DESCRICAO" NAME="LANC_DESCRICAO" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="LANC_TIPO" NAME="LANC_TIPO" />
+		<FIELD TYPE="DATE" MASK="dd/MM/yy" TITLE="LANC_DATA" NAME="LANC_DATA" />
+		<FIELD TYPE="NUMBER" SIZE="12" MASK="9.999.999.999,99" INTERNAL_SEQUENCE="FALSE" TITLE="LANC_VALOR" NAME="LANC_VALOR" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="COR_ID" NAME="COR_ID" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="CAT_ID" NAME="CAT_ID" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="CAT_NOME" NAME="CAT_NOME" />
+		<FIELD TYPE="TEXT" SIZE="8000" MASK="@!" TITLE="VALOR_EXTENSO" NAME="VALOR_EXTENSO" />
+		<FIELD TYPE="TEXT" SIZE="200" MASK="@!" TITLE="COR_NOME" NAME="COR_NOME" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="COR_NUM_DOC" NAME="COR_NUM_DOC" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="COR_ENDERECO" NAME="COR_ENDERECO" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="COR_BAIRRO" NAME="COR_BAIRRO" />
+		<FIELD TYPE="TEXT" SIZE="100" MASK="@!" TITLE="COR_CIDADE" NAME="COR_CIDADE" />
+		<FIELD TYPE="TEXT" SIZE="15" MASK="@!" TITLE="COR_TELEFONE" NAME="COR_TELEFONE" />
+		<FIELD TYPE="MEMO" TITLE="Igreja" NAME="Igreja" />
+		<FIELD TYPE="TEXT" SIZE="18" MASK="@!" TITLE="cnpj" NAME="cnpj" />
+		<FIELD TYPE="TEXT" SIZE="250" MASK="@!" TITLE="NomeIgreja" NAME="NomeIgreja" />
+		<FIELD TYPE="TEXT" SIZE="250" MASK="@!" TITLE="nomeJurisdicao" NAME="nomeJurisdicao" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="nomeDistrito" NAME="nomeDistrito" />
+		<FIELD TYPE="TEXT" SIZE="250" MASK="@!" TITLE="PastorPresidente" NAME="PastorPresidente" />
+		<FIELD TYPE="TEXT" SIZE="50" MASK="@!" TITLE="CPFPastorPresidente" NAME="CPFPastorPresidente" />
+		<FIELD TYPE="TEXT" SIZE="18" MASK="@!" TITLE="CNPJIgrejaLocal" NAME="CNPJIgrejaLocal" />
+		<FIELD TYPE="NUMBER" SIZE="19" MASK="9.999.999.999.999.999.999" INTERNAL_SEQUENCE="FALSE" TITLE="Numero" NAME="Numero" />
+	</TABLE>
+</DATABASE>
+</CAFINPI___IDPB___LOCAL_RR>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Anexar Arquivos Fechamento IDPB</title>
+<link rel="stylesheet" type="text/css" href="../css/StyleDoc.css" />
+</head>
+
+<body>
+<div class="properties">
+    <h2> Título: <span>Anexar Arquivos Fechamento IDPB</span></h2>	
+    <table>
+      <tr><th>Nome: </th><td>DataPageModule</td></tr>
+      <tr><th>Descrição</th><td></td></tr>				
+      <tr><th>Permite Inclusão: </th><td>True</td></tr>
+      <tr><th>Permite Edição: </th><td>True</td></tr>
+      <tr><th>Permite Deleção: </th><td>True</td></tr>
+      <tr><th>Banco de Dados: </th><td>idpb_AM</td></tr>
+      <tr><th>Tabela Básica: </th><td>TB_MESES_FECHAMENTO_IGREJA</td></tr>
+      <tr><th>Provider: </th><td>PrvAnexarFechamento</td></tr>
+      <tr><th>Index: </th><td>PK_TB_MESES_FECHAMENTO_IGREJA</td></tr>
+    </table>
+   
+       <h3>Campos</h3>
+	<table>
+      <tr><th>Nome: </th><td>GMultiMedia1</td></tr>
+      <tr><th>Campo Relacionado: </th><td></td></tr>
+      <tr><th>Validação: </th><td></td></tr>	
+      <tr><th>Mensagem: </th><td></td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>GMultiMedia2</td></tr>
+      <tr><th>Campo Relacionado: </th><td></td></tr>
+      <tr><th>Validação: </th><td></td></tr>	
+      <tr><th>Mensagem: </th><td></td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>RadTextBox1</td></tr>
+      <tr><th>Campo Relacionado: </th><td>mesReferencia</td></tr>
+      <tr><th>Validação: </th><td>{ClientValidation =(CheckNotEmpty(mesReferencia))}</td></tr>	
+      <tr><th>Mensagem: </th><td>mesReferencia não pode ser vazio!</td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>RadTextBox2</td></tr>
+      <tr><th>Campo Relacionado: </th><td>anoReferencia</td></tr>
+      <tr><th>Validação: </th><td>{ClientValidation =(CheckNotEmpty(anoReferencia))}</td></tr>	
+      <tr><th>Mensagem: </th><td>anoReferencia não pode ser vazio!</td></tr>
+	</table>
+	</br>
+</div>
+
+	<div class="properties">                 
+		<h3>Processos:</h3>
+		<table>
+		  <tr><th>Título: </th><td>DATA_processo</td></tr>	
+		  <tr><th>Condição Direta: </th><td></td></tr>	
+		  <tr><th>Formula Direta: </th><td>=(ActualDate)</td></tr>
+		  <tr><th>Executa Processo antes de Salvar: </th><td>True</td></tr>	
+		  <tr><th>Condição Inversa: </th><td></td></tr>	
+		  <tr><th>Formula Inversa: </th><td></td></tr>
+		  <tr><th>Campo Alvo: </th><td>dataEntregue</td></tr>
+		</table>
+		</br>
+		<table>
+		  <tr><th>Título: </th><td>enviado_processo</td></tr>	
+		  <tr><th>Condição Direta: </th><td></td></tr>	
+		  <tr><th>Formula Direta: </th><td>1</td></tr>
+		  <tr><th>Executa Processo antes de Salvar: </th><td>True</td></tr>	
+		  <tr><th>Condição Inversa: </th><td></td></tr>	
+		  <tr><th>Formula Inversa: </th><td></td></tr>
+		  <tr><th>Campo Alvo: </th><td>EntregueIgreja</td></tr>
+		</table>
+		</br>
+		<table>
+		  <tr><th>Título: </th><td>anexorel_processo</td></tr>	
+		  <tr><th>Condição Direta: </th><td>=(([AUX_TB_MESES_FECHAMENTO_IGREJA].[anexoRelatorio]).StartsWith("~/"))</td></tr>	
+		  <tr><th>Formula Direta: </th><td>#(UploadFile())</td></tr>
+		  <tr><th>Executa Processo antes de Salvar: </th><td>True</td></tr>	
+		  <tr><th>Condição Inversa: </th><td></td></tr>	
+		  <tr><th>Formula Inversa: </th><td></td></tr>
+		  <tr><th>Campo Alvo: </th><td>anexoRelatorio</td></tr>
+		</table>
+		</br>
+		<table>
+		  <tr><th>Título: </th><td>anexoofx_processo</td></tr>	
+		  <tr><th>Condição Direta: </th><td>=(([AUX_TB_MESES_FECHAMENTO_IGREJA].[anexoOfx]).StartsWith("~/"))</td></tr>	
+		  <tr><th>Formula Direta: </th><td>#(UploadFile1())</td></tr>
+		  <tr><th>Executa Processo antes de Salvar: </th><td>True</td></tr>	
+		  <tr><th>Condição Inversa: </th><td></td></tr>	
+		  <tr><th>Formula Inversa: </th><td></td></tr>
+		  <tr><th>Campo Alvo: </th><td>anexoOfx</td></tr>
+		</table>
+		</br>
+		<table>
+		  <tr><th>Título: </th><td>ValoraReceber_processo</td></tr>	
+		  <tr><th>Condição Direta: </th><td></td></tr>	
+		  <tr><th>Formula Direta: </th><td>=([AUX_TB_MESES_FECHAMENTO_IGREJA1].[VALORARECEBER])</td></tr>
+		  <tr><th>Executa Processo antes de Salvar: </th><td>True</td></tr>	
+		  <tr><th>Condição Inversa: </th><td></td></tr>	
+		  <tr><th>Formula Inversa: </th><td></td></tr>
+		  <tr><th>Campo Alvo: </th><td>VALORARECEBER</td></tr>
+		</table>
+		</br>
+	</div>
+	<div class="properties">
+		<h2>Tabela Auxiliar:<span>AUX_igreja</span></h2>
+		<table>
+			<tr><th>Banco</th><td>idpb_cafinpi</td></tr>
+			<tr><th>Tabela Relacionada</th><td>igreja</td></tr>
+			<tr><th>Forçar Relacionamento</th><td>False</td></tr>   
+			<tr><th>Indice</th><td></td></tr>
+			<tr><th>Menssagem</th><td></td></tr>
+		</table>
+		
+		
+		<h2>Tabela Auxiliar:<span>AUX_TB_MES_EXTENSO</span></h2>
+		<table>
+			<tr><th>Banco</th><td>idpb_AM</td></tr>
+			<tr><th>Tabela Relacionada</th><td>TB_MES_EXTENSO</td></tr>
+			<tr><th>Forçar Relacionamento</th><td>True</td></tr>   
+			<tr><th>Indice</th><td>PK_TB_MES_EXTENSO</td></tr>
+			<tr><th>Menssagem</th><td></td></tr>
+		</table>
+		<h3>Campos Relacionados</h3>
+		<table>
+		  <tr><th>Tabela base: </th><td>Mes</td></tr>	
+		  <tr><th>Tabela auxiliar: </th><td>=(ParamMes)</td></tr>
+		</table>
+		</br>
+		
+		
+		<h2>Tabela Auxiliar:<span>AUX_TB_MESES_FECHAMENTO_IGREJA1</span></h2>
+		<table>
+			<tr><th>Banco</th><td>idpb_cafinpi</td></tr>
+			<tr><th>Tabela Relacionada</th><td>TB_MESES_FECHAMENTO_IGREJA</td></tr>
+			<tr><th>Forçar Relacionamento</th><td>True</td></tr>   
+			<tr><th>Indice</th><td>PK_TB_MESES_FECHAMENTO_IGREJA</td></tr>
+			<tr><th>Menssagem</th><td></td></tr>
+		</table>
+		<h3>Campos Relacionados</h3>
+		<table>
+		  <tr><th>Tabela base: </th><td>codigoIgreja</td></tr>	
+		  <tr><th>Tabela auxiliar: </th><td>=([AUX_TB_MESES_FECHAMENTO_IGREJA].[codigoIgreja])</td></tr>
+		</table>
+		</br>
+		<table>
+		  <tr><th>Tabela base: </th><td>mesReferencia</td></tr>	
+		  <tr><th>Tabela auxiliar: </th><td>=([AUX_TB_MESES_FECHAMENTO_IGREJA].[mesReferencia])</td></tr>
+		</table>
+		</br>
+		<table>
+		  <tr><th>Tabela base: </th><td>anoReferencia</td></tr>	
+		  <tr><th>Tabela auxiliar: </th><td>=([AUX_TB_MESES_FECHAMENTO_IGREJA].[anoReferencia])</td></tr>
+		</table>
+		</br>
+		
+		
+	</div>
+</body>
+</html>

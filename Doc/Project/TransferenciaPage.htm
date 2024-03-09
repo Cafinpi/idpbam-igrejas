@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AppFinan - Transferência</title>
+<link rel="stylesheet" type="text/css" href="../css/StyleDoc.css" />
+</head>
+
+<body>
+<div class="properties">
+    <h2> Título: <span>AppFinan - Transferência</span></h2>	
+    <table>
+      <tr><th>Nome: </th><td>DataPageModule</td></tr>
+      <tr><th>Descrição</th><td></td></tr>				
+      <tr><th>Permite Inclusão: </th><td>True</td></tr>
+      <tr><th>Permite Edição: </th><td>True</td></tr>
+      <tr><th>Permite Deleção: </th><td>True</td></tr>
+      <tr><th>Banco de Dados: </th><td>idpb_cafinpi</td></tr>
+      <tr><th>Tabela Básica: </th><td>TB_TRANSFERENCIA</td></tr>
+      <tr><th>Provider: </th><td>ProvTransferencia</td></tr>
+      <tr><th>Index: </th><td>PK_TB_TRANSFERENCIA</td></tr>
+    </table>
+   
+       <h3>Campos</h3>
+	<table>
+      <tr><th>Nome: </th><td>txtDescricao</td></tr>
+      <tr><th>Campo Relacionado: </th><td>TF_DESCRICAO</td></tr>
+      <tr><th>Validação: </th><td>{ServerValidation =(CheckNotEmpty(TF_DESCRICAO))}</td></tr>	
+      <tr><th>Mensagem: </th><td>TF_DESCRICAO não pode ser vazio!</td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>DPData</td></tr>
+      <tr><th>Campo Relacionado: </th><td>TF_DATA</td></tr>
+      <tr><th>Validação: </th><td>{ServerValidation =(CheckNotEmpty(TF_DATA))}</td></tr>	
+      <tr><th>Mensagem: </th><td>TF_DATA não pode ser vazio!</td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>txtValor</td></tr>
+      <tr><th>Campo Relacionado: </th><td>TF_VALOR</td></tr>
+      <tr><th>Validação: </th><td>{ServerValidation =(CheckNotEmpty(TF_VALOR))}</td></tr>	
+      <tr><th>Mensagem: </th><td>TF_VALOR não pode ser vazio!</td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>CBCOrigem</td></tr>
+      <tr><th>Campo Relacionado: </th><td>TF_CT_ORIGEM</td></tr>
+      <tr><th>Validação: </th><td>{ServerValidation =(CheckNotEmpty(TF_CT_ORIGEM))}</td></tr>	
+      <tr><th>Mensagem: </th><td>TF_CT_ORIGEM não pode ser vazio!</td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>CBCDestino</td></tr>
+      <tr><th>Campo Relacionado: </th><td>TF_CT_DESTINO</td></tr>
+      <tr><th>Validação: </th><td>{ServerValidation =(CheckNotEmpty(TF_CT_DESTINO))}</td></tr>	
+      <tr><th>Mensagem: </th><td>TF_CT_DESTINO não pode ser vazio!</td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>ComboBox1</td></tr>
+      <tr><th>Campo Relacionado: </th><td>TF_CC_ORIGEM</td></tr>
+      <tr><th>Validação: </th><td>{ClientValidation =(CheckNotEmpty(TF_CC_ORIGEM))}{ServerValidation =(CheckNotEmpty(TF_CC_ORIGEM))}</td></tr>	
+      <tr><th>Mensagem: </th><td>TF_CC_ORIGEM não pode ser vazio!</td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>ComboBox2</td></tr>
+      <tr><th>Campo Relacionado: </th><td>TF_CC_DESTINO</td></tr>
+      <tr><th>Validação: </th><td>{ClientValidation =(CheckNotEmpty(TF_CC_DESTINO))}{ServerValidation =(CheckNotEmpty(TF_CC_DESTINO))}</td></tr>	
+      <tr><th>Mensagem: </th><td>TF_CC_DESTINO não pode ser vazio!</td></tr>
+	</table>
+	</br>
+</div>
+
+	<div class="properties">                 
+		<h3>Processos:</h3>
+		<table>
+		  <tr><th>Título: </th><td>ContaDefaultParam</td></tr>	
+		  <tr><th>Condição Direta: </th><td></td></tr>	
+		  <tr><th>Formula Direta: </th><td>1</td></tr>
+		  <tr><th>Executa Processo antes de Salvar: </th><td>True</td></tr>	
+		  <tr><th>Condição Inversa: </th><td></td></tr>	
+		  <tr><th>Formula Inversa: </th><td></td></tr>
+		  <tr><th>Campo Alvo: </th><td>CAT_ID</td></tr>
+		</table>
+		</br>
+		<table>
+		  <tr><th>Título: </th><td>DataHora</td></tr>	
+		  <tr><th>Condição Direta: </th><td></td></tr>	
+		  <tr><th>Formula Direta: </th><td>=(ActualDateTime)</td></tr>
+		  <tr><th>Executa Processo antes de Salvar: </th><td>True</td></tr>	
+		  <tr><th>Condição Inversa: </th><td></td></tr>	
+		  <tr><th>Formula Inversa: </th><td></td></tr>
+		  <tr><th>Campo Alvo: </th><td>TF_DATA_HORA_INCLUSAO</td></tr>
+		</table>
+		</br>
+		<table>
+		  <tr><th>Título: </th><td>mesreferencia_processo</td></tr>	
+		  <tr><th>Condição Direta: </th><td></td></tr>	
+		  <tr><th>Formula Direta: </th><td>=(PARAM_idpb_cafinpi_TB_MES_REFERENCIA_mesReferencia)</td></tr>
+		  <tr><th>Executa Processo antes de Salvar: </th><td>True</td></tr>	
+		  <tr><th>Condição Inversa: </th><td></td></tr>	
+		  <tr><th>Formula Inversa: </th><td></td></tr>
+		  <tr><th>Campo Alvo: </th><td>mesReferencia</td></tr>
+		</table>
+		</br>
+		<table>
+		  <tr><th>Título: </th><td>anoreferencia_processo</td></tr>	
+		  <tr><th>Condição Direta: </th><td></td></tr>	
+		  <tr><th>Formula Direta: </th><td>=(PARAM_idpb_cafinpi_TB_MES_REFERENCIA_anoReferencia)</td></tr>
+		  <tr><th>Executa Processo antes de Salvar: </th><td>True</td></tr>	
+		  <tr><th>Condição Inversa: </th><td></td></tr>	
+		  <tr><th>Formula Inversa: </th><td></td></tr>
+		  <tr><th>Campo Alvo: </th><td>anoReferencia</td></tr>
+		</table>
+		</br>
+		<table>
+		  <tr><th>Título: </th><td>criadopor_processo</td></tr>	
+		  <tr><th>Condição Direta: </th><td></td></tr>	
+		  <tr><th>Formula Direta: </th><td>=(LoggedNameUser)</td></tr>
+		  <tr><th>Executa Processo antes de Salvar: </th><td>True</td></tr>	
+		  <tr><th>Condição Inversa: </th><td></td></tr>	
+		  <tr><th>Formula Inversa: </th><td></td></tr>
+		  <tr><th>Campo Alvo: </th><td>CriadoPor</td></tr>
+		</table>
+		</br>
+		<table>
+		  <tr><th>Título: </th><td>atualizadoem_processo</td></tr>	
+		  <tr><th>Condição Direta: </th><td></td></tr>	
+		  <tr><th>Formula Direta: </th><td>=(ActualDateTime)</td></tr>
+		  <tr><th>Executa Processo antes de Salvar: </th><td>True</td></tr>	
+		  <tr><th>Condição Inversa: </th><td></td></tr>	
+		  <tr><th>Formula Inversa: </th><td></td></tr>
+		  <tr><th>Campo Alvo: </th><td>AtualizadoEm</td></tr>
+		</table>
+		</br>
+		<table>
+		  <tr><th>Título: </th><td>atualizadopor_processo</td></tr>	
+		  <tr><th>Condição Direta: </th><td></td></tr>	
+		  <tr><th>Formula Direta: </th><td>=(LoggedNameUser)</td></tr>
+		  <tr><th>Executa Processo antes de Salvar: </th><td>True</td></tr>	
+		  <tr><th>Condição Inversa: </th><td></td></tr>	
+		  <tr><th>Formula Inversa: </th><td></td></tr>
+		  <tr><th>Campo Alvo: </th><td>AtualizadoPor</td></tr>
+		</table>
+		</br>
+		<table>
+		  <tr><th>Título: </th><td>Grupo_processo</td></tr>	
+		  <tr><th>Condição Direta: </th><td></td></tr>	
+		  <tr><th>Formula Direta: </th><td>8</td></tr>
+		  <tr><th>Executa Processo antes de Salvar: </th><td>True</td></tr>	
+		  <tr><th>Condição Inversa: </th><td></td></tr>	
+		  <tr><th>Formula Inversa: </th><td></td></tr>
+		  <tr><th>Campo Alvo: </th><td>GC_ID</td></tr>
+		</table>
+		</br>
+	</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+{
+  "name": "CAFINPI",
+  "short_name": "CAFINPI",
+  "theme_color": "#FFFFCC",
+  "background_color": "#FFFF00",
+  "display": "standalone",
+  "description": "CAFINPI",
+  "Scope": "/",
+  "start_url": "/",
+  "gcm_sender_id": "",
+  "icons": [
+    {
+      "src": "Images/icons/android/",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "Images/icons/android/",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "Images/icons/android/",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "Images/icons/android/",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "Images/icons/android/",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "Images/icons/android/",
+      "sizes": "167x167",
+      "type": "image/png"
+    },
+    {
+      "src": "Images/icons/android/",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "Images/icons/android/",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "Images/icons/android/",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "Images/icons/android/cafinpi.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+

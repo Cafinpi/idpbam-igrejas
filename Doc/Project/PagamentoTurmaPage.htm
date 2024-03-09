@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AppSecretaria - Pagamento turma</title>
+<link rel="stylesheet" type="text/css" href="../css/StyleDoc.css" />
+</head>
+
+<body>
+<div class="properties">
+    <h2> Título: <span>AppSecretaria - Pagamento turma</span></h2>	
+    <table>
+      <tr><th>Nome: </th><td>DataPageModule</td></tr>
+      <tr><th>Descrição</th><td></td></tr>				
+      <tr><th>Permite Inclusão: </th><td>True</td></tr>
+      <tr><th>Permite Edição: </th><td>True</td></tr>
+      <tr><th>Permite Deleção: </th><td>True</td></tr>
+      <tr><th>Banco de Dados: </th><td>idpb_cafinpi</td></tr>
+      <tr><th>Tabela Básica: </th><td>inscritosCursos</td></tr>
+      <tr><th>Provider: </th><td>PrvPagamentoTurma</td></tr>
+      <tr><th>Index: </th><td>PK_inscritosCursos</td></tr>
+    </table>
+   
+       <h3>Campos</h3>
+	<table>
+      <tr><th>Nome: </th><td>DatePicker_data_pagamento</td></tr>
+      <tr><th>Campo Relacionado: </th><td>data_pagamento</td></tr>
+      <tr><th>Validação: </th><td>{ClientValidation =(CheckNotEmpty(data_pagamento))}{ServerValidation =(CheckNotEmpty(data_pagamento))}</td></tr>	
+      <tr><th>Mensagem: </th><td>O valor não pode ser vazio</td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>RadTextBox_valor_pago</td></tr>
+      <tr><th>Campo Relacionado: </th><td>valor_pago</td></tr>
+      <tr><th>Validação: </th><td>{ClientValidation =(CheckNotEmpty(valor_pago))}{ServerValidation =(CheckNotEmpty(valor_pago))}</td></tr>	
+      <tr><th>Mensagem: </th><td>O valor não pode ser vazio</td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>ComboBox2</td></tr>
+      <tr><th>Campo Relacionado: </th><td>forma_pagamento</td></tr>
+      <tr><th>Validação: </th><td>{ServerValidation =(CheckNotEmpty(forma_pagamento))}</td></tr>	
+      <tr><th>Mensagem: </th><td>O valor não pode ser vazio</td></tr>
+	</table>
+	</br>
+</div>
+
+	<div class="properties">                 
+		<h3>Processos:</h3>
+		<table>
+		  <tr><th>Título: </th><td>status_processo</td></tr>	
+		  <tr><th>Condição Direta: </th><td></td></tr>	
+		  <tr><th>Formula Direta: </th><td>Inscrito</td></tr>
+		  <tr><th>Executa Processo antes de Salvar: </th><td>True</td></tr>	
+		  <tr><th>Condição Inversa: </th><td></td></tr>	
+		  <tr><th>Formula Inversa: </th><td></td></tr>
+		  <tr><th>Campo Alvo: </th><td>Status</td></tr>
+		</table>
+		</br>
+	</div>
+</body>
+</html>

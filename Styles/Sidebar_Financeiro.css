@@ -1,0 +1,614 @@
+
+
+.c_Sidebar_Financeiro_Form1
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+:root
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	--sidebarMinimalWidth: 0px;
+	--sidebarWidth: 250px;
+}
+
+/*
+Media query for XS resolution
+*/
+@media (min-width: 0px) {
+	
+	:root
+	{
+		--sidebarMinimalWidth: 0px;
+		--sidebarWidth: 250px;
+	}
+
+}
+
+.Sidebar_Financeiro_MainDiv
+{
+	background-color: #A4ABB2;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	left: 0px;
+	margin: 0 0 0 0;
+	position: relative;
+	top: 0px;
+	width: var(--sidebarWidth);
+}
+
+.c_Sidebar_Financeiro_GLayoutContainer1
+{
+	background-size: auto;
+	cursor: inherit;
+}
+
+.c_Sidebar_Financeiro_GLayoutRow1
+{
+	background-position: center;
+	background-size: auto;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+	padding: 0px !important;
+}
+
+.c_Sidebar_Financeiro_GLayoutCol1
+{
+	background-position: center;
+	background-size: auto;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 0px !important;
+}
+
+.c_Sidebar_Financeiro_Div1
+{
+	background-color: #FFD86B;
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 5px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	height: 75px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
+	display: block;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+}
+
+.c_Sidebar_Financeiro_Label1
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	position: absolute !important;
+	left: 81px;
+	top: 10px;
+	width: 208px;
+	color: #3B3B3B;
+	display: block;
+	font-weight: 400;
+	Padding-right: 0px;
+	text-align: Left;
+	word-wrap: normal;
+}
+
+.c_Sidebar_Financeiro_Label2
+{
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	position: absolute !important;
+	left: 81px;
+	top: 32px;
+	width: 179px;
+	color: #3B3B3B;
+	display: block;
+	font-weight: 400;
+	Overflow: hidden;
+	Padding-right: 0px;
+	text-align: Left;
+	Text-Overflow: ellipsis;
+	White-space: nowrap;
+	word-wrap: normal;
+}
+
+.c_Sidebar_Financeiro_Icon1
+{
+	background-color: Transparent;
+	color: #3B3B3B;
+	display: block;
+	font-size: 40px;
+}
+
+.c_Sidebar_Financeiro_Div1.div-secondary .c_container_Sidebar_Financeiro_Icon1
+{
+	position: absolute !important;
+	left: 18px;
+	top: 11px;
+	text-align: left;
+}
+
+.c_Sidebar_Financeiro_LayoutCol1
+{
+	background-position: center;
+	background-size: auto;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 0px !important;
+}
+
+.c_Sidebar_Financeiro_PanelBar1
+{
+	margin-left: var(--mleft) !important;
+	margin-right: var(--mright);
+	margin-top: 0px;
+	margin-bottom: 0px;
+	--mleft: 0px;
+	--mright: 0px;
+	position: relative;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+	width: calc(100% - var(--mleft) - var(--mright)) !important;
+	z-index: 2500;
+}
+
+#PanelBar1 .rnvRootGroupWrapper
+{
+	position: relative;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem19
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem19 .rpText::before
+{
+	background-image: none;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	color: #383838;
+	content: '\f3fd';
+	font-family: 'Font Awesome 5 Free';
+	font-size: 16px;
+	font-weight: 900;
+	margin-right: 10px;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem20
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem20 .rpText::before
+{
+	background-image: none;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	color: #383838;
+	content: '\f571';
+	font-family: 'Font Awesome 5 Free';
+	font-size: 16px;
+	font-weight: 900;
+	margin-right: 10px;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem33
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem33 .rpText::before
+{
+	background-image: none;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	color: #DBDFE4;
+	content: '\f571';
+	font-family: 'Font Awesome 5 Free';
+	font-size: 16px;
+	font-weight: 900;
+	margin-right: 10px;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem21
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem21 .rpText::before
+{
+	background-image: none;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	color: #383838;
+	content: '\f074';
+	font-family: 'Font Awesome 5 Free';
+	font-size: 16px;
+	font-weight: 900;
+	margin-right: 10px;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem35
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem35 .rpText::before
+{
+	background-image: none;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	color: #000000;
+	content: '\f4c0';
+	font-family: 'Font Awesome 5 Free';
+	font-size: 16px;
+	font-weight: 900;
+	margin-right: 10px;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem36
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem36 .rpText::before
+{
+	background-image: none;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	color: #000000;
+	content: '\f155';
+	font-family: 'Font Awesome 5 Free';
+	font-size: 16px;
+	font-weight: 900;
+	margin-right: 10px;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem27
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem27 .rpText::before
+{
+	background-image: none;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	color: #383838;
+	content: '\f02f';
+	font-family: 'Font Awesome 5 Free';
+	font-size: 16px;
+	font-weight: 900;
+	margin-right: 10px;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem46
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem46 .rpText::before
+{
+	background-image: none;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	color: #000000;
+	content: '\f788';
+	font-family: 'Font Awesome 5 Free';
+	font-size: 16px;
+	font-weight: 900;
+	margin-right: 10px;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem47
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem47 .rpText::before
+{
+	background-image: none;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	color: #060606;
+	content: '\f468';
+	font-family: 'Font Awesome 5 Free';
+	font-size: 16px;
+	font-weight: 900;
+	margin-right: 10px;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem48
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem48 .rpText::before
+{
+	background-image: none;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	color: #000000;
+	content: '\f4d3';
+	font-family: 'Font Awesome 5 Free';
+	font-size: 16px;
+	font-weight: 900;
+	margin-right: 10px;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem49
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem49 .rpText::before
+{
+	background-image: none;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	color: #000000;
+	content: '\f4ce';
+	font-family: 'Font Awesome 5 Free';
+	font-size: 16px;
+	font-weight: 900;
+	margin-right: 10px;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem50
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem28
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem28 .rpText::before
+{
+	background-image: none;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	color: #000000;
+	content: '\f07c';
+	font-family: 'Font Awesome 5 Free';
+	font-size: 16px;
+	font-weight: 400;
+	margin-right: 10px;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem45
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem45 .rpText::before
+{
+	background-image: none;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	color: #000000;
+	content: '\f1d8';
+	font-family: 'Font Awesome 5 Free';
+	font-size: 16px;
+	font-weight: 900;
+	margin-right: 10px;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem29
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem29 .rpText::before
+{
+	background-image: none;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	color: #000000;
+	content: '\f0ad';
+	font-family: 'Font Awesome 5 Free';
+	font-size: 16px;
+	font-weight: 900;
+	margin-right: 10px;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem37
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem37 .rpText::before
+{
+	background-image: none;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	color: #000000;
+	content: '\f084';
+	font-family: 'Font Awesome 5 Free';
+	font-size: 16px;
+	font-weight: 900;
+	margin-right: 10px;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem32
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+}
+
+.c_Sidebar_Financeiro_PanelBarItem32 .rpText::before
+{
+	background-image: none;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	color: #383838;
+	content: '\f2f5';
+	font-family: 'Font Awesome 5 Free';
+	font-size: 16px;
+	font-weight: 900;
+	margin-right: 10px;
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+}

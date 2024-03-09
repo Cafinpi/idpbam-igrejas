@@ -1,0 +1,13 @@
+/* Button style: */ 
+
+.button-raised-secondary:hover{
+	background-image: linear-gradient(#FFFFFF30,#FFFFFF30) !important;
+}
+
+.button-raised-secondary{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.button-raised-secondary:hover{
+    box-shadow: none;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AppSecretaria - Mensagem</title>
+<link rel="stylesheet" type="text/css" href="../css/StyleDoc.css" />
+</head>
+
+<body>
+<div class="properties">
+    <h2> Título: <span>AppSecretaria - Mensagem</span></h2>	
+    <table>
+      <tr><th>Nome: </th><td>DataPageModule</td></tr>
+      <tr><th>Descrição</th><td></td></tr>				
+      <tr><th>Permite Inclusão: </th><td>True</td></tr>
+      <tr><th>Permite Edição: </th><td>True</td></tr>
+      <tr><th>Permite Deleção: </th><td>True</td></tr>
+      <tr><th>Banco de Dados: </th><td>idpb_cafinpi</td></tr>
+      <tr><th>Tabela Básica: </th><td>mensagem</td></tr>
+      <tr><th>Provider: </th><td>PrvMensagem</td></tr>
+      <tr><th>Index: </th><td>PK_mensagem</td></tr>
+    </table>
+   
+       <h3>Campos</h3>
+	<table>
+      <tr><th>Nome: </th><td>TxtNome</td></tr>
+      <tr><th>Campo Relacionado: </th><td>titulo</td></tr>
+      <tr><th>Validação: </th><td>{ClientValidation =(CheckNotEmpty(titulo))}</td></tr>	
+      <tr><th>Mensagem: </th><td>titulo não pode ser vazio!</td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>RadTextBox23</td></tr>
+      <tr><th>Campo Relacionado: </th><td>Autor</td></tr>
+      <tr><th>Validação: </th><td>{ClientValidation =(CheckNotEmpty(Autor))}</td></tr>	
+      <tr><th>Mensagem: </th><td>Autor não pode ser vazio!</td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>DatePicker1</td></tr>
+      <tr><th>Campo Relacionado: </th><td>Data</td></tr>
+      <tr><th>Validação: </th><td>{ClientValidation =(CheckNotEmpty(Data))}{ServerValidation =(CheckNotEmpty(Data))}</td></tr>	
+      <tr><th>Mensagem: </th><td>Data não pode ser vazio!</td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>CBDistrito</td></tr>
+      <tr><th>Campo Relacionado: </th><td>Distrito</td></tr>
+      <tr><th>Validação: </th><td></td></tr>	
+      <tr><th>Mensagem: </th><td></td></tr>
+	</table>
+	</br>
+</div>
+
+</body>
+</html>

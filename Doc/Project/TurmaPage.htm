@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AppSecretaria - Turma</title>
+<link rel="stylesheet" type="text/css" href="../css/StyleDoc.css" />
+</head>
+
+<body>
+<div class="properties">
+    <h2> Título: <span>AppSecretaria - Turma</span></h2>	
+    <table>
+      <tr><th>Nome: </th><td>DataPageModule</td></tr>
+      <tr><th>Descrição</th><td></td></tr>				
+      <tr><th>Permite Inclusão: </th><td>True</td></tr>
+      <tr><th>Permite Edição: </th><td>True</td></tr>
+      <tr><th>Permite Deleção: </th><td>True</td></tr>
+      <tr><th>Banco de Dados: </th><td>idpb_cafinpi</td></tr>
+      <tr><th>Tabela Básica: </th><td>turma</td></tr>
+      <tr><th>Provider: </th><td>PrvTurma</td></tr>
+      <tr><th>Index: </th><td>PK_turma</td></tr>
+    </table>
+   
+       <h3>Campos</h3>
+	<table>
+      <tr><th>Nome: </th><td>ComboBox2</td></tr>
+      <tr><th>Campo Relacionado: </th><td>codigoCurso</td></tr>
+      <tr><th>Validação: </th><td>{ClientValidation =(CheckNotEmpty(codigoCurso))}{ServerValidation =(CheckNotEmpty(codigoCurso))}</td></tr>	
+      <tr><th>Mensagem: </th><td>codigoCurso não pode ser vazio!</td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>DatePicker3</td></tr>
+      <tr><th>Campo Relacionado: </th><td>DataCurso</td></tr>
+      <tr><th>Validação: </th><td>{ClientValidation =(CheckNotEmpty(DataCurso))}{ServerValidation =(CheckNotEmpty(DataCurso))}</td></tr>	
+      <tr><th>Mensagem: </th><td>DataCurso não pode ser vazio!</td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>DatePicker1</td></tr>
+      <tr><th>Campo Relacionado: </th><td>inicioDivulgacao</td></tr>
+      <tr><th>Validação: </th><td>{ClientValidation =(CheckNotEmpty(inicioDivulgacao))}{ServerValidation =(CheckNotEmpty(inicioDivulgacao))}</td></tr>	
+      <tr><th>Mensagem: </th><td>inicioDivulgacao não pode ser vazio!</td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>DatePicker2</td></tr>
+      <tr><th>Campo Relacionado: </th><td>fimDivulgacao</td></tr>
+      <tr><th>Validação: </th><td>{ClientValidation =(CheckNotEmpty(fimDivulgacao))}{ServerValidation =(CheckNotEmpty(fimDivulgacao))}</td></tr>	
+      <tr><th>Mensagem: </th><td>fimDivulgacao não pode ser vazio!</td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>RadTextBox1</td></tr>
+      <tr><th>Campo Relacionado: </th><td>valor</td></tr>
+      <tr><th>Validação: </th><td>{ClientValidation =(CheckNotEmpty(valor))}{ServerValidation =(CheckNotEmpty(valor))}</td></tr>	
+      <tr><th>Mensagem: </th><td>valor não pode ser vazio!</td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>ComboBox3</td></tr>
+      <tr><th>Campo Relacionado: </th><td>RolMembro</td></tr>
+      <tr><th>Validação: </th><td></td></tr>	
+      <tr><th>Mensagem: </th><td></td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>ComboBox1</td></tr>
+      <tr><th>Campo Relacionado: </th><td>Distrito</td></tr>
+      <tr><th>Validação: </th><td></td></tr>	
+      <tr><th>Mensagem: </th><td></td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>ComboBox4</td></tr>
+      <tr><th>Campo Relacionado: </th><td>Status</td></tr>
+      <tr><th>Validação: </th><td>{ClientValidation =(CheckNotEmpty(Status))}{ServerValidation =(CheckNotEmpty(Status))}</td></tr>	
+      <tr><th>Mensagem: </th><td>Status não pode ser vazio!</td></tr>
+	</table>
+	</br>
+	<table>
+      <tr><th>Nome: </th><td>RadTextBox2</td></tr>
+      <tr><th>Campo Relacionado: </th><td>idTurma</td></tr>
+      <tr><th>Validação: </th><td></td></tr>	
+      <tr><th>Mensagem: </th><td></td></tr>
+	</table>
+	</br>
+</div>
+
+	<div class="properties">                 
+		<h3>Processos:</h3>
+		<table>
+		  <tr><th>Título: </th><td>PreRequisito_processo</td></tr>	
+		  <tr><th>Condição Direta: </th><td></td></tr>	
+		  <tr><th>Formula Direta: </th><td>=([AUX_cursos].[PreRequisito])</td></tr>
+		  <tr><th>Executa Processo antes de Salvar: </th><td>True</td></tr>	
+		  <tr><th>Condição Inversa: </th><td></td></tr>	
+		  <tr><th>Formula Inversa: </th><td></td></tr>
+		  <tr><th>Campo Alvo: </th><td>PreRequisito</td></tr>
+		</table>
+		</br>
+		<table>
+		  <tr><th>Título: </th><td>Requisito_processo</td></tr>	
+		  <tr><th>Condição Direta: </th><td></td></tr>	
+		  <tr><th>Formula Direta: </th><td>=([AUX_cursos].[Requisito])</td></tr>
+		  <tr><th>Executa Processo antes de Salvar: </th><td>True</td></tr>	
+		  <tr><th>Condição Inversa: </th><td></td></tr>	
+		  <tr><th>Formula Inversa: </th><td></td></tr>
+		  <tr><th>Campo Alvo: </th><td>Requisito</td></tr>
+		</table>
+		</br>
+		<table>
+		  <tr><th>Título: </th><td>Logo_processo</td></tr>	
+		  <tr><th>Condição Direta: </th><td></td></tr>	
+		  <tr><th>Formula Direta: </th><td>=([AUX_cursos].[imagemCurso])</td></tr>
+		  <tr><th>Executa Processo antes de Salvar: </th><td>True</td></tr>	
+		  <tr><th>Condição Inversa: </th><td></td></tr>	
+		  <tr><th>Formula Inversa: </th><td></td></tr>
+		  <tr><th>Campo Alvo: </th><td>imagemCurso</td></tr>
+		</table>
+		</br>
+		<table>
+		  <tr><th>Título: </th><td>Curso_processo</td></tr>	
+		  <tr><th>Condição Direta: </th><td></td></tr>	
+		  <tr><th>Formula Direta: </th><td>=([AUX_cursos].[Curso])</td></tr>
+		  <tr><th>Executa Processo antes de Salvar: </th><td>True</td></tr>	
+		  <tr><th>Condição Inversa: </th><td></td></tr>	
+		  <tr><th>Formula Inversa: </th><td></td></tr>
+		  <tr><th>Campo Alvo: </th><td>Curso</td></tr>
+		</table>
+		</br>
+		<table>
+		  <tr><th>Título: </th><td>Professor_processo</td></tr>	
+		  <tr><th>Condição Direta: </th><td></td></tr>	
+		  <tr><th>Formula Direta: </th><td>=([AUX_membros].[Nome])</td></tr>
+		  <tr><th>Executa Processo antes de Salvar: </th><td>True</td></tr>	
+		  <tr><th>Condição Inversa: </th><td></td></tr>	
+		  <tr><th>Formula Inversa: </th><td></td></tr>
+		  <tr><th>Campo Alvo: </th><td>Professor</td></tr>
+		</table>
+		</br>
+		<table>
+		  <tr><th>Título: </th><td>EmailProfessor_processo</td></tr>	
+		  <tr><th>Condição Direta: </th><td></td></tr>	
+		  <tr><th>Formula Direta: </th><td>=([AUX_membros].[Email])</td></tr>
+		  <tr><th>Executa Processo antes de Salvar: </th><td>True</td></tr>	
+		  <tr><th>Condição Inversa: </th><td></td></tr>	
+		  <tr><th>Formula Inversa: </th><td></td></tr>
+		  <tr><th>Campo Alvo: </th><td>Email</td></tr>
+		</table>
+		</br>
+		<table>
+		  <tr><th>Título: </th><td>Imagem_processo</td></tr>	
+		  <tr><th>Condição Direta: </th><td></td></tr>	
+		  <tr><th>Formula Direta: </th><td>=([AUX_cursos].[imagemCurso])</td></tr>
+		  <tr><th>Executa Processo antes de Salvar: </th><td>True</td></tr>	
+		  <tr><th>Condição Inversa: </th><td></td></tr>	
+		  <tr><th>Formula Inversa: </th><td></td></tr>
+		  <tr><th>Campo Alvo: </th><td>imagemCurso</td></tr>
+		</table>
+		</br>
+	</div>
+	<div class="properties">
+		<h2>Tabela Auxiliar:<span>AUX_cursos</span></h2>
+		<table>
+			<tr><th>Banco</th><td>idpb_cafinpi</td></tr>
+			<tr><th>Tabela Relacionada</th><td>cursos</td></tr>
+			<tr><th>Forçar Relacionamento</th><td>True</td></tr>   
+			<tr><th>Indice</th><td>PK_cursos</td></tr>
+			<tr><th>Menssagem</th><td></td></tr>
+		</table>
+		<h3>Campos Relacionados</h3>
+		<table>
+		  <tr><th>Tabela base: </th><td>codigoCurso</td></tr>	
+		  <tr><th>Tabela auxiliar: </th><td>=(codigoCurso)</td></tr>
+		</table>
+		</br>
+		
+		
+		<h2>Tabela Auxiliar:<span>AUX_membros</span></h2>
+		<table>
+			<tr><th>Banco</th><td>idpb_cafinpi</td></tr>
+			<tr><th>Tabela Relacionada</th><td>membros</td></tr>
+			<tr><th>Forçar Relacionamento</th><td>True</td></tr>   
+			<tr><th>Indice</th><td>PK_membros</td></tr>
+			<tr><th>Menssagem</th><td></td></tr>
+		</table>
+		<h3>Campos Relacionados</h3>
+		<table>
+		  <tr><th>Tabela base: </th><td>RolMembro</td></tr>	
+		  <tr><th>Tabela auxiliar: </th><td>=(RolMembro)</td></tr>
+		</table>
+		</br>
+		
+		
+	</div>
+</body>
+</html>

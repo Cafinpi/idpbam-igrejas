@@ -1,0 +1,218 @@
+/* Grid style: */ 
+
+.RadGrid_Office2010Silver.grid-default {
+    border: 1px solid #CBCBCB;
+    color: #333333;
+    background-color: #E2E5E9;
+	border-radius: 5px;
+	overflow:hidden;
+}
+
+.RadGrid_Office2010Silver.grid-default .rgGroupPanel {
+	border: solid #CBCBCB;
+	border-width: 0px 0px 1px 0px;
+	background: #E2E5E9;
+	background-image: linear-gradient(#ffffff08, #ffffff10);	
+	padding:5px 10px;
+}
+
+.RadGrid_Office2010Silver.grid-default .rgCommandCell {
+	border: solid #CBCBCB;
+	border-width: 0px 0px 1px 0px;
+	color: #333333;
+	background-color: #E2E5E9;
+	background-image: linear-gradient(#ffffff10, #ffffff10);
+}
+
+.RadGrid_Office2010Silver.grid-default .rgHeader,
+.RadGrid_Office2010Silver.grid-default th.rgResizeCol,
+.RadGrid_Office2010Silver.grid-default .rgHeaderWrapper {
+    color: #333333;
+    border-bottom-width: 0px;
+    background-color: #E2E5E9;
+    background-image: linear-gradient(#ffffff10, #ffffff10);
+}
+
+.RadGrid_Office2010Silver .rgHeader, .RadGrid_Office2010Silver .rgHeaderDiv, .RadGrid_Office2010Silver th.rgResizeCol { 
+    border: solid #E2E5E9;
+    border-width: 0px 0px 0px 1px;
+}
+
+.RadGrid_Office2010Silver.grid-default .rgFilterRow {
+    background: #E2E5E9;
+    background-image: linear-gradient(#ffffff10, #ffffff10);	
+}
+.RadGrid_Office2010Silver.grid-default .rgFilterRow > td {
+	border: solid #E2E5E9;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+}
+.RadGrid_Office2010Silver.grid-default .rgInput,
+.RadGrid_Office2010Silver.grid-default .rgEditRow > td > [type="text"],
+.RadGrid_Office2010Silver.grid-default .rgEditForm td > [type="text"],
+.RadGrid_Office2010Silver.grid-default .rgBatchContainer > [type="text"],
+.RadGrid_Office2010Silver.grid-default .rgFilterBox {
+    border-color: #CBCBCB;
+    color: #333333;
+    background-color: #E2E5E9;
+	width: 75% !important;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+
+.RadGrid_Office2010Silver.grid-default .rgRow {
+    color: #333333;
+    background: #E2E5E9;
+	background-image: linear-gradient(#ffffff04,#ffffff03);
+	border-width: 0px 0px 0px 0px;
+}
+
+.RadGrid_Office2010Silver.grid-default .rgRow > td {
+    border: solid #CBCBCB50;
+    border-width: 1px 0px 0px 0px;
+}
+.RadGrid_Office2010Silver.grid-default .rgAltRow > td {
+    border: solid #CBCBCB50;
+    border-width: 1px 0px 0px 0px;
+}
+.RadComboBox_Office2010Silver .rcbReadOnly {
+    border-color: #E2E5E9;
+    color: #383838;
+    background-color: #A4ABB2;
+    background-image: linear-gradient(#FFFFFF10,#FFFFFF08);
+}
+.RadGrid_Office2010Silver.grid-default .rgPagerCell .rgPagerButton,
+.RadGrid_Office2010Silver.grid-default .rgPagerCell .rgActionButton {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: #A4ABB240;
+    color: #333333;
+    background-color: #E2E5E9;
+	background-image: linear-gradient(#ffffff10, #ffffff10);	
+}
+
+.RadGrid_Office2010Silver input[type="button"] {
+	border-color: #A4ABB250;
+	border-width:0px;
+	background-color: #FFD86B;
+	background-image: linear-gradient(#ffffff10, #ffffff10);
+	border-radius: 3px !important;
+	overflow:hidden;
+	color:#3B3B3B;
+	padding:3px 10px 3px 10px;
+}
+
+.RadGrid_Office2010Silver.grid-default .rgAltRow {
+    color: #333333;
+    background: #E2E5E9;
+}
+
+.RadGrid_Office2010Silver.grid-default .rgRow a,
+.RadGrid_Office2010Silver.grid-default .rgAltRow a,
+.RadGrid_Office2010Silver.grid-default .rgFooter a,
+.RadGrid_Office2010Silver.grid-default .rgEditForm a,
+.RadGrid_Office2010Silver.grid-default .rgEditRow a,
+.RadGrid_Office2010Silver.grid-default .rgHoveredRow a {
+    color: #FFD86B;
+}
+
+.RadGrid_Black.grid-default .rgRow a:hover,
+.RadGrid_Black.grid-default .rgAltRow a:hover,
+.RadGrid_Black.grid-default .rgFooter a:hover,
+.RadGrid_Black.grid-default .rgEditForm a:hover,
+.RadGrid_Black.grid-default .rgEditRow a:hover,
+.RadGrid_Black.grid-default .rgHoveredRow a:hover {
+    color: #3B3B3B;
+}
+
+
+.RadGrid_Office2010Silver.grid-default .rgHoveredRow {
+	background: #FFD86B;
+    background-image: linear-gradient(transparent, #00000015);
+    color: #3B3B3B;
+}
+.RadComboBox_Office2010Silver .rcbReadOnly {
+    border-color: #A4ABB240;
+    color: #333333;
+    background-color: #E2E5E9;
+    background-image: linear-gradient(#FFFFFF05,#FFFFFF02);
+}
+
+.RadComboBox_Office2010Silver .rcbReadOnly.rcbHovered {
+    border-color: #A4ABB240;
+    color: #333333;
+    background-color: #E2E5E9;
+    background-image: linear-gradient(#FFFFFF05,#FFFFFF02);
+}
+
+.RadGrid_Office2010Silver .rgPagerCell .rgNumPart a:hover {
+    border-color: #FFD86B;
+    color: #FFD86B;
+    background-color: #E2E5E91 !important;
+    background-image: linear-gradient(#FFFFFF05,#FFFFFF02);
+}
+.RadGrid_Office2010Silver.grid-default .rgPagerCell .rgNumPart a.rgCurrentPage {
+    border-color: #FFD86B;
+    color: #3B3B3B;
+    background-color: #FFD86B !important;
+}
+.RadGrid_Office2010Silver.grid-default .rgFilter {
+    border: none;
+	border-radius:3px;
+    color: #A4ABB2;
+    background-color: #E2E5E9;
+    background-image: linear-gradient(#00000010, #00000010);
+}
+.RadGrid_Office2010Silver.grid-default .rgFilterActive,
+.RadGrid_Office2010Silver.grid-default .rgFilterActive:hover,
+.RadGrid_Office2010Silver.grid-default .rgFilterActive:focus {
+    border-color: #CBCBCB;
+    color: #383838;
+    background-color: #A4ABB2;
+	background-image: linear-gradient(#ffffff10, #ffffff10);
+    
+}
+.RadComboBox_Office2010Silver .rcbReadOnly.rcbFocused, .RadComboBox_Office2010Silver .rcbReadOnly.rcbExpanded {
+    border-color: #E2E5E9;
+    color: #A4ABB2;
+    background-color: #E2E5E9;
+    background-image: linear-gradient(#ffffff10, #ffffff10);
+}
+.RadComboBoxDropDown_Office2010Silver .rcbHovered {
+    color: #383838;
+    background-color: #A4ABB2;
+}
+.RadComboBoxDropDown_Office2010Silver {
+    border-color: #E2E5E9;
+    color: #333333;
+    background-color: #E2E5E9;
+}
+.RadGrid_Office2010Silver .rgGroupHeader, .RadGrid_Office2010Silver .rgGroupHeader>td {
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+	background-color: #E2E5E9;
+	color:#333333;
+}
+
+.RadGrid_Office2010Silver td.rgGroupCol {
+    background-color: #E2E5E9;
+    background-image: linear-gradient(#ffffff10, #ffffff10);
+	border:none;
+	color:#333333;
+}
+
+.RadGrid_Office2010Silver .rgGroupItem {
+    border: none;
+    background-color: #E2E5E9;	
+    background-image: linear-gradient(#ffffff20, #ffffff05);
+    color: #333333;
+	border-radius: 5px;
+}
+.RadGrid_Office2010Silver .rgCommandCell .t-button:hover {
+    border-color: #E2E5E9;
+    color: #333333;
+    background-color: #E2E5E9;
+    background-image: linear-gradient(#ffffff20, #ffffff05);
+}

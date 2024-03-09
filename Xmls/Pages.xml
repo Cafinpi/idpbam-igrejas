@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Pages>
+	<Page Name="entradaofertamissionaria.aspx" Title="Cadastrar entrada oferta missionária" />
+	<Page Name="destinoofertamissoes.aspx" Title="Configurar destino oferta missões" />
+	<Page Name="TB_PARAM_OFERTA_MISSAO_Grid.aspx" Title="Lista de Destino Ofertas Missao" />
+	<Page Name="PainelPage.aspx" Title="AppFinan - Painel" />
+	<Page Name="ListaLancamentosPage.aspx" Title="AppFinan - Lista de Lançamentos" />
+	<Page Name="ListaCorrentistasPage.aspx" Title="AppFinan - Lista Correntista" />
+	<Page Name="ListTransferenciasPage.aspx" Title="AppFinan - Lista de Transferências" />
+	<Page Name="ListContasPage.aspx" Title="AppFinan - Lista de Contas" />
+	<Page Name="ListaCategoriasPage.aspx" Title="AppFinan - Lista de Categorias" />
+	<Page Name="ListaDeGruposPage.aspx" Title="AppFinan - Lista de Grupos" />
+	<Page Name="ListaCentroCustoPage.aspx" Title="AppFinan - Lista de Centro de Custo" />
+	<Page Name="LancamentoReceitaPage.aspx" Title="AppFinan - Lançamento Receita" />
+	<Page Name="LancamentosPage.aspx" Title="AppFinan - Lançamentos" />
+	<Page Name="TransferenciaPage.aspx" Title="AppFinan - Transferência" />
+	<Page Name="ContaPage.aspx" Title="AppFinan - Conta" />
+	<Page Name="CategoriaPage.aspx" Title="AppFinan - Categoria" />
+	<Page Name="GrupoCategoriaPage.aspx" Title="AppFinan - Grupo de Categorias" />
+	<Page Name="CentroCustoPage.aspx" Title="AppFinan - Centro de Custo" />
+	<Page Name="CorrentistaPage.aspx" Title="AppFinan - Correntista" />
+	<Page Name="GerarParcelasPage.aspx" Title="AppFinan - Gerar Parcelas" />
+	<Page Name="ConfiguracoesPage.aspx" Title="AppFinan - Configurações" />
+	<Page Name="PlanoContasPage.aspx" Title="AppFinan - Planos de Conta" />
+	<Page Name="ListaMesvigentePage.aspx" Title="AppFinan - Lista Mês Vigente" />
+	<Page Name="MesvigentePage.aspx" Title="AppFinanceiro - Mês Vigente" />
+	<Page Name="GerarParcelaLancamentoPage.aspx" Title="AppFinan - Gerar Parcecas Lancamento" />
+	<Page Name="ContasaPagarPage.aspx" Title="AppFinan - Contas a Pagar" />
+	<Page Name="ContasaReceberPage.aspx" Title="AppFinan - Contas a Receber" />
+	<Page Name="LanContasPagRecPage.aspx" Title="AppFinan - Lançar Contas a Pagar e Receber" />
+	<Page Name="PagarReeberPage.aspx" Title="AppFinan - Pagar ou Receber" />
+	<Page Name="paginarelatoriosPage.aspx" Title="Página de Relatóios" />
+	<Page Name="ofertamissionariaPage.aspx" Title="Lançamento Oferta Missionaria" />
+	<Page Name="DataSelecionarMembro.aspx" Title="Selecionar Membro" />
+	<Page Name="PageSelecionarMes.aspx" Title="Selecionar Mês" />
+	<Page Name="DataPageRelIDPBAM.aspx" Title="Gerenciar Relatorios IDPB AM" />
+	<Page Name="LancamentoCC.aspx" Title="AppFinan - Lançamentos Centro de Custo" />
+	<Page Name="ListaLancamentoCentroCusto.aspx" Title="AppFinan - Lista de Lançamentos Centro Custo" />
+	<Page Name="PainelCentroCusto.aspx" Title="Painel Centro de Custo" />
+	<Page Name="LancamentoReceitaCCPage.aspx" Title="AppFinan - Lançamento Receita Centro de Custo" />
+	<Page Name="ContasaPagarCentroCustoPage.aspx" Title="Contas a Pagar - Centro Custo" />
+	<Page Name="ListaTranferenciaCentroCustoPage.aspx" Title="Lista Tranferências - Centro Custo" />
+	<Page Name="TransferenciaCCPage.aspx" Title="Tranferência - Centro Custo" />
+	<Page Name="CadastrarUserCentroCustoPage.aspx" Title="Cadastrar Usuário - Centro Custo" />
+	<Page Name="CCListaPrestadorServicoPage.aspx" Title="Centro Custo - Lista Prestador Serviços" />
+	<Page Name="CCPrestadorServicoPage.aspx" Title="Centro Custo - Prestador Serviço" />
+	<Page Name="CCRelatoriosPage.aspx" Title="Centro de Custo - Relatórios" />
+	<Page Name="CCAbrirRelatorioPage.aspx" Title="Centro Custo - Abrir Relatório" />
+	<Page Name="RelCCLancamento.aspx" Title="Relatório - Centro Custo Lançamento" />
+	<Page Name="AnexarFechamentoPage.aspx" Title="Anexar Arquivos Fechamento IDPB" />
+	<Page Name="VisualizarArquivosPage.aspx" Title="PÁGINA DE PAGAMENTO - IDPB ESTADUAL" />
+	<Page Name="IgrejaPage.aspx" Title="Igreja" />
+	<Page Name="HomeAdmPage.aspx" Title="Home Administrativo" />
+	<Page Name="RedirecionamentoPage.aspx" Title="Página de Redirecionamento" />
+	<Page Name="SaldoemCaixaPage.aspx" Title="Saldo em caixa" />
+	<Page Name="AlterarSenhaFinanceiroPage.aspx" Title="Alterar Senha Financeiro" />
+	<Page Name="AlterarSenhaSecretariaPage.aspx" Title="Alterar Senha Secretaria" />
+	<Page Name="RelGrupoCategoria.aspx" Title="Relatório de Grupos de Categoria" />
+	<Page Name="RelCategoria.aspx" Title="Relatório de Categorias" />
+	<Page Name="RelCentroCusto.aspx" Title="Relatório de Centros de Custo" />
+	<Page Name="RelContas.aspx" Title="Relatório de Contas" />
+	<Page Name="RelCorrentistas.aspx" Title="Relatório de Correntistas" />
+	<Page Name="RelLancamentos.aspx" Title="Relatório de Lançamentos" />
+	<Page Name="RelTranferencias.aspx" Title="Relatório de Transferências" />
+	<Page Name="RelMovConta.aspx" Title="Relatório Movimento de Contas Diario" />
+	<Page Name="RelCaixaDiario.aspx" Title="Relatório - Caixa Diario - Banco" />
+	<Page Name="RelEscEstadual.aspx" Title="Relatório - Relatorio Esc. Estadual" />
+	<Page Name="RelMovMensalCentroCusto.aspx" Title="Relatório - Movimento Mensal Centro de Custo" />
+	<Page Name="RelContasaPagar.aspx" Title="Relatório - Contas a Pagar" />
+	<Page Name="RelContasaReceber.aspx" Title="Relatório - Contas a Receber" />
+	<Page Name="RelEntradaMembros.aspx" Title="Relatório - Entrada Membros" />
+	<Page Name="EntradaMembroSemanal.aspx" Title="Relatório - Entrada Membros Semanal" />
+	<Page Name="RelSinteticosGrupo.aspx" Title="Relatório - Sintetico Grupos" />
+	<Page Name="ReciboEntrada.aspx" Title="Relatório - Recibo de Entrada" />
+	<Page Name="ReciboSaida.aspx" Title="Relatório - Recibo Saida" />
+	<Page Name="RelFechamentoCaixa.aspx" Title="Relatório - Fechamento Caixa" />
+	<Page Name="CartaoDizimista.aspx" Title="Relatório - Cartão Dizimista" />
+	<Page Name="RelMovContaMensal.aspx" Title="Relatório Movimento de Contas Mensal" />
+	<Page Name="RelControleDizimista.aspx" Title="Relatório - Controle Dizimista" />
+	<Page Name="capaEnvelope.aspx" Title="Relatório - Capa Cartão Dizimista" />
+	<Page Name="CartaoDizimoFrente.aspx" Title="Relatório - Cartão Dizimos Frente" />
+	<Page Name="CartaoDizimoVerso.aspx" Title="Relatório - Cartão Dizimos Verso" />
+	<Page Name="SubRelatorioFechamentoCaixa.aspx" Title="Sub Relatório - Fechamento Caixa" />
+	<Page Name="MovAnualCentroCusto.aspx" Title="Relatório - Movimento Anual Centro de Custo" />
+	<Page Name="RelControleDizimistaOfertantes.aspx" Title="Relatório - Dizimistas e Ofertantes" />
+	<Page Name="RelContabil.aspx" Title="Relatório - Contabil IDPB " />
+	<Page Name="HomeSecretaria.aspx" Title="APPSecretaria - Painel" />
+	<Page Name="ListaDistritoPage.aspx" Title="APPSecretaria - Lista Distrito" />
+	<Page Name="DistritoPage.aspx" Title="APPSecretaria - Distrito" />
+	<Page Name="CoordenacaoPage.aspx" Title="AppSecretaria - Coordenação" />
+	<Page Name="ListaCoordenacaoPage.aspx" Title="AppSecretaria - Lista Coordenação" />
+	<Page Name="ListaLiderancaPage.aspx" Title="AppSecretaria - Lista de Liderança" />
+	<Page Name="LiderancaPage.aspx" Title="AppSecretaria - Liderança" />
+	<Page Name="FuncaoPage.aspx" Title="AppSecretria - Função" />
+	<Page Name="ListaSupervisaoPage.aspx" Title="AppSecretaria - Lista Supervisão" />
+	<Page Name="SupervisaoPage.aspx" Title="AppSecretaria - Supervisão" />
+	<Page Name="ListaCelulaPage.aspx" Title="AppSecretaria - Lista Célula" />
+	<Page Name="CelulaPage.aspx" Title="AppSecretaria - Célula" />
+	<Page Name="ListaMembrosPage.aspx" Title="AppSecretaria - Lista Membros" />
+	<Page Name="MembrosPage.aspx" Title="AppSecretaria - Membros" />
+	<Page Name="ListaMensagemPage.aspx" Title="AppSecretaria - Lista de Mensagem" />
+	<Page Name="MensagemPage.aspx" Title="AppSecretaria - Mensagem" />
+	<Page Name="ListaAvisosPage.aspx" Title="AppSecretaria - Lista de Avisos" />
+	<Page Name="AvisosPage.aspx" Title="AppSecretaria - Avisos" />
+	<Page Name="SelecionarCoordenacao.aspx" Title="AppSecretaria - Selecionar Coordenação" />
+	<Page Name="PageCadastrarLideranca.aspx" Title="AppSecretaria - Cadastrar Liderança" />
+	<Page Name="SelecionarSupervisorPage.aspx" Title="AppSecretaria - Selecionar Supervisor" />
+	<Page Name="SelecionaCelulaPage.aspx" Title="AppSecretaria - Selecionar Célula" />
+	<Page Name="ListaEventosPage.aspx" Title="AppSecretaria - Lista de Eventos" />
+	<Page Name="EventosPage.aspx" Title="AppSecretaria - Eventos" />
+	<Page Name="DataPageDistrito.aspx" Title="AppSecretaria Distrito" />
+	<Page Name="DataPageListadeMembros.aspx" Title="AppSecretaria - Lista de Membros" />
+	<Page Name="InscricaoEventosPage.aspx" Title="AppSecretaria - Inscricação Eventos Membro" />
+	<Page Name="CadastrarInscritoEventoPage.aspx" Title="AppSecretaria - Inscricação Eventos" />
+	<Page Name="CadastroVisitanteEventosPage.aspx" Title="AppSecretaria - Inscricação Eventos Outros" />
+	<Page Name="ListaInscritoTurmaEventoPage.aspx" Title="AppSecretaria - Lista de Inscritos Turma" />
+	<Page Name="ListadeCursosPage.aspx" Title="AppSecretaria - Lista de Cursos" />
+	<Page Name="TurmaPage.aspx" Title="AppSecretaria - Turma" />
+	<Page Name="InscritosTurmaMembroPage.aspx" Title="AppSecretaria - Incritos Turmas Membro" />
+	<Page Name="AlterarMembroCelulaPage.aspx" Title="AppSecretaria - Alterar Membro de Celula" />
+	<Page Name="TelaMembroCelulaPage.aspx" Title="AppSecretaria - Adicionar Membro Celula" />
+	<Page Name="PageRelSecretaria.aspx" Title="AppSecretaria - Relatorio" />
+	<Page Name="CursoConcluidoPage.aspx" Title="AppSecretaria - Cursos Concluidos" />
+	<Page Name="NucleosPage.aspx" Title="AppSecretaria - Núcleos" />
+	<Page Name="ListaAgendaPage.aspx" Title="AppSecretaria - Lista Agenda" />
+	<Page Name="AgendaPage.aspx" Title="AppSecretaria - Agenda" />
+	<Page Name="ListaNucleoPage.aspx" Title="AppSecretaria - Lista de Núcleo" />
+	<Page Name="PagamentoEventoPage.aspx" Title="AppSecretaria - Pagamento Evento" />
+	<Page Name="CursoPage.aspx" Title="AppSecretaria - Cursos" />
+	<Page Name="InscritoCursoOutroPage.aspx" Title="AppSecretaria - Inscritos Cursos Outro" />
+	<Page Name="PagamentoTurmaPage.aspx" Title="AppSecretaria - Pagamento turma" />
+	<Page Name="ListaInscritoEventoPage.aspx" Title="AppSecretaria - Lista Inscritos Evento" />
+	<Page Name="ListagemEventoPage.aspx" Title="AppSecretaria - Listagem de Eventos" />
+	<Page Name="ListaTurmaPage.aspx" Title="AppSecretaria - Lista Turma" />
+	<Page Name="HomePage.aspx" Title="AppSecretaria - Home" />
+	<Page Name="RelCenso.aspx" Title="Relatório - Censo " />
+	<Page Name="RelBoletim.aspx" Title="Relatório - Boletim" />
+	<Page Name="RelListaMembros.aspx" Title="Relatório - Lista de Membros" />
+	<Page Name="RelAniversariantes.aspx" Title="Relatório - Aniversariantes" />
+	<Page Name="RelListaPresenteCelula.aspx" Title="Relatório - Lista de Presentes Célula" />
+	<Page Name="RelFreqCelMensal.aspx" Title="Relatório - Frequencia Celula Mensal" />
+	<Page Name="Rel_RanckPontuacao.aspx" Title="Relatório - Ranck Pontuação" />
+	<Page Name="RelFrequenciaIgreja.aspx" Title="Relatório - Frequencia Igreja Semanal" />
+	<Page Name="RelFreqCelebracaoMensal.aspx" Title="Relatório - Frequencia Celebração - Mensal" />
+	<Page Name="RelInscirtosEventos.aspx" Title="Relatório - Lista Inscritos Evento" />
+	<Page Name="RelInscritosTurma.aspx" Title="Relatório - Lista Inscritos Turma" />
+	<Page Name="PainelAniversariantes.aspx" Title="Relatório - Painel Aniversariantes" />
+	<Page Name="RelCensoIdade.aspx" Title="Relatório - Censo Idade" />
+	<Page Name="ListadeCeluals.aspx" Title="Relatório - Lista de Células" />
+</Pages>
