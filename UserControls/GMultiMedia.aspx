@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" autoeventwireup="true" inherits="UserControls_GMultiMedia, App_Web_hu3ibb5p" %>
+﻿<%@ page language="C#" autoeventwireup="true" inherits="UserControls_GMultiMedia, App_Web_rnnmjpus" %>
 
 <!DOCTYPE html>
 

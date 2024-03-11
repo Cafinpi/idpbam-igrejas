@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" autoeventwireup="true" enableeventvalidation="True" inherits="PROJETO.DataPages.Processo_destino_oferta_missionaria, App_Web_zt1di403" %>
+﻿<%@ page language="C#" autoeventwireup="true" enableeventvalidation="True" inherits="PROJETO.DataPages.Processo_destino_oferta_missionaria, App_Web_j0g0jq1l" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -30,7 +30,7 @@
 		<script type="text/javascript" src="../../JS/sweetAlert.js"></script>
 		<script type="text/javascript" src="../../JS/sweetAlertComplement.js"></script>
 
-	<script type="text/javascript" src="../../JS/Processo_destino_oferta_missionaria_USER.js?sv=4.0_20240309131817"></script>
+	<script type="text/javascript" src="../../JS/Processo_destino_oferta_missionaria_USER.js?sv=4.0_20240311152742"></script>
 
 <script type="text/javascript">
 	function OnLoginSucceded()

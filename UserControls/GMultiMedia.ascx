@@ -1,4 +1,4 @@
-﻿<%@ control language="C#" autoeventwireup="true" inherits="COMPONENTS.GMultiMedia, App_Web_hu3ibb5p" %>
+﻿<%@ control language="C#" autoeventwireup="true" inherits="COMPONENTS.GMultiMedia, App_Web_rnnmjpus" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <asp:Panel runat="server" ID="BorderPanel">
 	<asp:Panel runat="server" ID="ImagePanel" Style="border-style:dashed; border-color:#ccc; text-align: center; border-radius: 5px;">

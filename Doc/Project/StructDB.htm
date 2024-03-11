@@ -10,7 +10,7 @@
 
 <div class="properties">
 		<h2>Bancos de Dados</h2>
-		  <h3 style="margin-bottom:0px">Banco: <span>idpb_cafinpi</span></h3>
+		  <h3 style="margin-bottom:0px">Banco: <span>idpb_vitoriaemcristo</span></h3>
 		  <span style="margin-left :50px">Descrição:</span>
 			  <h3 style="margin-left:40px; margin-bottom:0px">Tabela: <span>agenda_igreja</span></h3>
 				<h3 style="margin-left:50px; margin-bottom:0px" >Campo</h3>
@@ -20543,9 +20543,7 @@ From [idpb_AM].[dbo].[TB_CATEGORIA],
 								<tr><th>Relacionamento: </th><td>CONS_VALOR_MES_ANO</td></tr>			
 								<tr><th>Titulo: </th><td>CONS_VALOR_MES_ANO</td></tr>
 								<tr><th>Descrição: </th><td></td></tr>
-								<tr><th>Comando: </th><td><ViewConstructor Database="84">select MONTH([CONS_LANCAMENTOS_GRUPOS_CATEGORIA].[LANC_DATA]) as mes, YEAR([CONS_LANCAMENTOS_GRUPOS_CATEGORIA].[LANC_DATA]) as ano, [CONS_LANCAMENTOS_GRUPOS_CATEGORIA].[LANC_VALOR]
-from [CONS_LANCAMENTOS_GRUPOS_CATEGORIA]
-where ([CONS_LANCAMENTOS_GRUPOS_CATEGORIA].[PAGO] = 'SIM'</ViewConstructor></td></tr>
+								<tr><th>Comando: </th><td><ViewConstructor Database="1">Select Sum(CONS_LANCAMENTOS_GRUPOS_CATEGORIA.LANC_VALOR) As acumuladoMes, CONS_LANCAMENTOS_GRUPOS_CATEGORIA.mesReferencia, CONS_LANCAMENTOS_GRUPOS_CATEGORIA.anoReferencia From CONS_LANCAMENTOS_GRUPOS_CATEGORIA Where CONS_LANCAMENTOS_GRUPOS_CATEGORIA.PAGO = 'SIM' Group By CONS_LANCAMENTOS_GRUPOS_CATEGORIA.mesReferencia, CONS_LANCAMENTOS_GRUPOS_CATEGORIA.anoReferencia</ViewConstructor></td></tr>
 							</table>	
 						<br/>
 							<table style="margin-left:60px">
