@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" autoeventwireup="true" maintainscrollpositiononpostback="true" enableeventvalidation="True" validaterequest="false" inherits="PROJETO.AboutPage, App_Web_vkdgotqb" culture="auto" uiculture="auto" %>
+﻿<%@ page language="C#" autoeventwireup="true" maintainscrollpositiononpostback="true" enableeventvalidation="True" validaterequest="false" inherits="PROJETO.AboutPage, App_Web_cesfuuei" culture="auto" uiculture="auto" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <%@ Register Src="..\UserControls\SidebarPage.ascx" TagName="tagSidebar" TagPrefix="tgSid" %>
 <%@ Register Src="..\UserControls\Header.ascx" TagName="GHeader" TagPrefix="GHeader" %>
@@ -73,7 +73,7 @@
 
 		<script src='../JS/Mask.js' type="text/javascript"></script>
 		<script type="text/javascript" src="../JS/LayoutController.js" ></script>
-			<script type="text/javascript" src="../JS/AboutPage_USER.js?sv=4.0_20240311152748"></script>
+			<script type="text/javascript" src="../JS/AboutPage_USER.js?sv=4.0_20240312113343"></script>
 		<script type="text/javascript">
 			function OnLoginSucceded()
 			{
@@ -97,7 +97,7 @@
 				<div id="LayoutContainer1" runat="server" class="containerDefault container c_LayoutContainer1">
 					<div id="LayoutRow1" class="row c_LayoutRow1 card flex-row">
 						<div id="LayoutCol1" class="col col-12 c_LayoutCol1">
-							<telerik:RadLabel id="labSolutionTitle" runat="server" CssClass="c_labSolutionTitle" Text="CAFINPI - IDPB - LOCAL RR" />
+							<telerik:RadLabel id="labSolutionTitle" runat="server" CssClass="c_labSolutionTitle" Text="CAFINPI - IDPB - LOCAL AM" />
 						</div>
 						<div id="LayoutCol2" class="col col-12 c_LayoutCol2">
 							<telerik:RadLabel id="labProjectTitle" runat="server" CssClass="c_labProjectTitle" Text="CAFINPI - IDPB - LOCAL" />

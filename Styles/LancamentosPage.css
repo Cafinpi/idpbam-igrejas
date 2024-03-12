@@ -1950,6 +1950,15 @@
 	display: none;
 	width: 100px !important;
 }
+
+.c_WindowSettings1
+{
+	position: absolute !important;
+	left: 228px;
+	top: 1092px;
+	width: 150px;
+	height: 150px;
+}
 /*		Hover style		*/
 
 

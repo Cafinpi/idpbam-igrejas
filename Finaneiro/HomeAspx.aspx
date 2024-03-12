@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" autoeventwireup="true" maintainscrollpositiononpostback="true" enableeventvalidation="True" validaterequest="false" inherits="PROJETO.HomeAspx, App_Web_3vgckurc" culture="auto" uiculture="auto" %>
+﻿<%@ page language="C#" autoeventwireup="true" maintainscrollpositiononpostback="true" enableeventvalidation="True" validaterequest="false" inherits="PROJETO.HomeAspx, App_Web_ye34v321" culture="auto" uiculture="auto" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="<%=PROJETO.Utility.CurrentSiteLanguage%>">
@@ -74,7 +74,7 @@
 
 		<script src='../JS/Mask.js' type="text/javascript"></script>
 			<script type="text/javascript" src="../JS/Office_2010_Silver_LayoutRow_layoutrow_header_fixed_secondary.js"></script>
-			<script type="text/javascript" src="../JS/HomeAspx_USER.js?sv=4.0_20240311152737"></script>
+			<script type="text/javascript" src="../JS/HomeAspx_USER.js?sv=4.0_20240312113328"></script>
 		<script type="text/javascript">
 			function OnLoginSucceded()
 			{

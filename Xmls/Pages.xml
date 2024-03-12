@@ -49,6 +49,7 @@
 	<Page Name="RelCCLancamento.aspx" Title="Relatório - Centro Custo Lançamento" />
 	<Page Name="AnexarFechamentoPage.aspx" Title="Anexar Arquivos Fechamento IDPB" />
 	<Page Name="VisualizarArquivosPage.aspx" Title="PÁGINA DE PAGAMENTO - IDPB ESTADUAL" />
+	<Page Name="DataPageDownload.aspx" Title="Página Download" />
 	<Page Name="IgrejaPage.aspx" Title="Igreja" />
 	<Page Name="HomeAdmPage.aspx" Title="Home Administrativo" />
 	<Page Name="RedirecionamentoPage.aspx" Title="Página de Redirecionamento" />

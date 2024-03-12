@@ -263,7 +263,7 @@
 	background-position: center;
 	background-size: auto;
 	cursor: inherit;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	overflow: inherit;
 	padding: 5px 10px 5px 10px !important;

@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.LancamentosPage, App_Web_a0lhy43x" culture="auto" uiculture="auto" %>
+﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.LancamentosPage, App_Web_ye34v321" culture="auto" uiculture="auto" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <%@ Register Src="..\UserControls\GMultiMedia.ascx" TagName="GMultiMedia" TagPrefix="gas" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -125,7 +125,7 @@
 	   });
 	}
 </script>
-		<script type="text/javascript" src="../JS/LancamentosPage_USER.js?sv=4.0_20240311152739"></script>
+		<script type="text/javascript" src="../JS/LancamentosPage_USER.js?sv=4.0_20240312113331"></script>
 		<script type="text/javascript" src="../JS/jquery.validationEngine-pt_BR.js"></script>
 		<script type="text/javascript" src="../JS/jquery.validationEngine.js"></script>
 		<script type="text/javascript" src="../JS/validation.js"></script>
@@ -253,11 +253,37 @@
 		{
 			onTextChanged(event);
 		}
+		function ___WindowSettings1_OnClientPageLoad(sender, args)
+		{
+			OnClientPageLoad(sender);
+		}
+		function ___WindowSettings1_OnClientShow(sender, args)
+		{
+			OnClientShow(sender);
+			if (sender.get_navigateUrl() == null) return;
+			var oWnd = document.getElementById('WindowSettings1').control.GetActiveWindow();
+			var valueWidth = 90;
+			var valueHeight = 90;
+			var browserWidth = $telerik.$(window).width();
+			var browserHeight = $telerik.$(window).height();
+			oWnd.setSize(Math.ceil(browserWidth * valueWidth / 100), Math.ceil(browserHeight * valueHeight / 100));
+			oWnd.center();
+		}
+		function ___WindowSettings1_OnClientClose(sender, args)
+		{
+			OnClientClose(sender);
+			ShowClientFormulas(true);
+		}
 	</script>
 		
 		<form id="Form1" runat="server" class="c_Form1">
 			<asp:ScriptManager ID="MainScriptManager" runat="server"/>
 			<telerik:RadAjaxPanel id="MainAjaxPanel" runat="server" class="c_MainAjaxPanel" ClientEvents-OnRequestStart="___Form1_OnRequestStart" ClientEvents-OnResponseEnd="___Form1_OnResponseEnd" LoadingPanelID="___Form1_AjaxLoading">
+					<telerik:RadWindowManager id="WindowSettings1" runat="server" AutoSize="False" Behaviors="Default" CssClass="c_WindowSettings1"
+						DestroyOnClose="True" EnableFocusNextWindowShortcut="True" EnableShadow="True" HasScroll="False"
+						OnClientClose="___WindowSettings1_OnClientClose" OnClientPageLoad="___WindowSettings1_OnClientPageLoad"
+						OnClientShow="___WindowSettings1_OnClientShow" PreserveClientState="True" RenderMode="Lightweight" RestrictionZoneID="__MainDiv"
+						ShowContentDuringLoad="False" VisibleOnPageLoad="True" VisibleStatusbar="True" VisibleTitlebar="True" />
 					<telerik:RadTextBox id="TXTMes" runat="server" AutoPostBack="False" CssClass="c_TXTMes textbox-default" EnabledStyle-HorizontalAlign="Left"
 						EnableSingleInputRendering="True" ForeColor="#333333" MaxLength="0" onkeydown="___TXTMes_onkeydown();" ReadOnly="False" RenderMode="Lightweight"
 						TabIndex="20" TextMode="SingleLine" UseTelerikMask="False" WrapperCssClass="c_TXTMes_wrapper" />

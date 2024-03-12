@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.ConfiguracoesPage, App_Web_3vgckurc" culture="auto" uiculture="auto" %>
+﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.ConfiguracoesPage, App_Web_ye34v321" culture="auto" uiculture="auto" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <%@ Register Src="..\UserControls\Sidebar_Financeiro.ascx" TagName="uc" TagPrefix="uc" %>
 <%@ Register Src="..\UserControls\Header.ascx" TagName="GHeader" TagPrefix="GHeader" %>
@@ -97,7 +97,7 @@
 	   });
 	}
 </script>
-		<script type="text/javascript" src="../JS/ConfiguracoesPage_USER.js?sv=4.0_20240311152741"></script>
+		<script type="text/javascript" src="../JS/ConfiguracoesPage_USER.js?sv=4.0_20240312113334"></script>
 		<script type="text/javascript" src="../JS/jquery.validationEngine-pt_BR.js"></script>
 		<script type="text/javascript" src="../JS/jquery.validationEngine.js"></script>
 		<script type="text/javascript" src="../JS/validation.js"></script>
@@ -160,14 +160,6 @@
 		{
 			ValidateCombo(sender);
 		}
-		function ___ComboBox3_OnBlur(sender)
-		{
-			ValidateCombo(sender);
-		}
-		function ___ComboBox4_OnBlur(sender)
-		{
-			ValidateCombo(sender);
-		}
 		function ___RadTextBox1_onkeydown(event,vgWin)
 		{
 			onTextChanged(event);
@@ -194,27 +186,7 @@
 				return field.attr('data-validation-message');
 			}
 		}
-		function ComboBox3_Validation(field, rules, i, options) {
-			if (!(validateCall(field, "required", options))) {
-				return field.attr('data-validation-message');
-			}
-		}
-		function RadTextBox2_Validation(field, rules, i, options) {
-			if (!(validateCall(field, "required", options))) {
-				return field.attr('data-validation-message');
-			}
-		}
 		function ComboBox2_Validation(field, rules, i, options) {
-			if (!(validateCall(field, "required", options))) {
-				return field.attr('data-validation-message');
-			}
-		}
-		function ComboBox4_Validation(field, rules, i, options) {
-			if (!(validateCall(field, "required", options))) {
-				return field.attr('data-validation-message');
-			}
-		}
-		function RadTextBox1_Validation(field, rules, i, options) {
 			if (!(validateCall(field, "required", options))) {
 				return field.attr('data-validation-message');
 			}
@@ -276,28 +248,23 @@
 											</div>
 											<div id="LayoutCol26" class="col col-12 c_LayoutCol26">
 												<telerik:RadLabel id="Label31" runat="server" CssClass="c_Label31" Text="<%$ Resources: Label31 %>" />
-												<telerik:RadComboBox id="ComboBox3" runat="server" disable-data-validation-onblur AllowCustomText="False" AutoPostBack="False"
-													CssClass="c_ComboBox3 combobox-primary" CollapseAnimation-Duration="300" CollapseAnimation-Type="None"
-													data-validation-engine="validate[funcCall[ComboBox3_Validation]]" data-validation-message="CAT_MISSOES_AM não pode ser vazio!"
-													EnableEmbeddedSkins="True" EnableLoadOnDemand="True" EnableVirtualScrolling="True" ExpandAnimation-Duration="300"
-													ExpandAnimation-Type="None" LoadingMessage="<%$ Resources: ComboBox3 %>" MarkFirstMatch="true" MaxHeight="100"
-													OnClientBlur="___ComboBox3_OnBlur" OnClientItemsRequested="CheckComboItems" OnClientItemsRequesting="Combo_OnClientItemsRequesting"
+												<telerik:RadComboBox id="ComboBox3" runat="server" AllowCustomText="False" AutoPostBack="False" CssClass="c_ComboBox3 combobox-primary"
+													CollapseAnimation-Duration="300" CollapseAnimation-Type="None" EnableEmbeddedSkins="True" EnableLoadOnDemand="True"
+													EnableVirtualScrolling="True" ExpandAnimation-Duration="300" ExpandAnimation-Type="None" LoadingMessage="<%$ Resources: ComboBox3 %>"
+													MarkFirstMatch="true" MaxHeight="100" OnClientItemsRequested="CheckComboItems" OnClientItemsRequesting="Combo_OnClientItemsRequesting"
 													OnClientKeyPressing="Combo_HandleKeyPress" OnItemsRequested="___ComboBox3_OnItemsRequested" RenderMode="Lightweight" TabIndex="7" />
 											</div>
 											<div id="LayoutCol27" class="col col-12 c_LayoutCol27">
 												<telerik:RadLabel id="Label32" runat="server" CssClass="c_Label32" Text="<%$ Resources: Label32 %>" />
-												<telerik:RadComboBox id="ComboBox4" runat="server" disable-data-validation-onblur AllowCustomText="False" AutoPostBack="False"
-													CssClass="c_ComboBox4 combobox-primary" CollapseAnimation-Duration="300" CollapseAnimation-Type="None"
-													data-validation-engine="validate[funcCall[ComboBox4_Validation]]" data-validation-message="CAT_MISSOES_NACIONAL não pode ser vazio!"
-													EnableEmbeddedSkins="True" EnableLoadOnDemand="True" EnableVirtualScrolling="True" ExpandAnimation-Duration="300"
-													ExpandAnimation-Type="None" LoadingMessage="<%$ Resources: ComboBox4 %>" MarkFirstMatch="true" MaxHeight="100"
-													OnClientBlur="___ComboBox4_OnBlur" OnClientItemsRequested="CheckComboItems" OnClientItemsRequesting="Combo_OnClientItemsRequesting"
+												<telerik:RadComboBox id="ComboBox4" runat="server" AllowCustomText="False" AutoPostBack="False" CssClass="c_ComboBox4 combobox-primary"
+													CollapseAnimation-Duration="300" CollapseAnimation-Type="None" EnableEmbeddedSkins="True" EnableLoadOnDemand="True"
+													EnableVirtualScrolling="True" ExpandAnimation-Duration="300" ExpandAnimation-Type="None" LoadingMessage="<%$ Resources: ComboBox4 %>"
+													MarkFirstMatch="true" MaxHeight="100" OnClientItemsRequested="CheckComboItems" OnClientItemsRequesting="Combo_OnClientItemsRequesting"
 													OnClientKeyPressing="Combo_HandleKeyPress" OnItemsRequested="___ComboBox4_OnItemsRequested" RenderMode="Lightweight" TabIndex="8" />
 											</div>
 											<div id="LayoutCol25" class="col col-12 c_LayoutCol25">
 												<telerik:RadLabel id="Label33" runat="server" CssClass="c_Label33" Text="<%$ Resources: Label33 %>" />
 												<telerik:RadTextBox id="RadTextBox1" runat="server" AutoPostBack="False" CssClass="c_RadTextBox1 textbox-default"
-													data-validation-engine="validate[funcCall[RadTextBox1_Validation]]" data-validation-message="PERC_REPASSE_AM não pode ser vazio!"
 													EnabledStyle-HorizontalAlign="Right" EnableSingleInputRendering="True" ForeColor="#333333" MaxLength="11"
 													onkeydown="___RadTextBox1_onkeydown();" ReadOnly="False" RenderMode="Lightweight" TabIndex="9" TextMode="SingleLine"
 													UseTelerikMask="False" WrapperCssClass="c_RadTextBox1_wrapper" />
@@ -305,7 +272,6 @@
 											<div id="LayoutCol28" class="col col-12 c_LayoutCol28">
 												<telerik:RadLabel id="Label34" runat="server" CssClass="c_Label34" Text="<%$ Resources: Label34 %>" />
 												<telerik:RadTextBox id="RadTextBox2" runat="server" AutoPostBack="False" CssClass="c_RadTextBox2 textbox-default"
-													data-validation-engine="validate[funcCall[RadTextBox2_Validation]]" data-validation-message="PERC_REPASSE_NACIONAL não pode ser vazio!"
 													EnabledStyle-HorizontalAlign="Right" EnableSingleInputRendering="True" ForeColor="#333333" MaxLength="11"
 													onkeydown="___RadTextBox2_onkeydown();" ReadOnly="False" RenderMode="Lightweight" TabIndex="10" TextMode="SingleLine"
 													UseTelerikMask="False" WrapperCssClass="c_RadTextBox2_wrapper" />

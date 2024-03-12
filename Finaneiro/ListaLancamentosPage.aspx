@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.ListaLancamentosPage, App_Web_a0lhy43x" culture="auto" uiculture="auto" %>
+﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.ListaLancamentosPage, App_Web_ye34v321" culture="auto" uiculture="auto" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <%@ Register Src="..\UserControls\Sidebar_Financeiro.ascx" TagName="uc" TagPrefix="uc" %>
 <%@ Register Src="..\UserControls\Header.ascx" TagName="GHeader" TagPrefix="GHeader" %>
@@ -72,7 +72,7 @@
 		<script type="text/javascript" src="../JS/Common.js"></script>
 		<script type="text/javascript" src="../JS/Functions.js"></script>
 		<script src='../JS/Mask.js' type="text/javascript"></script>
-		<script type="text/javascript" src="../JS/ListaLancamentosPage_USER.js?sv=4.0_20240311152738"></script>
+		<script type="text/javascript" src="../JS/ListaLancamentosPage_USER.js?sv=4.0_20240312113329"></script>
 		<script type="text/javascript" src="../JS/jquery.validationEngine-pt_BR.js"></script>
 		<script type="text/javascript" src="../JS/jquery.validationEngine.js"></script>
 		<script type="text/javascript" src="../JS/validation.js"></script>
@@ -199,8 +199,8 @@
 			OnClientShow(sender);
 			if (sender.get_navigateUrl() == null) return;
 			var oWnd = document.getElementById('WindowSettings4').control.GetActiveWindow();
-			var valueWidth = 90;
-			var valueHeight = 90;
+			var valueWidth = 100;
+			var valueHeight = 100;
 			var browserWidth = $telerik.$(window).width();
 			var browserHeight = $telerik.$(window).height();
 			oWnd.setSize(Math.ceil(browserWidth * valueWidth / 100), Math.ceil(browserHeight * valueHeight / 100));

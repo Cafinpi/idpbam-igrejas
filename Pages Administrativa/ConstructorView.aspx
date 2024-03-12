@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" autoeventwireup="true" enableeventvalidation="True" inherits="PROJETO.ConstructorView, App_Web_vkdgotqb" culture="auto" uiculture="auto" %>
+﻿<%@ page language="C#" autoeventwireup="true" enableeventvalidation="True" inherits="PROJETO.ConstructorView, App_Web_cesfuuei" culture="auto" uiculture="auto" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <%@ Register Src="..\UserControls\SidebarPage.ascx" TagName="tagSidebar" TagPrefix="tgSid" %>
 <%@ Register Src="..\UserControls\Header.ascx" TagName="GHeader" TagPrefix="GHeader" %>
@@ -38,7 +38,7 @@
 		<script type="text/javascript" src="../JS/jquery.mCustomScrollbar.concat.min.js"></script>
 	
 		<script type="text/javascript" src="../JS/RadComboBoxHelper.js"></script>
-	<script type="text/javascript" src="../JS/ConstructorView_USER.js?sv=4.0_20240311152750"></script>
+	<script type="text/javascript" src="../JS/ConstructorView_USER.js?sv=4.0_20240312113345"></script>
 	</telerik:RadCodeBlock>
 	<script type="text/javascript">
 		function OnLoginSucceded()
