@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.MembrosPage, App_Web_beaxkst3" culture="auto" uiculture="auto" %>
+﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.MembrosPage, App_Web_d5iscsap" culture="auto" uiculture="auto" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <%@ Register Src="..\..\UserControls\GMultiMedia.ascx" TagName="GMultiMedia" TagPrefix="gas" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -103,7 +103,7 @@
 	   });
 	}
 </script>
-		<script type="text/javascript" src="../../JS/MembrosPage_USER.js?sv=4.0_20240312113356"></script>
+		<script type="text/javascript" src="../../JS/MembrosPage_USER.js?sv=4.0_20240318185231"></script>
 		<script type="text/javascript" src="../../JS/jquery.validationEngine-pt_BR.js"></script>
 		<script type="text/javascript" src="../../JS/jquery.validationEngine.js"></script>
 		<script type="text/javascript" src="../../JS/validation.js"></script>
@@ -256,10 +256,6 @@
 		function ___RadTextBox8_onkeydown(event,vgWin)
 		{
 		}
-		function ___ComboBox7_OnBlur(sender)
-		{
-			ValidateCombo(sender);
-		}
 		function ___RadTextBox32_onkeydown(event,vgWin)
 		{
 			onTextChanged(event);
@@ -306,11 +302,6 @@
 		{
 			try { GetRadWindow().Caller.Refresh();} catch (e) {};
 			try { GetRadWindow().close(); } catch (ex) {} 
-		}
-		function ComboBox7_Validation(field, rules, i, options) {
-			if (!(validateCall(field, "required", options))) {
-				return field.attr('data-validation-message');
-			}
 		}
 		function RadTextBox31_Validation(field, rules, i, options) {
 			if (!(validateCall(field, "required", options))) {
@@ -386,10 +377,10 @@
 											<div id="LayoutCol9" class="col col-12 col-md-2 c_LayoutCol9">
 												<telerik:RadLabel id="Label40" runat="server" CssClass="c_Label40" Text="<%$ Resources: Label40 %>" />
 												<asp:Image id="imgFoto" runat="server" class="c_imgFoto" />
-												<gas:GMultiMedia id="GMultiMedia2" runat="server" BorderWidth="1" CanDownloadFile="False" CanUploadFile="True" class="c_GMultiMedia2"
-													EncryptedFile="False" Height="45px" ImageFit="contain" MaxFileSize="0" Path="~/Images/Secretaria/" Responsive="true" SaveAsFile="True"
-													SaveOnS3="False" SessionHandlerObjectName="foto34963" ShowDownloadLink="False" ShowImage="False" TabIndex="1" Visible="True" Width="100%"
-													/>
+												<gas:GMultiMedia id="GMultiMedia2" runat="server" AllowFileExtensions="jpg,JPG,png,PNG" BorderWidth="1" CanDownloadFile="False"
+													CanUploadFile="True" class="c_GMultiMedia2" EncryptedFile="False" Height="45px" ImageFit="contain" MaxFileSize="0"
+													Path="~/Images/Secretaria/" Responsive="true" SaveAsFile="True" SaveOnS3="False" SessionHandlerObjectName="foto34963"
+													ShowDownloadLink="False" ShowImage="False" TabIndex="1" Visible="True" Width="100%" />
 											</div>
 											<div id="LayoutCol10" class="col col-12 col-md-10 c_LayoutCol10">
 												<div id="LayoutRow5" class="row c_LayoutRow5">
@@ -409,8 +400,8 @@
 													</div>
 													<div id="LayoutCol13" class="col col-12 col-md-3 c_LayoutCol13">
 														<telerik:RadLabel id="Label52" runat="server" CssClass="c_Label52" Text="<%$ Resources: Label52 %>" />
-														<telerik:RadDatePicker id="DatePicker1" runat="server" CssClass="c_DatePicker1 datepicker-default"
-															ClientEvents-OnDateSelected="setDatePickerFocus" DateInput-DateFormat="dd/MM/yyyy"
+														<telerik:RadDatePicker id="DatePicker1" runat="server" Calendar-ClientEvents-OnDateClick="HideDatePickerValidation"
+															CssClass="c_DatePicker1 datepicker-default" ClientEvents-OnDateSelected="setDatePickerFocus" DateInput-DateFormat="dd/MM/yyyy"
 															DateInput-WrapperCssClass="c_DatePicker1_dateInput_wrapper" DatePickerType="Date" DatePopupButton-ToolTip="Select date"
 															EnableEmbeddedSkins="True" Height="32" HideAnimation-Duration="300" HideAnimation-Type="Fade" MinDate="01/01/1900"
 															PopupDirection="BottomRight" ReadOnly="False" RenderMode="Lightweight" ShowAnimation-Duration="300" ShowAnimation-Type="Fade"
@@ -595,12 +586,11 @@
 											</div>
 											<div id="LayoutCol59" class="col col-12 col-md-2 c_LayoutCol59">
 												<telerik:RadLabel id="Label64" runat="server" CssClass="c_Label64" Text="<%$ Resources: Label64 %>" />
-												<telerik:RadComboBox id="ComboBox7" runat="server" disable-data-validation-onblur AllowCustomText="False" AutoPostBack="False"
-													CssClass="c_ComboBox7 combobox-primary" CollapseAnimation-Duration="300" CollapseAnimation-Type="None"
-													data-validation-engine="validate[funcCall[ComboBox7_Validation]]" data-validation-message="Situacao não pode ser vazio!"
-													EnableEmbeddedSkins="True" EnableLoadOnDemand="True" EnableVirtualScrolling="True" ExpandAnimation-Duration="300"
-													ExpandAnimation-Type="None" ForeColor="#A4ABB2" LoadingMessage="<%$ Resources: ComboBox7 %>" MarkFirstMatch="true" MaxHeight="100"
-													OnClientBlur="___ComboBox7_OnBlur" OnClientItemsRequesting="Combo_OnClientItemsRequesting" OnClientKeyPressing="Combo_HandleKeyPress"
+												<telerik:RadComboBox id="ComboBox7" runat="server" AllowCustomText="False" AutoPostBack="False" CssClass="c_ComboBox7 combobox-primary"
+													CollapseAnimation-Duration="300" CollapseAnimation-Type="None" EnableEmbeddedSkins="True" EnableLoadOnDemand="True"
+													EnableVirtualScrolling="True" ExpandAnimation-Duration="300" ExpandAnimation-Type="None" ForeColor="#A4ABB2"
+													LoadingMessage="<%$ Resources: ComboBox7 %>" MarkFirstMatch="true" MaxHeight="100"
+													OnClientItemsRequesting="Combo_OnClientItemsRequesting" OnClientKeyPressing="Combo_HandleKeyPress"
 													OnItemsRequested="___ComboBox7_OnItemsRequested" RenderMode="Lightweight" TabIndex="32" />
 											</div>
 											<div id="LayoutCol62" class="col col-1 c_LayoutCol62">

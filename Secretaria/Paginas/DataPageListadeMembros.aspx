@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.DataPageListadeMembros, App_Web_1rsa1f0q" culture="auto" uiculture="auto" %>
+﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.DataPageListadeMembros, App_Web_uonbfczu" culture="auto" uiculture="auto" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="<%=PROJETO.Utility.CurrentSiteLanguage%>">
@@ -37,9 +37,9 @@
 		<StyleSheets>
 			<telerik:StyleSheetReference Path="~/Styles/Office_2010_Silver_ButtonStyle.css" OrderIndex="0"/>
 			<telerik:StyleSheetReference Path="~/Styles/Office_2010_Silver_Button_button_secondary.css" OrderIndex="0"/>
+			<telerik:StyleSheetReference Path="~/Styles/Office_2010_Silver_Button_button_primary.css" OrderIndex="0"/>
 			<telerik:StyleSheetReference Path="~/Styles/Office_2010_Silver_RadTextBox_textbox_default.css" OrderIndex="0"/>
 			<telerik:StyleSheetReference Path="~/Styles/Office_2010_Silver_Grid_grid_default.css" OrderIndex="0"/>
-			<telerik:StyleSheetReference Path="~/Styles/Office_2010_Silver_Button_button_primary.css" OrderIndex="0"/>
 			<telerik:StyleSheetReference Path="~/Styles/DataPageListadeMembros.css" OrderIndex="1"/>
 			<telerik:StyleSheetReference Path="~/Styles/gridAutoHeight.css" OrderIndex="2"/>
 			<telerik:StyleSheetReference Path="~/Styles/gvinci_button.css" OrderIndex="2"/>
@@ -70,7 +70,7 @@
 		<script type="text/javascript" src="../../JS/Common.js"></script>
 		<script type="text/javascript" src="../../JS/Functions.js"></script>
 		<script src='../../JS/Mask.js' type="text/javascript"></script>
-		<script type="text/javascript" src="../../JS/DataPageListadeMembros_USER.js?sv=4.0_20240312113359"></script>
+		<script type="text/javascript" src="../../JS/DataPageListadeMembros_USER.js?sv=4.0_20240318185234"></script>
 		<script type="text/javascript" src="../../JS/jquery.validationEngine-pt_BR.js"></script>
 		<script type="text/javascript" src="../../JS/jquery.validationEngine.js"></script>
 		<script type="text/javascript" src="../../JS/validation.js"></script>
@@ -214,6 +214,16 @@
 				return field.attr('data-validation-message');
 			}
 		}
+		function GridColumn15_Validation(field, rules, i, options) {
+			if (!(validateCall(field, "required", options))) {
+				return field.attr('data-validation-message');
+			}
+		}
+		function GridColumn16_Validation(field, rules, i, options) {
+			if (!(validateCall(field, "required", options))) {
+				return field.attr('data-validation-message');
+			}
+		}
 	</script>
 		
 		<form id="Form1" runat="server" class="c_Form1">
@@ -285,6 +295,8 @@
 													<telerik:RadTab id="TabItem1" runat="server" CssClass="c_TabItem1" Selected="true" Text="<%$ Resources: TabPage1 %>">
 													</telerik:RadTab>
 													<telerik:RadTab id="TabItem2" runat="server" CssClass="c_TabItem2" Text="<%$ Resources: TabPage2 %>">
+													</telerik:RadTab>
+													<telerik:RadTab id="TabItem3" runat="server" CssClass="c_TabItem3" Text="<%$ Resources: TabPage3 %>">
 													</telerik:RadTab>
 												</Tabs>
 											</telerik:RadTabStrip>
@@ -409,7 +421,56 @@
 														</div>
 													</div>
 												</telerik:RadPageView>
+												<telerik:RadPageView id="TabPage3" runat="server" BackColor="#FFFFFF" CssClass="c_TabPage3 col-12">
+													<div style="border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-left-radius:0px;border-top-right-radius:0px" class="container">
+														<div id="LayoutRow6" class="row c_LayoutRow6">
+															<div id="LayoutCol17" class="col col-12 c_LayoutCol17">
+																<telerik:RadGrid id="Grid3" runat="server" AllowCustomPaging="true" AllowFilteringByColumn="False" AllowPaging="True"
+																	AllowSorting="True" AutoGenerateColumns="false" CssClass="c_Grid3 grid-default" CleanLayoutNoRecord="False"
+																	ClientSettings-ClientEvents-OnCommand="CheckValidation" EnableEmbeddedSkins="True" EnableHeaderContextMenu="False"
+																	EnableLinqExpressions="false" ExportFileName="GGrid" OnDeleteCommand="Grid_DeleteCommand" OnInit="Grid_Init"
+																	OnInsertCommand="Grid_InsertCommand" OnItemCommand="Grid3_ItemCommand" OnItemCreated="Grid3_ItemCreated"
+																	OnItemDataBound="Grid3_ItemDataBound" OnNeedDataSource="Grid_NeedDataSource" OnUpdateCommand="Grid_UpdateCommand" PageSize="10"
+																	RenderMode="Lightweight" ShowFooter="False" ShowGroupPanel="False" TabIndex="9" TableLayout="Fixed">
+																	<MasterTableView  AllowCustomPaging="true" CommandItemDisplay="Top" DataKeyNames="RolMembro" EditMode="InPlace">
+																		<Columns>
+																			<telerik:GridBoundColumn UniqueName="GridColumn14" runat="server" AllowFiltering="True" AllowSorting="true"
+																				AutoPostBackOnFilter="False" ConvertEmptyStringToNull="False" DataField="RolMembro" DataFormatString="{0:###,###,##0}"
+																				EnableHeaderContextMenu="True" Exportable="True" FilterControlWidth="100%" FilterDelay="2000" FooterStyle-HorizontalAlign="Right"
+																				ForceExtractValue="Always" HeaderStyle-CssClass="c_GridColumn14" HeaderStyle-HorizontalAlign="Right" HeaderStyle-Width="93"
+																				HeaderText="<%$ Resources: GridColumn14 %>" ItemStyle-CssClass="c_GridColumn14" ItemStyle-HorizontalAlign="Right"
+																				ItemStyle-Width="86" MaxLength="11" ReadOnly="False" ShowFilterIcon="True" ShowSortIcon="True" />
+																			<telerik:GridBoundColumn UniqueName="GridColumn15" runat="server" AllowFiltering="True" AllowSorting="true"
+																				AutoPostBackOnFilter="False" ConvertEmptyStringToNull="False" DataField="Nome" EnableHeaderContextMenu="True" Exportable="True"
+																				FilterControlWidth="100%" FilterDelay="2000" ForceExtractValue="Always" HeaderStyle-CssClass="c_GridColumn15"
+																				HeaderStyle-Width="93" HeaderText="<%$ Resources: GridColumn15 %>" ItemStyle-CssClass="c_GridColumn15" ItemStyle-Width="86"
+																				MaxLength="255" ReadOnly="False" ShowFilterIcon="True" ShowSortIcon="True" />
+																			<telerik:GridBoundColumn UniqueName="GridColumn16" runat="server" AllowFiltering="True" AllowSorting="true"
+																				AutoPostBackOnFilter="False" ConvertEmptyStringToNull="False" DataField="Celula" DataFormatString="{0:###,###,##0}"
+																				EnableHeaderContextMenu="True" Exportable="True" FilterControlWidth="100%" FilterDelay="2000" FooterStyle-HorizontalAlign="Right"
+																				ForceExtractValue="Always" HeaderStyle-CssClass="c_GridColumn16" HeaderStyle-HorizontalAlign="Right" HeaderStyle-Width="93"
+																				HeaderText="<%$ Resources: GridColumn16 %>" ItemStyle-CssClass="c_GridColumn16" ItemStyle-HorizontalAlign="Right"
+																				ItemStyle-Width="86" MaxLength="11" ReadOnly="False" ShowFilterIcon="True" ShowSortIcon="True" />
+																			<telerik:GridBoundColumn UniqueName="GridColumn17" runat="server" AllowFiltering="True" AllowSorting="true"
+																				AutoPostBackOnFilter="False" ConvertEmptyStringToNull="False" DataField="TelCelular" EnableHeaderContextMenu="True"
+																				Exportable="True" FilterControlWidth="100%" FilterDelay="2000" ForceExtractValue="Always" HeaderStyle-CssClass="c_GridColumn17"
+																				HeaderStyle-Width="93" HeaderText="<%$ Resources: GridColumn17 %>" ItemStyle-CssClass="c_GridColumn17" ItemStyle-Width="86"
+																				MaxLength="25" ReadOnly="False" ShowFilterIcon="True" ShowSortIcon="True" />
+																		</Columns>
+																		<CommandItemSettings ShowAddNewRecordButton="False" ShowRefreshButton="True" AddNewRecordText="" RefreshText="" />
+																	</MasterTableView>
+																	<PagerStyle Mode="NextPrevAndNumeric" />
+																	<ClientSettings EnableRowHoverStyle="true">
+																		<ClientEvents OnCommand="gridCommand" />
+																	</ClientSettings>
+																</telerik:RadGrid>
+															</div>
+														</div>
+													</div>
+												</telerik:RadPageView>
 											</telerik:RadMultiPage>
+										</div>
+										<div id="LayoutContainer2" runat="server" class="container-fluid c_LayoutContainer2">
 										</div>
 									</div>
 								</div>

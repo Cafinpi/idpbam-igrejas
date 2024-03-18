@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.EventosPage, App_Web_1rsa1f0q" culture="auto" uiculture="auto" %>
+﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.EventosPage, App_Web_uonbfczu" culture="auto" uiculture="auto" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <%@ Register Src="..\..\UserControls\GMultiMedia.ascx" TagName="GMultiMedia" TagPrefix="gas" %>
 <%@ Register Src="..\..\UserControls\GEditor.ascx" TagName="GEditor" TagPrefix="gas" %>
@@ -103,7 +103,7 @@
 	   });
 	}
 </script>
-		<script type="text/javascript" src="../../JS/EventosPage_USER.js?sv=4.0_20240312113358"></script>
+		<script type="text/javascript" src="../../JS/EventosPage_USER.js?sv=4.0_20240318185233"></script>
 		<script type="text/javascript" src="../../JS/jquery.validationEngine-pt_BR.js"></script>
 		<script type="text/javascript" src="../../JS/jquery.validationEngine.js"></script>
 		<script type="text/javascript" src="../../JS/validation.js"></script>
@@ -175,6 +175,10 @@
 		{
 			try { GetRadWindow().Caller.Refresh();} catch (e) {};
 			try { GetRadWindow().close(); } catch (ex) {} 
+		}
+		function ___RadTextBox2_onkeydown(event,vgWin)
+		{
+			onTextChanged(event);
 		}
 		function DatePicker1_Validation(field, rules, i, options) {
 			if (!(validateCall(field, "required", options))) {
@@ -294,6 +298,9 @@
 							</div>
 						</div>
 					</div>
+					<telerik:RadTextBox id="RadTextBox2" runat="server" AutoPostBack="False" CssClass="c_RadTextBox2 textbox-default"
+						EnabledStyle-HorizontalAlign="Left" EnableSingleInputRendering="True" ForeColor="#333333" MaxLength="10" onkeydown="___RadTextBox2_onkeydown();"
+						ReadOnly="False" RenderMode="Lightweight" TabIndex="12" TextMode="SingleLine" UseTelerikMask="False" WrapperCssClass="c_RadTextBox2_wrapper" />
 			<telerik:RadAjaxLoadingPanel ID="___Form1_AjaxLoading" runat="server">
 			</telerik:RadAjaxLoadingPanel>
 			</telerik:RadAjaxPanel>
@@ -331,6 +338,7 @@
 		function DataIni() { return document.getElementById('DatePicker1').value; }
 		function DataFim() { return document.getElementById('DatePicker2').value; }
 		function Distrito() { return $find("<%= ComboBox1.ClientID %>").get_value(); }
+		function codIgreja() { return document.getElementById('RadTextBox2').value; }
 		function EnableButtons()
 		{
 				try
@@ -370,6 +378,7 @@
 
 		function LoadEditAuto() {
 				$j("#RadTextBox1").bind("keydown", InitiateEditAuto);
+				$j("#RadTextBox2").bind("keydown", InitiateEditAuto);
 				$j("#RadCheckBox1").bind("change", InitiateEditAuto);
 				$j("#ComboBox1").bind("change", InitiateEditAuto);
 				$j("#DatePicker3").bind("change", InitiateEditAuto);

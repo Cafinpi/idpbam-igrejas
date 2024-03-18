@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" autoeventwireup="true" inherits="AdapterInferface, App_Web_yolhg3by" validaterequest="false" %>
+﻿<%@ page language="C#" autoeventwireup="true" inherits="AdapterInferface, App_Web_01pcw2q2" validaterequest="false" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 
 <!DOCTYPE html>

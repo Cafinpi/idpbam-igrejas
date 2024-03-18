@@ -25,8 +25,8 @@
 	<table>
       <tr><th>Nome: </th><td>CBCategoriaDefault</td></tr>
       <tr><th>Campo Relacionado: </th><td>PAR_CAT_TRANSF</td></tr>
-      <tr><th>Validação: </th><td></td></tr>	
-      <tr><th>Mensagem: </th><td></td></tr>
+      <tr><th>Validação: </th><td>{ServerValidation =(CheckNotEmpty(PAR_CAT_TRANSF))}</td></tr>	
+      <tr><th>Mensagem: </th><td>O valor não pode ser vazio</td></tr>
 	</table>
 	</br>
 	<table>
@@ -46,45 +46,32 @@
 	<table>
       <tr><th>Nome: </th><td>ComboBox3</td></tr>
       <tr><th>Campo Relacionado: </th><td>CAT_MISSOES_AM</td></tr>
-      <tr><th>Validação: </th><td></td></tr>	
-      <tr><th>Mensagem: </th><td></td></tr>
+      <tr><th>Validação: </th><td>{ClientValidation =(CheckNotEmpty(CAT_MISSOES_AM))}</td></tr>	
+      <tr><th>Mensagem: </th><td>CAT_MISSOES_AM não pode ser vazio!</td></tr>
 	</table>
 	</br>
 	<table>
       <tr><th>Nome: </th><td>ComboBox4</td></tr>
       <tr><th>Campo Relacionado: </th><td>CAT_MISSOES_NACIONAL</td></tr>
-      <tr><th>Validação: </th><td></td></tr>	
-      <tr><th>Mensagem: </th><td></td></tr>
+      <tr><th>Validação: </th><td>{ClientValidation =(CheckNotEmpty(CAT_MISSOES_NACIONAL))}</td></tr>	
+      <tr><th>Mensagem: </th><td>CAT_MISSOES_NACIONAL não pode ser vazio!</td></tr>
 	</table>
 	</br>
 	<table>
       <tr><th>Nome: </th><td>RadTextBox1</td></tr>
       <tr><th>Campo Relacionado: </th><td>PERC_REPASSE_AM</td></tr>
-      <tr><th>Validação: </th><td></td></tr>	
-      <tr><th>Mensagem: </th><td></td></tr>
+      <tr><th>Validação: </th><td>{ClientValidation =(CheckNotEmpty(PERC_REPASSE_AM))}</td></tr>	
+      <tr><th>Mensagem: </th><td>PERC_REPASSE_AM não pode ser vazio!</td></tr>
 	</table>
 	</br>
 	<table>
       <tr><th>Nome: </th><td>RadTextBox2</td></tr>
       <tr><th>Campo Relacionado: </th><td>PERC_REPASSE_NACIONAL</td></tr>
-      <tr><th>Validação: </th><td></td></tr>	
-      <tr><th>Mensagem: </th><td></td></tr>
+      <tr><th>Validação: </th><td>{ClientValidation =(CheckNotEmpty(PERC_REPASSE_NACIONAL))}</td></tr>	
+      <tr><th>Mensagem: </th><td>PERC_REPASSE_NACIONAL não pode ser vazio!</td></tr>
 	</table>
 	</br>
 </div>
 
-	<div class="properties">                 
-		<h3>Processos:</h3>
-		<table>
-		  <tr><th>Título: </th><td>CAT_processo</td></tr>	
-		  <tr><th>Condição Direta: </th><td></td></tr>	
-		  <tr><th>Formula Direta: </th><td>1</td></tr>
-		  <tr><th>Executa Processo antes de Salvar: </th><td>True</td></tr>	
-		  <tr><th>Condição Inversa: </th><td></td></tr>	
-		  <tr><th>Formula Inversa: </th><td></td></tr>
-		  <tr><th>Campo Alvo: </th><td>PAR_CAT_TRANSF</td></tr>
-		</table>
-		</br>
-	</div>
 </body>
 </html>

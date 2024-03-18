@@ -48,6 +48,29 @@
 			<Setting key="DataBaseName" value="DataBase84_PRODUCTION"/>
 			<Setting key="DataBaseAdapterName" value="DataBase84PRODUCTION_TMP"/>
 		</Database>
+		<Database Name="bd_idpb">
+			<Setting key="Type" value="Sql"/>
+			<Setting key="StringConnection" value="Data Source=35.222.95.171;Database=bd_idpb;User ID=sa;Password=rms@2012;Trusted_Connection=false;"/>
+			<Setting key="Server" value="MSSQLSERVER"/>
+			<Setting key="BoolFormat" value="1;0"/>
+			<Setting key="DateFormat" value="yyyy/MM/dd HH:mm:ss"/>
+			<Setting key="IdentifierDelimiterInitial" value="["/>
+			<Setting key="IdentifierDelimiterFinal" value="]"/>
+			<Setting key="StringDelimiterInitial" value="N'"/>
+			<Setting key="StringDelimiterFinal" value="'"/>
+			<Setting key="DateRightDelimeter" value="'"/>
+			<Setting key="DateLeftDelimeter" value="'"/>
+			<Setting key="Optimized" value="True"/>
+			<Setting key="ParameterDelimiter" value="@"/>
+			<Setting key="User" value="sa"/>
+			<Setting key="Password" value="rms@2012"/>
+			<Setting key="WinAut" value="False"/>
+			<Setting key="ServerName" value="35.222.95.171"/>
+			<Setting key="RunAdapter" value="True"/>
+			<Setting key="CheckDatabase" value="False"/>
+			<Setting key="DataBaseName" value="DataBase86_PRODUCTION"/>
+			<Setting key="DataBaseAdapterName" value="DataBase86PRODUCTION_TMP"/>
+		</Database>
 	</Databases>
 	<!--End Databases-->
 </Configuration>

@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" autoeventwireup="true" inherits="PROJETO.Reports.RelCCLancamento, App_Web_sjovergu" %>
+﻿<%@ page language="C#" autoeventwireup="true" inherits="PROJETO.Reports.RelCCLancamento, App_Web_0s2fhedc" %>
 <%@ Register TagPrefix="telerik" Assembly="Telerik.ReportViewer.Html5.WebForms" Namespace="Telerik.ReportViewer.Html5.WebForms" %>
 <!DOCTYPE>
 <html>

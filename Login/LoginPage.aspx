@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" autoeventwireup="true" maintainscrollpositiononpostback="true" enableeventvalidation="True" validaterequest="false" inherits="PROJETO.LoginPage, App_Web_luahopir" culture="auto" uiculture="auto" %>
+﻿<%@ page language="C#" autoeventwireup="true" maintainscrollpositiononpostback="true" enableeventvalidation="True" validaterequest="false" inherits="PROJETO.LoginPage, App_Web_ghrpz005" culture="auto" uiculture="auto" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="<%=PROJETO.Utility.CurrentSiteLanguage%>">
@@ -73,7 +73,7 @@
 		<script type="text/javascript" src="../JS/Functions.js"></script>
 
 		<script src='../JS/Mask.js' type="text/javascript"></script>
-			<script type="text/javascript" src="../JS/LoginPage_USER.js?sv=4.0_20240312113427"></script>
+			<script type="text/javascript" src="../JS/LoginPage_USER.js?sv=4.0_20240318185304"></script>
 		<script type="text/javascript">
 			function OnLoginSucceded()
 			{
@@ -125,7 +125,6 @@
 									</div>
 									<div id="LayoutCol11" class="col col-12 col-md-5 c_LayoutCol11 card-body">
 										<telerik:RadLabel id="Label12" runat="server" CssClass="c_Label12" Text="<%$ Resources: Label12 %>" />
-										<telerik:RadLabel id="Label13" runat="server" CssClass="c_Label13" Text="<%$ Resources: Label13 %>" />
 										<asp:Image id="Image4" runat="server" class="c_Image4" ImageUrl="../Images/Logos/oie_transparent.png" />
 										<telerik:RadLabel id="Label1" runat="server" CssClass="c_Label1" Text="<%$ Resources: Label1 %>" />
 										<telerik:RadLabel id="Label6" runat="server" CssClass="c_Label6" Text="<%$ Resources: Label6 %>" />
@@ -148,7 +147,6 @@
 											</ContentTemplate>
 										</telerik:RadButton>
 										<telerik:RadLabel id="Label14" runat="server" CssClass="c_Label14" Text="<%$ Resources: Label14 %>" />
-										<telerik:RadLabel id="Label15" runat="server" CssClass="c_Label15" Text="<%$ Resources: Label15 %>" />
 										<telerik:RadLabel id="Label9" runat="server" CssClass="c_Label9" Text="<%$ Resources: Label9 %>" />
 									</div>
 								</div>

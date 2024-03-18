@@ -4,7 +4,7 @@
 	<Databases>
 		<Database Name="idpbam_cafinpi">
 			<Setting key="Type" value="Sql"/>
-			<Setting key="StringConnection" value="Data Source=35.232.160.218;Database=idpb_vitoriaemcristo;User ID=sa;Password=rms@lms@2024;Trusted_Connection=false;"/>
+			<Setting key="StringConnection" value="Data Source=35.232.160.218;Database=idpb_cafinpi;User ID=sa;Password=rms@lms@2024;Trusted_Connection=false;"/>
 			<Setting key="ConnectionCommands" value=""/>
 			<Setting key="Server" value="MSSQLSERVER"/>
 			<Setting key="BoolFormat" value="1;0"/>
@@ -21,7 +21,7 @@
 			<Setting key="Password" value="rms@lms@2024"/>
 			<Setting key="WinAut" value="False"/>
 			<Setting key="ServerName" value="35.232.160.218"/>
-			<Setting key="RunAdapter" value="False"/>
+			<Setting key="RunAdapter" value="True"/>
 			<Setting key="CheckDatabase" value="True"/>
 			<Setting key="DataBaseName" value="idpbam_cafinpi"/>
 			<Setting key="DataBaseAdapterName" value="idpb_cafinpiTMP"/>
@@ -49,6 +49,30 @@
 			<Setting key="CheckDatabase" value="True"/>
 			<Setting key="DataBaseName" value="idpb_AM"/>
 			<Setting key="DataBaseAdapterName" value="idpb_AMTMP"/>
+		</Database>
+		<Database Name="bd_idpb">
+			<Setting key="Type" value="Sql"/>
+			<Setting key="StringConnection" value="Data Source=35.232.160.218;Database=bd_idpb;User ID=sa;Password=rms@lms@2024;Trusted_Connection=false;"/>
+			<Setting key="ConnectionCommands" value=""/>
+			<Setting key="Server" value="MSSQLSERVER"/>
+			<Setting key="BoolFormat" value="1;0"/>
+			<Setting key="DateFormat" value="yyyy/MM/dd HH:mm:ss"/>
+			<Setting key="IdentifierDelimiterInitial" value="["/>
+			<Setting key="IdentifierDelimiterFinal" value="]"/>
+			<Setting key="StringDelimiterInitial" value="N'"/>
+			<Setting key="StringDelimiterFinal" value="'"/>
+			<Setting key="DateRightDelimeter" value="'"/>
+			<Setting key="DateLeftDelimeter" value="'"/>
+			<Setting key="Optimized" value="True"/>
+			<Setting key="ParameterDelimiter" value="@"/>
+			<Setting key="User" value="sa"/>
+			<Setting key="Password" value="rms@lms@2024"/>
+			<Setting key="WinAut" value="False"/>
+			<Setting key="ServerName" value="35.232.160.218"/>
+			<Setting key="RunAdapter" value="False"/>
+			<Setting key="CheckDatabase" value="True"/>
+			<Setting key="DataBaseName" value="bd_idpb"/>
+			<Setting key="DataBaseAdapterName" value="DataBase86TMP"/>
 		</Database>
 	</Databases>
 	<!--End Databases-->

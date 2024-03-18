@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.CursoPage, App_Web_1rsa1f0q" culture="auto" uiculture="auto" %>
+﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.CursoPage, App_Web_d5iscsap" culture="auto" uiculture="auto" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <%@ Register Src="..\..\UserControls\GMultiMedia.ascx" TagName="GMultiMedia" TagPrefix="gas" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -126,7 +126,7 @@
 	   });
 	}
 </script>
-		<script type="text/javascript" src="../../JS/CursoPage_USER.js?sv=4.0_20240312113403"></script>
+		<script type="text/javascript" src="../../JS/CursoPage_USER.js?sv=4.0_20240318185238"></script>
 		<script type="text/javascript" src="../../JS/jquery.validationEngine-pt_BR.js"></script>
 		<script type="text/javascript" src="../../JS/jquery.validationEngine.js"></script>
 		<script type="text/javascript" src="../../JS/validation.js"></script>
@@ -227,6 +227,10 @@
 			try { GetRadWindow().Caller.Refresh();} catch (e) {};
 			try { GetRadWindow().close(); } catch (ex) {} 
 		}
+		function ___RadTextBox1_onkeydown(event,vgWin)
+		{
+			onTextChanged(event);
+		}
 		function txtCodigo_Validation(field, rules, i, options) {
 			if (!(validateCall(field, "required", options))) {
 				return field.attr('data-validation-message');
@@ -242,6 +246,9 @@
 		<form id="Form1" runat="server" class="c_Form1" SaveFailed="___Form1_OnSaveFailed">
 			<asp:ScriptManager ID="MainScriptManager" runat="server"/>
 			<telerik:RadAjaxPanel id="MainAjaxPanel" runat="server" class="c_MainAjaxPanel" ClientEvents-OnRequestStart="___Form1_OnRequestStart" ClientEvents-OnResponseEnd="___Form1_OnResponseEnd" LoadingPanelID="___Form1_AjaxLoading">
+					<telerik:RadTextBox id="RadTextBox1" runat="server" AutoPostBack="False" CssClass="c_RadTextBox1 textbox-default"
+						EnabledStyle-HorizontalAlign="Left" EnableSingleInputRendering="True" ForeColor="#333333" MaxLength="10" onkeydown="___RadTextBox1_onkeydown();"
+						ReadOnly="False" RenderMode="Lightweight" TabIndex="9" TextMode="SingleLine" UseTelerikMask="False" WrapperCssClass="c_RadTextBox1_wrapper" />
 					<div id="LayoutContainer1" runat="server" class="container-fluid c_LayoutContainer1">
 						<div id="LayoutRow1" class="row c_LayoutRow1">
 							<div id="LayoutCol9" class="col col-12 c_LayoutCol9 card-header">
@@ -353,6 +360,7 @@
 		function inscricao() { return inscricao.checked; }
 		function Requisito() { return $find("<%= ComboBox1.ClientID %>").get_value(); }
 		function PreRequisito() { return PreRequisito.checked; }
+		function codIgreja() { return document.getElementById('RadTextBox1').value; }
 		function EnableButtons()
 		{
 				try
@@ -393,6 +401,7 @@
 		function LoadEditAuto() {
 				$j("#txtCodigo").bind("keydown", InitiateEditAuto);
 				$j("#txtNomeCurso").bind("keydown", InitiateEditAuto);
+				$j("#RadTextBox1").bind("keydown", InitiateEditAuto);
 				$j("#RadCheckBox1").bind("change", InitiateEditAuto);
 				$j("#RadCheckBox2").bind("change", InitiateEditAuto);
 				$j("#ComboBox1").bind("change", InitiateEditAuto);

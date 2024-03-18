@@ -226,7 +226,7 @@
     <value>Apres. Criança</value>
   </data>
   <data name="Label64" xml:space="preserve">
-    <value>Situação</value>
+    <value>Situação *</value>
   </data>
   <data name="ComboBox7" xml:space="preserve">
     <value>Carregando...</value>

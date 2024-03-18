@@ -126,9 +126,6 @@
   <data name="Label12" xml:space="preserve">
     <value>Bem vindo</value>
   </data>
-  <data name="Label13" xml:space="preserve">
-    <value>Está é tela de login, fique a vontade para customizar da forma que desejar</value>
-  </data>
   <data name="Label1" xml:space="preserve">
     <value>Login</value>
   </data>
@@ -149,9 +146,6 @@
   </data>
   <data name="Label14" xml:space="preserve">
     <value>Você pode fazer login com sua conta existente ou utilizar a nosso login padrão</value>
-  </data>
-  <data name="Label15" xml:space="preserve">
-    <value>Usuário: admin e Senha: admin</value>
   </data>
   <data name="Label9" xml:space="preserve">
     <value>Fazer o controle financeiro e administrativo ficou mais fácil. Com o sistema CAFINPI sua igreja tem o controle na palma das mãos.</value>

@@ -147,6 +147,9 @@
   <data name="TabPage2" xml:space="preserve">
     <value>INATIVOS</value>
   </data>
+  <data name="TabPage3" xml:space="preserve">
+    <value>NOVO</value>
+  </data>
   <data name="GridColumn1" xml:space="preserve">
     <value>RolMembro</value>
   </data>
@@ -182,5 +185,17 @@
   </data>
   <data name="GridColumn13" xml:space="preserve">
     <value>Editar</value>
+  </data>
+  <data name="GridColumn14" xml:space="preserve">
+    <value>RolMembro</value>
+  </data>
+  <data name="GridColumn15" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="GridColumn16" xml:space="preserve">
+    <value>Célula</value>
+  </data>
+  <data name="GridColumn17" xml:space="preserve">
+    <value>Telefone</value>
   </data>
 </root>

@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.LiderancaPage, App_Web_1rsa1f0q" culture="auto" uiculture="auto" %>
+﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.LiderancaPage, App_Web_d5iscsap" culture="auto" uiculture="auto" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="<%=PROJETO.Utility.CurrentSiteLanguage%>">
@@ -100,7 +100,7 @@
 	   });
 	}
 </script>
-		<script type="text/javascript" src="../../JS/LiderancaPage_USER.js?sv=4.0_20240312113354"></script>
+		<script type="text/javascript" src="../../JS/LiderancaPage_USER.js?sv=4.0_20240318185229"></script>
 		<script type="text/javascript" src="../../JS/jquery.validationEngine-pt_BR.js"></script>
 		<script type="text/javascript" src="../../JS/jquery.validationEngine.js"></script>
 		<script type="text/javascript" src="../../JS/validation.js"></script>

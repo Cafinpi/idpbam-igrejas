@@ -1414,7 +1414,7 @@
 	background-position: center;
 	background-size: auto;
 	cursor: inherit;
-	display: none;
+	display: flex;
 	padding: 10px !important;
 }
 
@@ -1880,7 +1880,7 @@
 	background-position: center;
 	background-size: auto;
 	cursor: inherit;
-	display: none;
+	display: flex;
 	padding: 10px !important;
 }
 
