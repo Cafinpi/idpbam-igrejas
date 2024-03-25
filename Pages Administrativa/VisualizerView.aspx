@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" autoeventwireup="true" enableeventvalidation="True" inherits="PROJETO.VisualizerView, App_Web_au5qv2il" culture="auto" uiculture="auto" %>
+﻿<%@ page language="C#" autoeventwireup="true" enableeventvalidation="True" inherits="PROJETO.VisualizerView, App_Web_2vqg02es" culture="auto" uiculture="auto" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <%@ Register Src="..\UserControls\SidebarPage.ascx" TagName="tagSidebar" TagPrefix="tgSid" %>
 <%@ Register Src="..\UserControls\Header.ascx" TagName="GHeader" TagPrefix="GHeader" %>

@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" enableeventvalidation="True" validaterequest="false" autoeventwireup="true" inherits="PROJETO.Access, App_Web_au5qv2il" culture="auto" uiculture="auto" %>
+﻿<%@ page language="C#" enableeventvalidation="True" validaterequest="false" autoeventwireup="true" inherits="PROJETO.Access, App_Web_2vqg02es" culture="auto" uiculture="auto" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <%@ Register Src="..\UserControls\Sidebar_Administrador.ascx" TagName="uc" TagPrefix="uc" %>
 <%@ Register Src="..\UserControls\Header.ascx" TagName="GHeader" TagPrefix="GHeader" %>
@@ -147,7 +147,7 @@
 		}
 			currentPath = "<%= Page.Request.Path %>";			
 		</script>
-	<script type="text/javascript" src="../JS/Access_USER.js?sv=4.0_20240318185218"></script>
+	<script type="text/javascript" src="../JS/Access_USER.js?sv=4.0_20240325151735"></script>
 	</telerik:RadCodeBlock>
 		<form id="Form1" runat="server" class="c_Form1">
 			<asp:ScriptManager ID="MainScriptManager" runat="server"/>

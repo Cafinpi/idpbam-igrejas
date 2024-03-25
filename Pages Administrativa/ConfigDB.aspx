@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" autoeventwireup="true" enableeventvalidation="True" inherits="PROJETO.ConfigDB, App_Web_au5qv2il" culture="auto" uiculture="auto" %>
+﻿<%@ page language="C#" autoeventwireup="true" enableeventvalidation="True" inherits="PROJETO.ConfigDB, App_Web_2vqg02es" culture="auto" uiculture="auto" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="<%=PROJETO.Utility.CurrentSiteLanguage%>">
@@ -37,7 +37,7 @@
 		<script type="text/javascript" src="../JS/sweetAlert.js"></script>
 		<script type="text/javascript" src="../JS/sweetAlertComplement.js"></script>
 
-	<script type="text/javascript" src="../JS/ConfigDB_USER.js?sv=4.0_20240318185220"></script>
+	<script type="text/javascript" src="../JS/ConfigDB_USER.js?sv=4.0_20240325151737"></script>
 	</telerik:RadCodeBlock>
 		
 		<form id="Form1" runat="server" class="c_Form1">

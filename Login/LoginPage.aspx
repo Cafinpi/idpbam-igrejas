@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" autoeventwireup="true" maintainscrollpositiononpostback="true" enableeventvalidation="True" validaterequest="false" inherits="PROJETO.LoginPage, App_Web_ghrpz005" culture="auto" uiculture="auto" %>
+﻿<%@ page language="C#" autoeventwireup="true" maintainscrollpositiononpostback="true" enableeventvalidation="True" validaterequest="false" inherits="PROJETO.LoginPage, App_Web_swhyswxi" culture="auto" uiculture="auto" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="<%=PROJETO.Utility.CurrentSiteLanguage%>">
@@ -73,7 +73,7 @@
 		<script type="text/javascript" src="../JS/Functions.js"></script>
 
 		<script src='../JS/Mask.js' type="text/javascript"></script>
-			<script type="text/javascript" src="../JS/LoginPage_USER.js?sv=4.0_20240318185304"></script>
+			<script type="text/javascript" src="../JS/LoginPage_USER.js?sv=4.0_20240325151814"></script>
 		<script type="text/javascript">
 			function OnLoginSucceded()
 			{

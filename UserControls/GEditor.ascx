@@ -1,4 +1,4 @@
-﻿<%@ control language="C#" autoeventwireup="true" inherits="COMPONENTS.GEditor, App_Web_rzvl4nac" %>
+﻿<%@ control language="C#" autoeventwireup="true" inherits="COMPONENTS.GEditor, App_Web_nntdyv20" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 
 <style>

@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.AvisosPage, App_Web_uonbfczu" culture="auto" uiculture="auto" %>
+﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.AvisosPage, App_Web_n0hzq5tm" culture="auto" uiculture="auto" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <%@ Register Src="..\..\UserControls\GEditor.ascx" TagName="GEditor" TagPrefix="gas" %>
 <%@ Register Src="..\..\UserControls\Sidebar_Secretaria.ascx" TagName="uc" TagPrefix="uc" %>
@@ -100,7 +100,7 @@
 	   });
 	}
 </script>
-		<script type="text/javascript" src="../../JS/AvisosPage_USER.js?sv=4.0_20240318185232"></script>
+		<script type="text/javascript" src="../../JS/AvisosPage_USER.js?sv=4.0_20240325151748"></script>
 		<script type="text/javascript" src="../../JS/sweetAlert.js"></script>
 		<script type="text/javascript" src="../../JS/sweetAlertComplement.js"></script>
 		<script type="text/javascript" src="../../JS/jquery.mCustomScrollbar.concat.min.js"></script>

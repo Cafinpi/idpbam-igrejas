@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" autoeventwireup="true" enableeventvalidation="True" inherits="PROJETO.DataPages.Processo_Coo_Distrito, App_Web_tqwogxdd" %>
+﻿<%@ page language="C#" autoeventwireup="true" enableeventvalidation="True" inherits="PROJETO.DataPages.Processo_Coo_Distrito, App_Web_54ihzyf5" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -30,7 +30,7 @@
 		<script type="text/javascript" src="../../JS/sweetAlert.js"></script>
 		<script type="text/javascript" src="../../JS/sweetAlertComplement.js"></script>
 
-	<script type="text/javascript" src="../../JS/Processo_Coo_Distrito_USER.js?sv=4.0_20240318185227"></script>
+	<script type="text/javascript" src="../../JS/Processo_Coo_Distrito_USER.js?sv=4.0_20240325151744"></script>
 
 <script type="text/javascript">
 	function OnLoginSucceded()

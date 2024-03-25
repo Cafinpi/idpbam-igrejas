@@ -7788,6 +7788,14 @@
             Service-specific handling, we code-gen override per service.
             </summary>
         </member>
+        <member name="M:Amazon.Runtime.Internal.BaseEndpointResolver.IsCrtDependencyAvailable">
+            <summary>
+            Validates whether the CRT dependency is available by trying to create an <see cref="T:Amazon.Runtime.Internal.Auth.AWS4aSignerCRTWrapper"/> instance.
+            </summary>
+            <returns>
+            True if the CRT package is available at runtime, false otherwise.
+            </returns>
+        </member>
         <member name="M:Amazon.Runtime.Internal.BaseEndpointResolver.InjectHostPrefix(Amazon.Runtime.IRequestContext)">
             <summary>
             Inject host prefix into request endpoint.
@@ -18824,6 +18832,28 @@
             &lt;/configSections&gt;
             &lt;aws useSdkCache="true" /&gt;
             </code>
+            </summary>
+        </member>
+        <member name="F:Amazon.AWSConfigs.InitializeCollectionsKey">
+            <summary>
+            Key for the InitializeCollections property.
+            <seealso cref="P:Amazon.AWSConfigs.InitializeCollections"/>
+            </summary>
+        </member>
+        <member name="P:Amazon.AWSConfigs.InitializeCollections">
+            <summary>
+            When true the collections used on the service API request and response objects are initialized
+            to an empty collection. The collections are sent as part of requests when a collection is non-empty.
+            
+            Setting InitializeCollections to false means all collections used on the service API request and 
+            response objects are initialized to null. The collections are sent as part of requests when
+            the collection non-null including an empty collection.
+            
+            The default value is true. In the next major version of the SDK the default will change to false.
+            This will improve performance not creating unnecessary collection instances and provide more
+            control when the collection is sent to the service.
+            
+            Setting this property is not thread safe and should only be set at application startup.
             </summary>
         </member>
         <member name="P:Amazon.AWSConfigs.LoggingConfig">

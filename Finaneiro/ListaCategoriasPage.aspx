@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.ListaCategoriasPage, App_Web_0mrdujfn" culture="auto" uiculture="auto" %>
+﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.ListaCategoriasPage, App_Web_hpwhwr2d" culture="auto" uiculture="auto" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <%@ Register Src="..\UserControls\SidebarPage.ascx" TagName="tagSidebar" TagPrefix="tgSid" %>
 <%@ Register Src="..\UserControls\Header.ascx" TagName="GHeader" TagPrefix="GHeader" %>
@@ -72,7 +72,7 @@
 		<script type="text/javascript" src="../JS/Common.js"></script>
 		<script type="text/javascript" src="../JS/Functions.js"></script>
 		<script src='../JS/Mask.js' type="text/javascript"></script>
-		<script type="text/javascript" src="../JS/ListaCategoriasPage_USER.js?sv=4.0_20240318185205"></script>
+		<script type="text/javascript" src="../JS/ListaCategoriasPage_USER.js?sv=4.0_20240325151726"></script>
 		<script type="text/javascript" src="../JS/jquery.validationEngine-pt_BR.js"></script>
 		<script type="text/javascript" src="../JS/jquery.validationEngine.js"></script>
 		<script type="text/javascript" src="../JS/validation.js"></script>

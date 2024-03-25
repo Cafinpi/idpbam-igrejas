@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.AlterarSenhaSecretariaPage, App_Web_au5qv2il" culture="auto" uiculture="auto" %>
+﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.AlterarSenhaSecretariaPage, App_Web_2vqg02es" culture="auto" uiculture="auto" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <%@ Register Src="..\UserControls\Sidebar_Secretaria.ascx" TagName="uc" TagPrefix="uc" %>
 <%@ Register Src="..\UserControls\Header.ascx" TagName="GHeader" TagPrefix="GHeader" %>
@@ -122,7 +122,7 @@
 	   });
 	}
 </script>
-		<script type="text/javascript" src="../JS/AlterarSenhaSecretariaPage_USER.js?sv=4.0_20240318185221"></script>
+		<script type="text/javascript" src="../JS/AlterarSenhaSecretariaPage_USER.js?sv=4.0_20240325151738"></script>
 		<script type="text/javascript" src="../JS/jquery.validationEngine-pt_BR.js"></script>
 		<script type="text/javascript" src="../JS/jquery.validationEngine.js"></script>
 		<script type="text/javascript" src="../JS/validation.js"></script>
