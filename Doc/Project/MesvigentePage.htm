@@ -15,7 +15,7 @@
       <tr><th>Permite Inclusão: </th><td>True</td></tr>
       <tr><th>Permite Edição: </th><td>True</td></tr>
       <tr><th>Permite Deleção: </th><td>True</td></tr>
-      <tr><th>Banco de Dados: </th><td>idpb_gileatos</td></tr>
+      <tr><th>Banco de Dados: </th><td>idpb_castelo</td></tr>
       <tr><th>Tabela Básica: </th><td>TB_MES_REFERENCIA</td></tr>
       <tr><th>Provider: </th><td>PrvMesvigente</td></tr>
       <tr><th>Index: </th><td>PK_TB_MES_REFERENCIA</td></tr>
@@ -64,12 +64,38 @@
 	<div class="properties">
 		<h2>Tabela Auxiliar:<span>AUX_TB_MESES_USADOS</span></h2>
 		<table>
-			<tr><th>Banco</th><td>idpbam_cafinpi</td></tr>
+			<tr><th>Banco</th><td>idpb_castelo</td></tr>
 			<tr><th>Tabela Relacionada</th><td>TB_MESES_USADOS</td></tr>
 			<tr><th>Forçar Relacionamento</th><td>False</td></tr>   
 			<tr><th>Indice</th><td></td></tr>
 			<tr><th>Menssagem</th><td></td></tr>
 		</table>
+		
+		
+		<h2>Tabela Auxiliar:<span>AUX_TB_MESES_FECHAMENTO_IGREJA</span></h2>
+		<table>
+			<tr><th>Banco</th><td>idpb_AM</td></tr>
+			<tr><th>Tabela Relacionada</th><td>TB_MESES_FECHAMENTO_IGREJA</td></tr>
+			<tr><th>Forçar Relacionamento</th><td>True</td></tr>   
+			<tr><th>Indice</th><td>PK_TB_MESES_FECHAMENTO_IGREJA</td></tr>
+			<tr><th>Menssagem</th><td></td></tr>
+		</table>
+		<h3>Campos Relacionados</h3>
+		<table>
+		  <tr><th>Tabela base: </th><td>codigoIgreja</td></tr>	
+		  <tr><th>Tabela auxiliar: </th><td>=([AUX_TB_MESES_FECHAMENTO_IGREJA].[codigoIgreja])</td></tr>
+		</table>
+		</br>
+		<table>
+		  <tr><th>Tabela base: </th><td>mesReferencia</td></tr>	
+		  <tr><th>Tabela auxiliar: </th><td>=(mesReferencia)</td></tr>
+		</table>
+		</br>
+		<table>
+		  <tr><th>Tabela base: </th><td>anoReferencia</td></tr>	
+		  <tr><th>Tabela auxiliar: </th><td>=(anoReferencia)</td></tr>
+		</table>
+		</br>
 		
 		
 	</div>

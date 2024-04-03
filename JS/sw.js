@@ -1,4 +1,4 @@
-var CACHE_NAME = 'DEFAULT_20240325151722';
+var CACHE_NAME = 'DEFAULT_20240403133324';
 
 self.addEventListener('install', function (event) {
     event.waitUntil(

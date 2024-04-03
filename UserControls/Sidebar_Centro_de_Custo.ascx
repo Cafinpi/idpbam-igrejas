@@ -1,4 +1,4 @@
-﻿<%@ control language="C#" autoeventwireup="true" inherits="PROJETO.Sidebar_Centro_de_Custo, App_Web_nntdyv20" %>
+﻿<%@ control language="C#" autoeventwireup="true" inherits="PROJETO.Sidebar_Centro_de_Custo, App_Web_nko1pvkx" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 	<meta name="generator" content="Gvinci Low-Code Platform" />
 	<telerik:RadCodeBlock ID="CustomHeaderCodeBlock" runat="server">

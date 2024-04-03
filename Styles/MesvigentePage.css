@@ -755,8 +755,8 @@
 {
 	background-color: #FFFFFF;
 	position: absolute !important;
-	left: 18px;
-	top: 1038px;
+	left: 26px;
+	top: 871px;
 	width: 640px;
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
@@ -790,8 +790,8 @@
 {
 	background-color: #FFFFFF;
 	position: absolute !important;
-	left: 530px;
-	top: 945px;
+	left: 687px;
+	top: 875px;
 	width: 640px;
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
@@ -812,6 +812,41 @@
 }
 
 #SweetAlert2 > ul > li
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.c_SweetAlert3
+{
+	background-color: #FFFFFF;
+	position: absolute !important;
+	left: 445px;
+	top: 988px;
+	width: 640px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: inherit;
+	z-index: 2500;
+}
+
+#SweetAlert3 > ul
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+#SweetAlert3 > ul > li
 {
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;

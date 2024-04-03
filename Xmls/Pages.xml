@@ -56,6 +56,9 @@
 	<Page Name="SaldoemCaixaPage.aspx" Title="Saldo em caixa" />
 	<Page Name="AlterarSenhaFinanceiroPage.aspx" Title="Alterar Senha Financeiro" />
 	<Page Name="AlterarSenhaSecretariaPage.aspx" Title="Alterar Senha Secretaria" />
+	<Page Name="CadatrarUsuarioFinaneiroPage.aspx" Title="Cadastrar Usuário Financeiro" />
+	<Page Name="PainelADMPage.aspx" Title="Painel Administrativo" />
+	<Page Name="AlterarSenhaADMPage.aspx" Title="Alterar Senha ADM Igreja" />
 	<Page Name="RelGrupoCategoria.aspx" Title="Relatório de Grupos de Categoria" />
 	<Page Name="RelCategoria.aspx" Title="Relatório de Categorias" />
 	<Page Name="RelCentroCusto.aspx" Title="Relatório de Centros de Custo" />

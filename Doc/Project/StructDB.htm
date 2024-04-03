@@ -10,7 +10,7 @@
 
 <div class="properties">
 		<h2>Bancos de Dados</h2>
-		  <h3 style="margin-bottom:0px">Banco: <span>idpb_gileatos</span></h3>
+		  <h3 style="margin-bottom:0px">Banco: <span>idpb_castelo</span></h3>
 		  <span style="margin-left :50px">Descrição:</span>
 			  <h3 style="margin-left:40px; margin-bottom:0px">Tabela: <span>agenda_igreja</span></h3>
 				<h3 style="margin-left:50px; margin-bottom:0px" >Campo</h3>
@@ -6597,7 +6597,7 @@
 						<td>bigint</td>
 						<td>10</td>
 						<td>0</td>
-						<td>False</td>
+						<td>True</td>
 						<td>False</td>
 						<td>0</td>
 						<td>9999999999</td>
@@ -7968,7 +7968,7 @@
 						<td>bigint</td>
 						<td>10</td>
 						<td>0</td>
-						<td>False</td>
+						<td>True</td>
 						<td>False</td>
 						<td>0</td>
 						<td>9999999999</td>
@@ -8007,7 +8007,7 @@
 						<td>decimal</td>
 						<td>10</td>
 						<td>2</td>
-						<td>False</td>
+						<td>True</td>
 						<td>False</td>
 						<td>0</td>
 						<td>99999999,99</td>
@@ -8020,7 +8020,7 @@
 						<td>decimal</td>
 						<td>10</td>
 						<td>2</td>
-						<td>False</td>
+						<td>True</td>
 						<td>False</td>
 						<td>0</td>
 						<td>99999999,99</td>
@@ -8033,7 +8033,7 @@
 						<td>bigint</td>
 						<td>10</td>
 						<td>0</td>
-						<td>False</td>
+						<td>True</td>
 						<td>False</td>
 						<td>0</td>
 						<td>9999999999</td>
@@ -8046,7 +8046,7 @@
 						<td>bigint</td>
 						<td>10</td>
 						<td>0</td>
-						<td>False</td>
+						<td>True</td>
 						<td>False</td>
 						<td>0</td>
 						<td>9999999999</td>
@@ -8062,7 +8062,7 @@
 						<tr><th>Único: </th><td>True</td></tr>
 						<tr><th>Primário: </th><td>True</td></tr>
 						<tr><th>FillFactor: </th><td>90</td></tr>			
-							<tr><th>Campo do índice: </th><td>PAR_CAT_TRANSF</td></tr>
+							<tr><th>Campo do índice: </th><td>CC_SAIDA_CONTRIBUICAOMM</td></tr>
 					</table>
 					<br/>
 			  <h3 style="margin-left:40px; margin-bottom:0px">Tabela: <span>TB_PLANO_CONTA</span></h3>
@@ -9403,6 +9403,32 @@ where CONS_LANCAMENTOS.PAGO = 'SIM'</ViewConstructor></td></tr>
 							</table>	
 						<br/>
 							<table style="margin-left:60px">
+								<tr><th>Relacionamento: </th><td>CONS_PAGAR_TRIBUTOS</td></tr>			
+								<tr><th>Titulo: </th><td>CONS_PAGAR_TRIBUTOS</td></tr>
+								<tr><th>Descrição: </th><td></td></tr>
+								<tr><th>Comando: </th><td><ViewConstructor Database="1">Select VV_SOMA_RECEITAOPERACIONAL.mesReferencia,
+  VV_SOMA_RECEITAOPERACIONAL.anoReferencia,
+  VV_SOMA_RECEITAOPERACIONAL.TotalReceita,
+  VV_SOMA_RECEITAOPERACIONAL.repasseAM,
+  VV_SOMA_RECEITAOPERACIONAL.repasseNacioal,
+  
+  CASE
+        WHEN CONS_TRIBUTOS.GC_ID = 4 THEN CONS_TRIBUTOS.VALOR_PAGO END as VALOR_NACIONAL ,
+  CASE
+        WHEN CONS_TRIBUTOS.GC_ID = 5 THEN CONS_TRIBUTOS.VALOR_PAGO END as VALOR_ESTADUAL,
+  CASE 
+  WHEN CONS_TRIBUTOS.GC_ID = 4 THEN (VV_SOMA_RECEITAOPERACIONAL.repasseNacioal - CONS_TRIBUTOS.VALOR_PAGO) END as VALOR_APAGAR_NACIONAL,
+
+    CASE 
+  WHEN CONS_TRIBUTOS.GC_ID = 5 THEN (VV_SOMA_RECEITAOPERACIONAL.repasseAM - CONS_TRIBUTOS.VALOR_PAGO) END as VALOR_APAGAR_ESTADUAL
+  
+From VV_SOMA_RECEITAOPERACIONAL
+  Left Join CONS_TRIBUTOS On VV_SOMA_RECEITAOPERACIONAL.anoReferencia =
+      CONS_TRIBUTOS.anoReferencia And VV_SOMA_RECEITAOPERACIONAL.mesReferencia =
+      CONS_TRIBUTOS.mesReferencia</ViewConstructor></td></tr>
+							</table>	
+						<br/>
+							<table style="margin-left:60px">
 								<tr><th>Relacionamento: </th><td>CONS_REL_FECHAMENTO</td></tr>			
 								<tr><th>Titulo: </th><td>CONS_REL_FECHAMENTO</td></tr>
 								<tr><th>Descrição: </th><td></td></tr>
@@ -9463,6 +9489,13 @@ where CONS_LANCAMENTOS.PAGO = 'SIM'</ViewConstructor></td></tr>
 								<tr><th>Titulo: </th><td>CONS_TRANFERENCIA</td></tr>
 								<tr><th>Descrição: </th><td></td></tr>
 								<tr><th>Comando: </th><td><ViewConstructor Database="1">Select TB_TRANSFERENCIA.TF_ID, TB_TRANSFERENCIA.TF_DESCRICAO, TB_TRANSFERENCIA.TF_DATA, TB_TRANSFERENCIA.TF_CT_ORIGEM, TB_CONTA.CT_NOME As FANCONTAORIGEM, TB_TRANSFERENCIA.TF_CT_DESTINO, CONTADESTINO.CT_NOME As FANCONTADESTINO, TB_TRANSFERENCIA.TF_VALOR, TB_TRANSFERENCIA.CAT_ID, TB_CATEGORIA.CAT_NOME, TB_TRANSFERENCIA.TF_DATA_HORA_INCLUSAO, TB_TRANSFERENCIA.mesReferencia, TB_TRANSFERENCIA.anoReferencia, TB_TRANSFERENCIA.TF_CC_ORIGEM, TB_TRANSFERENCIA.TF_CC_DESTINO From TB_TRANSFERENCIA Left Join idpb_AM.dbo.TB_CATEGORIA On TB_CATEGORIA.CAT_ID = TB_TRANSFERENCIA.CAT_ID And TB_CATEGORIA.GC_ID = TB_TRANSFERENCIA.GC_ID Left Join TB_CONTA On TB_CONTA.CT_ID = TB_TRANSFERENCIA.TF_CT_ORIGEM Left Join TB_CONTA As CONTADESTINO On CONTADESTINO.CT_ID = TB_TRANSFERENCIA.TF_CT_DESTINO</ViewConstructor></td></tr>
+							</table>	
+						<br/>
+							<table style="margin-left:60px">
+								<tr><th>Relacionamento: </th><td>CONS_TRIBUTOS</td></tr>			
+								<tr><th>Titulo: </th><td>CONS_TRIBUTOS</td></tr>
+								<tr><th>Descrição: </th><td></td></tr>
+								<tr><th>Comando: </th><td><ViewConstructor Database="1"><SelectedFields><SelectedField AgregateAlias="" AgregateFunc="" JoinAlias="" FieldID="591675" /><SelectedField AgregateAlias="" AgregateFunc="" JoinAlias="" FieldID="428885" /><SelectedField AgregateAlias="" AgregateFunc="" JoinAlias="" FieldID="591667" /><SelectedField AgregateAlias="" AgregateFunc="" JoinAlias="" FieldID="591669" /><SelectedField AgregateAlias="VALOR_PAGO" AgregateFunc="Soma" JoinAlias="" FieldID="428881" /></SelectedFields><Joins /><OrderBys /><GroupBys><GroupBy AgregateAlias="" AgregateFunc="" JoinAlias="" FieldID="591675" /><GroupBy AgregateAlias="" AgregateFunc="" JoinAlias="" FieldID="428885" /><GroupBy AgregateAlias="" AgregateFunc="" JoinAlias="" FieldID="591667" /><GroupBy AgregateAlias="" AgregateFunc="" JoinAlias="" FieldID="591669" /></GroupBys><MaxReg Value="" /><Filters><Filter IsAnd="False" Operator="="><FirstValue><Field AgregateAlias="" AgregateFunc="" JoinAlias="" FieldID="591675" /></FirstValue><SeccondValue Value="4" /></Filter><Filter IsAnd="True" Operator="="><FirstValue><Field AgregateAlias="" AgregateFunc="" JoinAlias="" FieldID="428885" /></FirstValue><SeccondValue Value="1" /></Filter><Filter IsAnd="False" Operator="="><FirstValue><Field AgregateAlias="" AgregateFunc="" JoinAlias="" FieldID="591675" /></FirstValue><SeccondValue Value="5" /></Filter><Filter IsAnd="True" Operator="="><FirstValue><Field AgregateAlias="" AgregateFunc="" JoinAlias="" FieldID="428885" /></FirstValue><SeccondValue Value="1" /></Filter></Filters></ViewConstructor></td></tr>
 							</table>	
 						<br/>
 							<table style="margin-left:60px">
@@ -9976,7 +10009,7 @@ Group By Month(CONS_LANCAMENTOS.LANC_DATA),
  round (Sum((TB_LANCAMENTO.LANC_VALOR) * [TB_PARAMETRO].PAR_PERC_IDPB_AM),2) as repasseAM,
   Sum(TB_LANCAMENTO.LANC_VALOR) * [TB_PARAMETRO].PAR_PERC_IDPB_NACIONAL as repasseNacioal
 From TB_LANCAMENTO,
-  [idpb_RR].[dbo].[TB_PARAMETRO]
+  [idpb_AM].[dbo].[TB_PARAMETRO]
 
 Where TB_LANCAMENTO.GC_ID = 3
 Group By TB_LANCAMENTO.mesReferencia,

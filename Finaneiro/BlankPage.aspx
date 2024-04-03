@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" validaterequest="false" autoeventwireup="true" inherits="PROJETO.Pages.BlankPage, App_Web_qpvz2pf5" culture="auto" uiculture="auto" %>
+﻿<%@ page language="C#" validaterequest="false" autoeventwireup="true" inherits="PROJETO.Pages.BlankPage, App_Web_pd21iw0n" culture="auto" uiculture="auto" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>

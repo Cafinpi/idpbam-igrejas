@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.AlterarSenhaSecretariaPage, App_Web_2vqg02es" culture="auto" uiculture="auto" %>
+﻿<%@ page language="C#" validaterequest="false" maintainscrollpositiononpostback="true" enableeventvalidation="True" autoeventwireup="true" inherits="PROJETO.DataPages.AlterarSenhaSecretariaPage, App_Web_rhk5yajc" culture="auto" uiculture="auto" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <%@ Register Src="..\UserControls\Sidebar_Secretaria.ascx" TagName="uc" TagPrefix="uc" %>
 <%@ Register Src="..\UserControls\Header.ascx" TagName="GHeader" TagPrefix="GHeader" %>
@@ -72,6 +72,29 @@
 		<script type="text/javascript" src="../JS/Functions.js"></script>
 		<script src='../JS/Mask.js' type="text/javascript"></script>
 <script type="text/javascript">
+	function sweetAlert_SweetAlert2(customMessage, customTitle, customPosition, sender)
+	{
+	   Swal.fire({
+	       icon:  'error' ,
+	       title: customTitle === undefined ? 'Error' : customTitle,
+	       text: customMessage === undefined ? 'Senhas não conferem!' : customMessage,
+	       showCloseButton:  false,
+	       showCancelButton: false,
+	       showConfirmButton:true,
+	       confirmButtonText:'OK' ,
+	       cancelButtonText: 'Cancel' ,
+	       reverseButtons:false,
+	       timer:0,
+	       timerProgressBar:true,
+	       focusConfirm:true,
+	       focusCancel:false,
+	       position: customPosition === undefined ? 'center' : customPosition,
+	       allowEscapeKey:true,
+	       allowEnterKey:true,
+	       allowOutsideClick:true,
+	   }).then(function(result) {
+	   });
+	}
 	function sweetAlert_SweetAlert1(customMessage, customTitle, customPosition, sender)
 	{
 	   Swal.fire({
@@ -98,31 +121,8 @@
 		   }
 	   });
 	}
-	function sweetAlert_SweetAlert2(customMessage, customTitle, customPosition, sender)
-	{
-	   Swal.fire({
-	       icon:  'error' ,
-	       title: customTitle === undefined ? 'Error' : customTitle,
-	       text: customMessage === undefined ? 'Senhas não conferem!' : customMessage,
-	       showCloseButton:  false,
-	       showCancelButton: false,
-	       showConfirmButton:true,
-	       confirmButtonText:'OK' ,
-	       cancelButtonText: 'Cancel' ,
-	       reverseButtons:false,
-	       timer:0,
-	       timerProgressBar:true,
-	       focusConfirm:true,
-	       focusCancel:false,
-	       position: customPosition === undefined ? 'center' : customPosition,
-	       allowEscapeKey:true,
-	       allowEnterKey:true,
-	       allowOutsideClick:true,
-	   }).then(function(result) {
-	   });
-	}
 </script>
-		<script type="text/javascript" src="../JS/AlterarSenhaSecretariaPage_USER.js?sv=4.0_20240325151738"></script>
+		<script type="text/javascript" src="../JS/AlterarSenhaSecretariaPage_USER.js?sv=4.0_20240403133338"></script>
 		<script type="text/javascript" src="../JS/jquery.validationEngine-pt_BR.js"></script>
 		<script type="text/javascript" src="../JS/jquery.validationEngine.js"></script>
 		<script type="text/javascript" src="../JS/validation.js"></script>
@@ -172,7 +172,7 @@
 		}
 		function ___LOGIN_USER_PASSWORD_onkeydown(event,vgWin)
 		{
-			onTextChanged(event);
+			ShowClientFormulas(event.srcElement.id);
 		}
 		function ___txtNewPasswordConfirm_onkeydown(event,vgWin)
 		{
@@ -188,13 +188,13 @@
 		{
 			localStorage.removeItem('SSI_F'); localStorage.removeItem('SSI_T'); Logoff();
 		}
-		function LOGIN_USER_PASSWORD_Validation(field, rules, i, options) {
-			if (!(validateCall(field, "required", options))) {
+		function txtNewPasswordConfirm_Validation(field, rules, i, options) {
+			if (!(document.getElementById("txtNewPasswordConfirm").value == document.getElementById("LOGIN_USER_PASSWORD").value)) {
 				return field.attr('data-validation-message');
 			}
 		}
-		function txtNewPasswordConfirm_Validation(field, rules, i, options) {
-			if (!(document.getElementById("txtNewPasswordConfirm").value == document.getElementById("LOGIN_USER_PASSWORD").value)) {
+		function LOGIN_USER_PASSWORD_Validation(field, rules, i, options) {
+			if (!(validateCall(field, "required", options))) {
 				return field.attr('data-validation-message');
 			}
 		}

@@ -2,7 +2,7 @@
 <Configuration>
 	<!--Databases-->
 	<Databases>
-		<Database Name="idpb_gileatos">
+		<Database Name="idpb_castelo">
 			<Setting key="Type" value="Sql"/>
 			<Setting key="StringConnection" value="Server=.\gvinci;Database=Banco;User ID=sa;Password=gvinci;Trusted_Connection=false"/>
 			<Setting key="Server" value="MSSQLSERVER"/>
